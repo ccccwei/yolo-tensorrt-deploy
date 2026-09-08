@@ -1,0 +1,15 @@
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/.venv-export/
+/artifacts/
+/results/
+/result.jpg
+/weights/*.pt
+/weights/*.onnx
+
+__pycache__/
+*.py[cod]
+*.engine
+*.plan
+compile_commands.json

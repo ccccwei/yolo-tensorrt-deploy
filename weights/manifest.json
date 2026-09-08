@@ -1,0 +1,112 @@
+{
+  "exporter": {
+    "arguments": {
+      "batch": 1,
+      "device": "cpu",
+      "dynamic": false,
+      "format": "onnx",
+      "imgsz": 640,
+      "nms": false,
+      "opset": 16,
+      "simplify": false
+    },
+    "packages": {
+      "onnx": "1.22.0",
+      "torch": "2.13.0+cpu",
+      "torchvision": "0.28.0+cpu",
+      "ultralytics": "8.4.137"
+    }
+  },
+  "generated_at_utc": "2026-09-01T07:38:13.500768Z",
+  "models": [
+    {
+      "checkpoint": {
+        "bytes": 5613764,
+        "path": "yolo11n.pt",
+        "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+      },
+      "model": "yolo11n.pt",
+      "onnx": {
+        "bytes": 10701975,
+        "checker": "passed",
+        "inputs": [
+          {
+            "dtype": "FLOAT",
+            "name": "images",
+            "shape": [
+              1,
+              3,
+              640,
+              640
+            ]
+          }
+        ],
+        "opsets": [
+          {
+            "domain": "ai.onnx",
+            "version": 16
+          }
+        ],
+        "outputs": [
+          {
+            "dtype": "FLOAT",
+            "name": "output0",
+            "shape": [
+              1,
+              84,
+              8400
+            ]
+          }
+        ],
+        "path": "yolo11n.onnx",
+        "sha256": "06e6b4375c3dfcd25a28cd6e49b4c7069f5c9dce8f595a63a025f6915d6219eb"
+      },
+      "postprocess_contract": "xywh + 80 class scores; confidence filtering and NMS required"
+    },
+    {
+      "checkpoint": {
+        "bytes": 5544453,
+        "path": "yolo26n.pt",
+        "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+      },
+      "model": "yolo26n.pt",
+      "onnx": {
+        "bytes": 9893948,
+        "checker": "passed",
+        "inputs": [
+          {
+            "dtype": "FLOAT",
+            "name": "images",
+            "shape": [
+              1,
+              3,
+              640,
+              640
+            ]
+          }
+        ],
+        "opsets": [
+          {
+            "domain": "ai.onnx",
+            "version": 16
+          }
+        ],
+        "outputs": [
+          {
+            "dtype": "FLOAT",
+            "name": "output0",
+            "shape": [
+              1,
+              300,
+              6
+            ]
+          }
+        ],
+        "path": "yolo26n.onnx",
+        "sha256": "c1753a66ca8cf9eb0165b2cb75e7b8be9226d126ca96c7dd99239dd8fc56c77b"
+      },
+      "postprocess_contract": "xyxy + confidence + class_id; end-to-end output without external NMS"
+    }
+  ],
+  "schema_version": 1
+}
