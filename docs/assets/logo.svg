@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="180" viewBox="0 0 600 180" role="img" aria-labelledby="title desc">
+  <title id="title">YOLO TensorRT Deploy</title>
+  <desc id="desc">A green detection frame and lightning bolt beside the YOLO TensorRT Deploy wordmark.</desc>
+
+  <rect x="1" y="1" width="598" height="178" rx="24" fill="#111820" stroke="#29343f" stroke-width="2"/>
+
+  <rect x="30" y="30" width="120" height="120" rx="24" fill="#1b2824"/>
+  <path d="M55 74V57a2 2 0 0 1 2-2h17 M106 55h17a2 2 0 0 1 2 2v17 M125 106v17a2 2 0 0 1-2 2h-17 M74 125H57a2 2 0 0 1-2-2v-17"
+        fill="none" stroke="#a3e635" stroke-width="4" stroke-linecap="round"/>
+  <path d="M97 64 70 96h21l-8 22 29-34H91z" fill="#a3e635"/>
+
+  <g font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="184" y="91" fill="#f5f7fa" font-size="56" font-weight="700" letter-spacing="-2">YOLO</text>
+    <text x="187" y="126" fill="#b7c4d0" font-size="25" font-weight="400" letter-spacing="1">TensorRT Deploy</text>
+  </g>
+</svg>
