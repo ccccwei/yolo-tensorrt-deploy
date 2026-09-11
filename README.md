@@ -1,15 +1,11 @@
 <p align="center">
-  <img src="docs/assets/logo.svg" alt="YOLO TensorRT Deploy logo" width="600">
+  <img src="docs/assets/logo.svg" alt="YOLO TensorRT Deploy logo" width="80" height="80">
 </p>
 
 <h1 align="center">YOLO TensorRT Deploy</h1>
 
 <p align="center">
-  <strong>从简洁部署到极致速度</strong>
-</p>
-
-<p align="center">
-  A hands-on YOLO deployment series: from simple C++ inference to TensorRT / CUDA performance optimization.
+  从简洁部署到极致速度
 </p>
 
 一个循序渐进的 **YOLO C++ / TensorRT / CUDA 部署与优化系列**。从一份容易读懂、能够跑通的推理代码出发，逐步理解性能瓶颈、实现优化，并用同一测试口径比较每一步的收益。
