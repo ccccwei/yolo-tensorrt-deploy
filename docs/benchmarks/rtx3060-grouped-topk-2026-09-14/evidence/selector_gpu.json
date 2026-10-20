@@ -1,0 +1,182 @@
+{
+  "cases": {
+    "unique": {
+      "control": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.6405830383300781,
+        "output": "selector/unique_control_gpu/output0.output.1.300.6.Float.raw",
+        "sha256": "995d80bebf81e13d6703dbc1eedcf5b8b0220b68754cd714f7279b66a7329a29"
+      },
+      "grouped": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.6405830383300781,
+        "output": "selector/unique_grouped_gpu/output0.output.1.300.6.Float.raw",
+        "sha256": "995d80bebf81e13d6703dbc1eedcf5b8b0220b68754cd714f7279b66a7329a29"
+      },
+      "raw_identical": true,
+      "equal_rows": 300,
+      "equal_row_sets": true,
+      "common_rows": 300
+    },
+    "fp16_rounded_ties": {
+      "control": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.640625,
+        "output": "selector/fp16_rounded_ties_control_gpu/output0.output.1.300.6.Float.raw",
+        "sha256": "64b5641f54801f9e47a0e639e137434435f2bb56b72e4b3171fc48ce4939848a"
+      },
+      "grouped": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.640625,
+        "output": "selector/fp16_rounded_ties_grouped_gpu/output0.output.1.300.6.Float.raw",
+        "sha256": "64b5641f54801f9e47a0e639e137434435f2bb56b72e4b3171fc48ce4939848a"
+      },
+      "raw_identical": true,
+      "equal_rows": 300,
+      "equal_row_sets": true,
+      "common_rows": 300
+    },
+    "high_confidence_ties": {
+      "control": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.75,
+        "output": "selector/high_confidence_ties_control_gpu/output0.output.1.300.6.Float.raw",
+        "sha256": "0522c08870aa30ad6f889f77467acd1fc0f617ae60897f56ae108a2d29bbe017"
+      },
+      "grouped": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.75,
+        "output": "selector/high_confidence_ties_grouped_gpu/output0.output.1.300.6.Float.raw",
+        "sha256": "0522c08870aa30ad6f889f77467acd1fc0f617ae60897f56ae108a2d29bbe017"
+      },
+      "raw_identical": true,
+      "equal_rows": 300,
+      "equal_row_sets": true,
+      "common_rows": 300
+    },
+    "threshold_multiclass": {
+      "control": {
+        "rows": 300,
+        "above_threshold": 260,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.2499999850988388,
+        "output": "selector/threshold_multiclass_control_gpu/output0.output.1.300.6.Float.raw",
+        "sha256": "d57c998108fc3aa8c61ddf2eb407eee7438e3032db4b8f3278680f2e4d2522d0"
+      },
+      "grouped": {
+        "rows": 300,
+        "above_threshold": 260,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.2499999850988388,
+        "output": "selector/threshold_multiclass_grouped_gpu/output0.output.1.300.6.Float.raw",
+        "sha256": "d57c998108fc3aa8c61ddf2eb407eee7438e3032db4b8f3278680f2e4d2522d0"
+      },
+      "raw_identical": true,
+      "equal_rows": 300,
+      "equal_row_sets": true,
+      "common_rows": 300
+    }
+  },
+  "commands": [
+    [
+      "/usr/local/TensorRT/bin/trtexec",
+      "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/control.engine",
+      "--loadInputs=boxes:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/boxes.bin,scores:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/unique/scores.bin",
+      "--noDataTransfers",
+      "--useCudaGraph",
+      "--iterations=3",
+      "--warmUp=0",
+      "--duration=0",
+      "--dumpRawBindingsToFile"
+    ],
+    [
+      "/usr/local/TensorRT/bin/trtexec",
+      "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/grouped.engine",
+      "--loadInputs=boxes:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/boxes.bin,scores:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/unique/scores.bin",
+      "--noDataTransfers",
+      "--useCudaGraph",
+      "--iterations=3",
+      "--warmUp=0",
+      "--duration=0",
+      "--dumpRawBindingsToFile"
+    ],
+    [
+      "/usr/local/TensorRT/bin/trtexec",
+      "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/control.engine",
+      "--loadInputs=boxes:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/boxes.bin,scores:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/fp16_rounded_ties/scores.bin",
+      "--noDataTransfers",
+      "--useCudaGraph",
+      "--iterations=3",
+      "--warmUp=0",
+      "--duration=0",
+      "--dumpRawBindingsToFile"
+    ],
+    [
+      "/usr/local/TensorRT/bin/trtexec",
+      "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/grouped.engine",
+      "--loadInputs=boxes:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/boxes.bin,scores:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/fp16_rounded_ties/scores.bin",
+      "--noDataTransfers",
+      "--useCudaGraph",
+      "--iterations=3",
+      "--warmUp=0",
+      "--duration=0",
+      "--dumpRawBindingsToFile"
+    ],
+    [
+      "/usr/local/TensorRT/bin/trtexec",
+      "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/control.engine",
+      "--loadInputs=boxes:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/boxes.bin,scores:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/high_confidence_ties/scores.bin",
+      "--noDataTransfers",
+      "--useCudaGraph",
+      "--iterations=3",
+      "--warmUp=0",
+      "--duration=0",
+      "--dumpRawBindingsToFile"
+    ],
+    [
+      "/usr/local/TensorRT/bin/trtexec",
+      "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/grouped.engine",
+      "--loadInputs=boxes:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/boxes.bin,scores:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/high_confidence_ties/scores.bin",
+      "--noDataTransfers",
+      "--useCudaGraph",
+      "--iterations=3",
+      "--warmUp=0",
+      "--duration=0",
+      "--dumpRawBindingsToFile"
+    ],
+    [
+      "/usr/local/TensorRT/bin/trtexec",
+      "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/control.engine",
+      "--loadInputs=boxes:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/boxes.bin,scores:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/threshold_multiclass/scores.bin",
+      "--noDataTransfers",
+      "--useCudaGraph",
+      "--iterations=3",
+      "--warmUp=0",
+      "--duration=0",
+      "--dumpRawBindingsToFile"
+    ],
+    [
+      "/usr/local/TensorRT/bin/trtexec",
+      "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/grouped.engine",
+      "--loadInputs=boxes:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/boxes.bin,scores:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/selector/threshold_multiclass/scores.bin",
+      "--noDataTransfers",
+      "--useCudaGraph",
+      "--iterations=3",
+      "--warmUp=0",
+      "--duration=0",
+      "--dumpRawBindingsToFile"
+    ]
+  ]
+}

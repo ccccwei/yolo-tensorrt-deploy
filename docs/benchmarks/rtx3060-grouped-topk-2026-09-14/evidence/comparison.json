@@ -1,0 +1,2714 @@
+{
+  "scope": "21 synthetic/derived image fixtures, four fresh engines, last raw output per image",
+  "raw_format": "Little-endian native float32, [1,300,6], binary rather than text-rounded scores",
+  "limitations": [
+    "Not a labeled dataset or a mAP evaluation",
+    "Per-execution program checks three Graph replays internally; only one raw output is archived per image",
+    "No tolerance, row reordering or low-confidence filtering is used for the raw equality checks",
+    "Postprocessed CSV rows include the production coordinate scaling/clamping and invalid-box rejection"
+  ],
+  "file_sha256": {
+    "raw_control_a/blank_0.png.bin": "8734a0f1216c971582b3a57cd68e311d8ea310bedf07b0c3924dfdb3a353b7c7",
+    "raw_control_a/blank_114.png.bin": "3bb4dddeb4d932d09705d851a7778e7a765d3cae1b074c4ccb583fe9a5cec1bf",
+    "raw_control_a/blank_255.png.bin": "cbc3d59e6539151f15c4ca832868d92337fa300e6422921cdd7baa7e18dfaa7f",
+    "raw_control_a/bus_bright.png.bin": "991b069acac36ce045803b43f44a6698fdb20ca05d34fdb7c86e1afddb0dc97f",
+    "raw_control_a/bus_crop.png.bin": "899dca320de75ece4c439feb4c2722dde8c81fd454a2ac03ee83a896ca3141a7",
+    "raw_control_a/bus_dark.png.bin": "75fd9cb709488a90d0065b7a1a71be20005224016b5afe29d89e7fef2588c315",
+    "raw_control_a/bus_flip.png.bin": "0786b437bd16d3061f32b9825920fe51e4ea77d061ef7ae07262c2ff7b0ce5ba",
+    "raw_control_a/bus_half.png.bin": "78b41ab595acb7898f2f792346d8bd444eea7ce47f18479c140d73ab356fd986",
+    "raw_control_a/bus_large.png.bin": "7f4562a2b38c61f75550c619ac4e1a5e894c7fd42b90ce8501780671dcf17ad9",
+    "raw_control_a/bus_original.png.bin": "8aa5281290a3f82c4212818e15faac20532c8d072f6aa48bc3c8ada28ad1e0fb",
+    "raw_control_a/bus_tiles.png.bin": "54ef82c14586c90f21e767a32d3c127b2c7134dd18dbe7c3656a875f2ab4279f",
+    "raw_control_a/checker.png.bin": "1dd2498bfd0f65f7aaa98bccbe97b9841ac55b0fde1294cedc0346a9083a8fa6",
+    "raw_control_a/noise.png.bin": "4ec6453f9e0d15b1468ea1ba760a0be97c0887c04ea6e52a3c8ea394fa8cf387",
+    "raw_control_a/zidane_bright.png.bin": "543700ea689cfe731692e0e962813f72b2286848a47e963a98e5ddf9eb51e79b",
+    "raw_control_a/zidane_crop.png.bin": "161298486b0825e5aafb8fe8cbd9cffba7ae6f04d2d67ae73b7be853d07d478d",
+    "raw_control_a/zidane_dark.png.bin": "48f473d827da67bfee4743035cdaaef9ed614c457b1c2cc88d9b1e1b17a5f585",
+    "raw_control_a/zidane_flip.png.bin": "6f073ae761cc5f4ed99fe05aa14258fa5b8213dcb20f1288c4405495f63f526e",
+    "raw_control_a/zidane_half.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_control_a/zidane_large.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_control_a/zidane_original.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_control_a/zidane_tiles.png.bin": "60424d873db3b5ad96e66a6ab0fee8302020172ac8b0b8f610352c46311cced6",
+    "raw_control_a/detections.csv": "23816ce845e4608fe38d188fb9489472d9258b61007f95e9464799272a64c313",
+    "raw_control_b/blank_0.png.bin": "8734a0f1216c971582b3a57cd68e311d8ea310bedf07b0c3924dfdb3a353b7c7",
+    "raw_control_b/blank_114.png.bin": "3bb4dddeb4d932d09705d851a7778e7a765d3cae1b074c4ccb583fe9a5cec1bf",
+    "raw_control_b/blank_255.png.bin": "cbc3d59e6539151f15c4ca832868d92337fa300e6422921cdd7baa7e18dfaa7f",
+    "raw_control_b/bus_bright.png.bin": "991b069acac36ce045803b43f44a6698fdb20ca05d34fdb7c86e1afddb0dc97f",
+    "raw_control_b/bus_crop.png.bin": "899dca320de75ece4c439feb4c2722dde8c81fd454a2ac03ee83a896ca3141a7",
+    "raw_control_b/bus_dark.png.bin": "75fd9cb709488a90d0065b7a1a71be20005224016b5afe29d89e7fef2588c315",
+    "raw_control_b/bus_flip.png.bin": "0786b437bd16d3061f32b9825920fe51e4ea77d061ef7ae07262c2ff7b0ce5ba",
+    "raw_control_b/bus_half.png.bin": "78b41ab595acb7898f2f792346d8bd444eea7ce47f18479c140d73ab356fd986",
+    "raw_control_b/bus_large.png.bin": "7f4562a2b38c61f75550c619ac4e1a5e894c7fd42b90ce8501780671dcf17ad9",
+    "raw_control_b/bus_original.png.bin": "8aa5281290a3f82c4212818e15faac20532c8d072f6aa48bc3c8ada28ad1e0fb",
+    "raw_control_b/bus_tiles.png.bin": "54ef82c14586c90f21e767a32d3c127b2c7134dd18dbe7c3656a875f2ab4279f",
+    "raw_control_b/checker.png.bin": "1dd2498bfd0f65f7aaa98bccbe97b9841ac55b0fde1294cedc0346a9083a8fa6",
+    "raw_control_b/noise.png.bin": "4ec6453f9e0d15b1468ea1ba760a0be97c0887c04ea6e52a3c8ea394fa8cf387",
+    "raw_control_b/zidane_bright.png.bin": "543700ea689cfe731692e0e962813f72b2286848a47e963a98e5ddf9eb51e79b",
+    "raw_control_b/zidane_crop.png.bin": "161298486b0825e5aafb8fe8cbd9cffba7ae6f04d2d67ae73b7be853d07d478d",
+    "raw_control_b/zidane_dark.png.bin": "48f473d827da67bfee4743035cdaaef9ed614c457b1c2cc88d9b1e1b17a5f585",
+    "raw_control_b/zidane_flip.png.bin": "6f073ae761cc5f4ed99fe05aa14258fa5b8213dcb20f1288c4405495f63f526e",
+    "raw_control_b/zidane_half.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_control_b/zidane_large.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_control_b/zidane_original.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_control_b/zidane_tiles.png.bin": "60424d873db3b5ad96e66a6ab0fee8302020172ac8b0b8f610352c46311cced6",
+    "raw_control_b/detections.csv": "23816ce845e4608fe38d188fb9489472d9258b61007f95e9464799272a64c313",
+    "raw_grouped_a/blank_0.png.bin": "8734a0f1216c971582b3a57cd68e311d8ea310bedf07b0c3924dfdb3a353b7c7",
+    "raw_grouped_a/blank_114.png.bin": "3bb4dddeb4d932d09705d851a7778e7a765d3cae1b074c4ccb583fe9a5cec1bf",
+    "raw_grouped_a/blank_255.png.bin": "cbc3d59e6539151f15c4ca832868d92337fa300e6422921cdd7baa7e18dfaa7f",
+    "raw_grouped_a/bus_bright.png.bin": "991b069acac36ce045803b43f44a6698fdb20ca05d34fdb7c86e1afddb0dc97f",
+    "raw_grouped_a/bus_crop.png.bin": "899dca320de75ece4c439feb4c2722dde8c81fd454a2ac03ee83a896ca3141a7",
+    "raw_grouped_a/bus_dark.png.bin": "75fd9cb709488a90d0065b7a1a71be20005224016b5afe29d89e7fef2588c315",
+    "raw_grouped_a/bus_flip.png.bin": "0786b437bd16d3061f32b9825920fe51e4ea77d061ef7ae07262c2ff7b0ce5ba",
+    "raw_grouped_a/bus_half.png.bin": "78b41ab595acb7898f2f792346d8bd444eea7ce47f18479c140d73ab356fd986",
+    "raw_grouped_a/bus_large.png.bin": "7f4562a2b38c61f75550c619ac4e1a5e894c7fd42b90ce8501780671dcf17ad9",
+    "raw_grouped_a/bus_original.png.bin": "8aa5281290a3f82c4212818e15faac20532c8d072f6aa48bc3c8ada28ad1e0fb",
+    "raw_grouped_a/bus_tiles.png.bin": "54ef82c14586c90f21e767a32d3c127b2c7134dd18dbe7c3656a875f2ab4279f",
+    "raw_grouped_a/checker.png.bin": "1dd2498bfd0f65f7aaa98bccbe97b9841ac55b0fde1294cedc0346a9083a8fa6",
+    "raw_grouped_a/noise.png.bin": "4ec6453f9e0d15b1468ea1ba760a0be97c0887c04ea6e52a3c8ea394fa8cf387",
+    "raw_grouped_a/zidane_bright.png.bin": "543700ea689cfe731692e0e962813f72b2286848a47e963a98e5ddf9eb51e79b",
+    "raw_grouped_a/zidane_crop.png.bin": "161298486b0825e5aafb8fe8cbd9cffba7ae6f04d2d67ae73b7be853d07d478d",
+    "raw_grouped_a/zidane_dark.png.bin": "48f473d827da67bfee4743035cdaaef9ed614c457b1c2cc88d9b1e1b17a5f585",
+    "raw_grouped_a/zidane_flip.png.bin": "6f073ae761cc5f4ed99fe05aa14258fa5b8213dcb20f1288c4405495f63f526e",
+    "raw_grouped_a/zidane_half.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_grouped_a/zidane_large.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_grouped_a/zidane_original.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_grouped_a/zidane_tiles.png.bin": "60424d873db3b5ad96e66a6ab0fee8302020172ac8b0b8f610352c46311cced6",
+    "raw_grouped_a/detections.csv": "23816ce845e4608fe38d188fb9489472d9258b61007f95e9464799272a64c313",
+    "raw_grouped_b/blank_0.png.bin": "8734a0f1216c971582b3a57cd68e311d8ea310bedf07b0c3924dfdb3a353b7c7",
+    "raw_grouped_b/blank_114.png.bin": "3bb4dddeb4d932d09705d851a7778e7a765d3cae1b074c4ccb583fe9a5cec1bf",
+    "raw_grouped_b/blank_255.png.bin": "cbc3d59e6539151f15c4ca832868d92337fa300e6422921cdd7baa7e18dfaa7f",
+    "raw_grouped_b/bus_bright.png.bin": "991b069acac36ce045803b43f44a6698fdb20ca05d34fdb7c86e1afddb0dc97f",
+    "raw_grouped_b/bus_crop.png.bin": "899dca320de75ece4c439feb4c2722dde8c81fd454a2ac03ee83a896ca3141a7",
+    "raw_grouped_b/bus_dark.png.bin": "75fd9cb709488a90d0065b7a1a71be20005224016b5afe29d89e7fef2588c315",
+    "raw_grouped_b/bus_flip.png.bin": "0786b437bd16d3061f32b9825920fe51e4ea77d061ef7ae07262c2ff7b0ce5ba",
+    "raw_grouped_b/bus_half.png.bin": "78b41ab595acb7898f2f792346d8bd444eea7ce47f18479c140d73ab356fd986",
+    "raw_grouped_b/bus_large.png.bin": "7f4562a2b38c61f75550c619ac4e1a5e894c7fd42b90ce8501780671dcf17ad9",
+    "raw_grouped_b/bus_original.png.bin": "8aa5281290a3f82c4212818e15faac20532c8d072f6aa48bc3c8ada28ad1e0fb",
+    "raw_grouped_b/bus_tiles.png.bin": "54ef82c14586c90f21e767a32d3c127b2c7134dd18dbe7c3656a875f2ab4279f",
+    "raw_grouped_b/checker.png.bin": "1dd2498bfd0f65f7aaa98bccbe97b9841ac55b0fde1294cedc0346a9083a8fa6",
+    "raw_grouped_b/noise.png.bin": "4ec6453f9e0d15b1468ea1ba760a0be97c0887c04ea6e52a3c8ea394fa8cf387",
+    "raw_grouped_b/zidane_bright.png.bin": "543700ea689cfe731692e0e962813f72b2286848a47e963a98e5ddf9eb51e79b",
+    "raw_grouped_b/zidane_crop.png.bin": "161298486b0825e5aafb8fe8cbd9cffba7ae6f04d2d67ae73b7be853d07d478d",
+    "raw_grouped_b/zidane_dark.png.bin": "48f473d827da67bfee4743035cdaaef9ed614c457b1c2cc88d9b1e1b17a5f585",
+    "raw_grouped_b/zidane_flip.png.bin": "6f073ae761cc5f4ed99fe05aa14258fa5b8213dcb20f1288c4405495f63f526e",
+    "raw_grouped_b/zidane_half.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_grouped_b/zidane_large.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_grouped_b/zidane_original.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "raw_grouped_b/zidane_tiles.png.bin": "60424d873db3b5ad96e66a6ab0fee8302020172ac8b0b8f610352c46311cced6",
+    "raw_grouped_b/detections.csv": "23816ce845e4608fe38d188fb9489472d9258b61007f95e9464799272a64c313",
+    "compare_raw.py": "58cee438ba08d873966aa50f7460844ea82a8df1ff8f3896035a6594d1ed2d01",
+    "infer_raw.cpp": "ec9da411e3d5ad2778c8186c8652efe41828f99ac32627baeaf08183d016d6e7",
+    "infer_raw": "c411c31bb4b1aec80146237ed175d6335c31fa128111c102caaca21852ce774f",
+    "image_cases/metadata.json": "6c234af5a3700301c82dd1cee7f48c2a76428accba270979caf4fce1b621b328",
+    "control_a.engine": "a0c530489f69c8cd145eeb00ec05b5f1694d5708d94f893e20f429cee4db28de",
+    "control_b.engine": "0cb135b24e1a3b411acf08ba09b52270f5fa3dd0debdded872617789b640adf2",
+    "grouped_a.engine": "1bd991bc9ed123ad0c7cf8c3542819e0838232d2caaca025713c78d74a657aa9",
+    "grouped_b.engine": "b58a45ce1ea06554ceb7354dcd1f5f9aa58c4132be8a4d15f3b763b66f0a9ae8"
+  },
+  "comparisons": [
+    {
+      "left": "control_a",
+      "right": "control_b",
+      "images": [
+        {
+          "image": "blank_0.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            253,
+            253
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "blank_114.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            287,
+            287
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "blank_255.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            278,
+            278
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_bright.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            57,
+            57
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_crop.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            89,
+            89
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_dark.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            60,
+            60
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_flip.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            68,
+            68
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_half.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_large.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            51,
+            51
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_original.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            63,
+            63
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_tiles.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            73,
+            73
+          ],
+          "raw_confidence_at_least_0_25": [
+            16,
+            16
+          ],
+          "postprocessed_count": [
+            16,
+            16
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "checker.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            118,
+            118
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "noise.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            164,
+            164
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_bright.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            58,
+            58
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_crop.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            73,
+            73
+          ],
+          "raw_confidence_at_least_0_25": [
+            4,
+            4
+          ],
+          "postprocessed_count": [
+            4,
+            4
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_dark.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            53,
+            53
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_flip.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_half.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_large.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_original.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_tiles.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            52,
+            52
+          ],
+          "raw_confidence_at_least_0_25": [
+            8,
+            8
+          ],
+          "postprocessed_count": [
+            8,
+            8
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        }
+      ],
+      "totals": {
+        "images": 21,
+        "raw_rows_per_engine": 6300,
+        "raw_float_elements_per_engine": 37800,
+        "byte_identical_images": 21,
+        "equal_raw_aligned_rows": 6300,
+        "equal_row_multiset_images": 21,
+        "equal_score_multiset_images": 21,
+        "equal_postprocessed_images": 21,
+        "postprocessed_detections": [
+          79,
+          79
+        ],
+        "max_absolute_raw_difference": 0.0
+      }
+    },
+    {
+      "left": "grouped_a",
+      "right": "grouped_b",
+      "images": [
+        {
+          "image": "blank_0.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            253,
+            253
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "blank_114.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            287,
+            287
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "blank_255.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            278,
+            278
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_bright.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            57,
+            57
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_crop.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            89,
+            89
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_dark.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            60,
+            60
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_flip.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            68,
+            68
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_half.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_large.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            51,
+            51
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_original.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            63,
+            63
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_tiles.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            73,
+            73
+          ],
+          "raw_confidence_at_least_0_25": [
+            16,
+            16
+          ],
+          "postprocessed_count": [
+            16,
+            16
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "checker.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            118,
+            118
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "noise.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            164,
+            164
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_bright.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            58,
+            58
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_crop.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            73,
+            73
+          ],
+          "raw_confidence_at_least_0_25": [
+            4,
+            4
+          ],
+          "postprocessed_count": [
+            4,
+            4
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_dark.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            53,
+            53
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_flip.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_half.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_large.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_original.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_tiles.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            52,
+            52
+          ],
+          "raw_confidence_at_least_0_25": [
+            8,
+            8
+          ],
+          "postprocessed_count": [
+            8,
+            8
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        }
+      ],
+      "totals": {
+        "images": 21,
+        "raw_rows_per_engine": 6300,
+        "raw_float_elements_per_engine": 37800,
+        "byte_identical_images": 21,
+        "equal_raw_aligned_rows": 6300,
+        "equal_row_multiset_images": 21,
+        "equal_score_multiset_images": 21,
+        "equal_postprocessed_images": 21,
+        "postprocessed_detections": [
+          79,
+          79
+        ],
+        "max_absolute_raw_difference": 0.0
+      }
+    },
+    {
+      "left": "control_a",
+      "right": "grouped_a",
+      "images": [
+        {
+          "image": "blank_0.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            253,
+            253
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "blank_114.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            287,
+            287
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "blank_255.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            278,
+            278
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_bright.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            57,
+            57
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_crop.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            89,
+            89
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_dark.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            60,
+            60
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_flip.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            68,
+            68
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_half.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_large.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            51,
+            51
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_original.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            63,
+            63
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_tiles.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            73,
+            73
+          ],
+          "raw_confidence_at_least_0_25": [
+            16,
+            16
+          ],
+          "postprocessed_count": [
+            16,
+            16
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "checker.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            118,
+            118
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "noise.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            164,
+            164
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_bright.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            58,
+            58
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_crop.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            73,
+            73
+          ],
+          "raw_confidence_at_least_0_25": [
+            4,
+            4
+          ],
+          "postprocessed_count": [
+            4,
+            4
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_dark.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            53,
+            53
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_flip.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_half.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_large.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_original.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_tiles.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            52,
+            52
+          ],
+          "raw_confidence_at_least_0_25": [
+            8,
+            8
+          ],
+          "postprocessed_count": [
+            8,
+            8
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        }
+      ],
+      "totals": {
+        "images": 21,
+        "raw_rows_per_engine": 6300,
+        "raw_float_elements_per_engine": 37800,
+        "byte_identical_images": 21,
+        "equal_raw_aligned_rows": 6300,
+        "equal_row_multiset_images": 21,
+        "equal_score_multiset_images": 21,
+        "equal_postprocessed_images": 21,
+        "postprocessed_detections": [
+          79,
+          79
+        ],
+        "max_absolute_raw_difference": 0.0
+      }
+    },
+    {
+      "left": "control_b",
+      "right": "grouped_b",
+      "images": [
+        {
+          "image": "blank_0.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            253,
+            253
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "blank_114.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            287,
+            287
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "blank_255.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            278,
+            278
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_bright.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            57,
+            57
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_crop.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            89,
+            89
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_dark.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            60,
+            60
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_flip.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            68,
+            68
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_half.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_large.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            51,
+            51
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_original.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            63,
+            63
+          ],
+          "raw_confidence_at_least_0_25": [
+            5,
+            5
+          ],
+          "postprocessed_count": [
+            5,
+            5
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "bus_tiles.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            73,
+            73
+          ],
+          "raw_confidence_at_least_0_25": [
+            16,
+            16
+          ],
+          "postprocessed_count": [
+            16,
+            16
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "checker.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            118,
+            118
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "noise.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            164,
+            164
+          ],
+          "raw_confidence_at_least_0_25": [
+            0,
+            0
+          ],
+          "postprocessed_count": [
+            0,
+            0
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_bright.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            58,
+            58
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_crop.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            73,
+            73
+          ],
+          "raw_confidence_at_least_0_25": [
+            4,
+            4
+          ],
+          "postprocessed_count": [
+            4,
+            4
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_dark.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            53,
+            53
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_flip.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_half.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_large.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_original.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            56,
+            56
+          ],
+          "raw_confidence_at_least_0_25": [
+            3,
+            3
+          ],
+          "postprocessed_count": [
+            3,
+            3
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        },
+        {
+          "image": "zidane_tiles.png",
+          "raw_bytes_identical": true,
+          "equal_float_elements": 1800,
+          "equal_aligned_rows": 300,
+          "raw_row_multiset_equal": true,
+          "raw_common_rows_multiset": 300,
+          "aligned_max_absolute_difference": 0.0,
+          "score_order_equal": true,
+          "score_multiset_equal": true,
+          "sorted_score_max_absolute_difference": 0.0,
+          "selected_score_duplicates": [
+            52,
+            52
+          ],
+          "raw_confidence_at_least_0_25": [
+            8,
+            8
+          ],
+          "postprocessed_count": [
+            8,
+            8
+          ],
+          "postprocessed_class_order_equal": true,
+          "postprocessed_class_and_integer_box_order_equal": true,
+          "postprocessed_score_order_equal": true,
+          "postprocessed_rows_equal": true,
+          "postprocessed_rows_left_if_different": [],
+          "postprocessed_rows_right_if_different": []
+        }
+      ],
+      "totals": {
+        "images": 21,
+        "raw_rows_per_engine": 6300,
+        "raw_float_elements_per_engine": 37800,
+        "byte_identical_images": 21,
+        "equal_raw_aligned_rows": 6300,
+        "equal_row_multiset_images": 21,
+        "equal_score_multiset_images": 21,
+        "equal_postprocessed_images": 21,
+        "postprocessed_detections": [
+          79,
+          79
+        ],
+        "max_absolute_raw_difference": 0.0
+      }
+    }
+  ]
+}

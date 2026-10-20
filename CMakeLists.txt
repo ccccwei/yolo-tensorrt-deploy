@@ -135,4 +135,5 @@ message(STATUS "yolo_deploy ${PROJECT_VERSION}")
 message(STATUS "  CUDA Toolkit: ${CUDAToolkit_VERSION}")
 message(STATUS "  TensorRT:     ${TensorRT_VERSION}")
 
+include(CTest)
 add_subdirectory(src)

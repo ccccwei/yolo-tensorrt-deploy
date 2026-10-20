@@ -1,0 +1,173 @@
+{
+  "base_cache_sha256": "3b8da1765a293b22cff1cbc96892f0dc364c4f321edda408cbf68f660141f5a3",
+  "input_sha256": "c67c8bcf7b4962b20fc6f07fb9387219e21347c8413945f925385e427aaf7834",
+  "script_sha256": "bc6bc61e5e7b537ca1d673032926f867105edcc9247580414e461f3d937f4070",
+  "commands": [
+    {
+      "tag": "control_build",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--onnx=/home/aoi/ais/code/ccw/compete/yolo_deploy/weights/yolo26n.onnx",
+        "--saveEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control.engine",
+        "--fp16",
+        "--memPoolSize=workspace:1024",
+        "--skipInference",
+        "--profilingVerbosity=detailed",
+        "--builderOptimizationLevel=3",
+        "--timingCacheFile=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control.cache",
+        "--exportLayerInfo=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control.layers.json"
+      ],
+      "gpu_before": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n42, 5.74 W, 210 MHz, 405 MHz, 0 %\n",
+      "returncode": 0,
+      "gpu_after": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n45, 33.07 W, 1777 MHz, 7500 MHz, 4 %\n"
+    },
+    {
+      "tag": "grouped_build",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--onnx=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped8.onnx",
+        "--saveEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.engine",
+        "--fp16",
+        "--memPoolSize=workspace:1024",
+        "--skipInference",
+        "--profilingVerbosity=detailed",
+        "--builderOptimizationLevel=3",
+        "--timingCacheFile=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.cache",
+        "--exportLayerInfo=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.layers.json"
+      ],
+      "gpu_before": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n45, 33.07 W, 1777 MHz, 7500 MHz, 4 %\n",
+      "returncode": 0,
+      "gpu_after": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n46, 33.20 W, 1777 MHz, 7500 MHz, 2 %\n"
+    },
+    {
+      "tag": "r1_control",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--useCudaGraph",
+        "--noDataTransfers",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_control.times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_control.output.json"
+      ],
+      "gpu_before": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n46, 33.28 W, 1777 MHz, 7500 MHz, 2 %\n",
+      "returncode": 0,
+      "gpu_after": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n51, 116.65 W, 1950 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "tag": "r1_grouped",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--useCudaGraph",
+        "--noDataTransfers",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_grouped.times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_grouped.output.json"
+      ],
+      "gpu_before": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n51, 116.65 W, 1950 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n52, 122.49 W, 1950 MHz, 7500 MHz, 71 %\n"
+    },
+    {
+      "tag": "r2_grouped",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--useCudaGraph",
+        "--noDataTransfers",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_grouped.times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_grouped.output.json"
+      ],
+      "gpu_before": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n52, 114.73 W, 1950 MHz, 7500 MHz, 71 %\n",
+      "returncode": 0,
+      "gpu_after": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n53, 119.51 W, 1950 MHz, 7500 MHz, 50 %\n"
+    },
+    {
+      "tag": "r2_control",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--useCudaGraph",
+        "--noDataTransfers",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_control.times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_control.output.json"
+      ],
+      "gpu_before": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n53, 119.51 W, 1950 MHz, 7500 MHz, 50 %\n",
+      "returncode": 0,
+      "gpu_after": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n54, 122.15 W, 1935 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "tag": "control_profile",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--useCudaGraph",
+        "--noDataTransfers",
+        "--infStreams=1",
+        "--warmUp=200",
+        "--duration=0",
+        "--iterations=500",
+        "--separateProfileRun",
+        "--dumpProfile",
+        "--exportProfile=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control.profile.json"
+      ],
+      "gpu_before": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n54, 114.69 W, 1935 MHz, 7500 MHz, 41 %\n",
+      "returncode": 0,
+      "gpu_after": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n53, 91.99 W, 1935 MHz, 7500 MHz, 99 %\n"
+    },
+    {
+      "tag": "grouped_profile",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--useCudaGraph",
+        "--noDataTransfers",
+        "--infStreams=1",
+        "--warmUp=200",
+        "--duration=0",
+        "--iterations=500",
+        "--separateProfileRun",
+        "--dumpProfile",
+        "--exportProfile=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.profile.json"
+      ],
+      "gpu_before": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n53, 91.99 W, 1935 MHz, 7500 MHz, 99 %\n",
+      "returncode": 0,
+      "gpu_after": "temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\n54, 93.58 W, 1935 MHz, 7500 MHz, 63 %\n"
+    }
+  ],
+  "builds": {
+    "control": {
+      "source_sha256": "c1753a66ca8cf9eb0165b2cb75e7b8be9226d126ca96c7dd99239dd8fc56c77b",
+      "cache_before": "3b8da1765a293b22cff1cbc96892f0dc364c4f321edda408cbf68f660141f5a3",
+      "cache_after": "1c656b649d737b3a1d0ce207d62a58754b098293e7bdc39a43208c2fd227197b",
+      "engine_sha256": "2fea1cb85fd875ec54c26b0f8935b388c77d6a071531a49e4512c1a133618174"
+    },
+    "grouped": {
+      "source_sha256": "07d6b58f86a25bfb064a2b9d169b737ef23df36792bd202c157edcd20a3335b0",
+      "cache_before": "3b8da1765a293b22cff1cbc96892f0dc364c4f321edda408cbf68f660141f5a3",
+      "cache_after": "1c656b649d737b3a1d0ce207d62a58754b098293e7bdc39a43208c2fd227197b",
+      "engine_sha256": "766a3c53086cf7124581d7670596b568d0bfd6a89d8ec28f12089f0f801ae249"
+    }
+  }
+}

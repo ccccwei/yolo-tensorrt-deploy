@@ -1,0 +1,25 @@
+{
+  "label": "grouped",
+  "command": [
+    "/usr/local/TensorRT/bin/trtexec",
+    "--onnx=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/models/grouped.onnx",
+    "--saveEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/grouped.engine",
+    "--fp16",
+    "--memPoolSize=workspace:1024",
+    "--skipInference",
+    "--profilingVerbosity=detailed",
+    "--builderOptimizationLevel=3",
+    "--timingCacheFile=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/grouped.cache",
+    "--exportLayerInfo=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/grouped.layers.json"
+  ],
+  "source_sha256": "653f5c1922e2faeff4364ffbb5f0f33d89218042da6a55b974038c7e775081ea",
+  "initial_cache_sha256": null,
+  "initial_cache": "empty",
+  "started_utc": "2026-10-15T07:07:41.651804+00:00",
+  "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 59, 42.80 W, 1927 MHz, 7500 MHz, 1 %\n",
+  "returncode": 0,
+  "wall_s": 289.08722108462825,
+  "engine_sha256": "a3eabc58810b1fd1819d9aa00096b631f8d457d36a3dca56a3e2435fbb2c16d0",
+  "final_cache_sha256": "c6e18410d0b2fa9a8b4bbce57b5d82c094ae6ad67137dcf7d880813fe0da061a",
+  "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 59, 44.62 W, 1927 MHz, 7500 MHz, 2 %\n"
+}

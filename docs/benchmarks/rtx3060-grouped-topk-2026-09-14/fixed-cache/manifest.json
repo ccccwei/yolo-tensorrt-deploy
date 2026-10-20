@@ -1,0 +1,697 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-14T07:57:38.260500+00:00",
+  "source_directory": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache",
+  "archive_repo_path": "docs/benchmarks/rtx3060-grouped-topk-2026-09-14/fixed-cache",
+  "scope": "Separate fixed-input-timing-cache follow-up: 4,000 uninstrumented engine-only samples (2,000 per engine), two instrumented profiles, and 21-image raw-output correctness checks. Not included in the main 48,000-sample experiment.",
+  "timing_boundary": "Engine-only measurement JSON is distinct from instrumented layer profiles; profile counts can include warmup and graph setup.",
+  "compression": "gzip level 9, mtime=0; source hashes cover decompressed bytes.",
+  "excluded": [
+    "Serialized engines",
+    "Timing cache files and lock files",
+    "Models, images, input tensors and executables",
+    "Main experiment data and its separate evidence manifest"
+  ],
+  "validation": {
+    "measurement_samples": 4000,
+    "measurement_samples_per_engine": 2000,
+    "instrumented_profiles": 2,
+    "raw_image_outputs_per_engine": 21,
+    "raw_outputs_and_detections_equal_across_all_six_engines": true
+  },
+  "file_count_excluding_manifest": 67,
+  "stored_bytes_excluding_manifest": 392516,
+  "source_bytes": 2319892,
+  "files": [
+    {
+      "path": "control.layers.json.gz",
+      "sha256": "7dbebd12d059c508613fe795552ba23c83583da690b75c88f3676830b711bb06",
+      "size_bytes": 11371,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control.layers.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/control.layers.json",
+      "source_sha256": "a410999a9c37748bfa74d5992fc8bac41f0f62e350fe6b5134ebaee19251f0ec",
+      "source_size_bytes": 297380
+    },
+    {
+      "path": "control.profile.json.gz",
+      "sha256": "e06f5a9a94550657d62ec44eae901937cb9fc2f9237023c79b6d32e7dfc9ca41",
+      "size_bytes": 5130,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control.profile.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/control.profile.json",
+      "source_sha256": "9d3c33a3fa25f575740cba6c62faae1cd5737d12e4942c462b6f2e547d6f2aef",
+      "source_size_bytes": 41503
+    },
+    {
+      "path": "control_build.log.gz",
+      "sha256": "5566d9d694cb6aeaae6ccafabd944c0471293b01e67f315a8453207989f94edd",
+      "size_bytes": 2724,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control_build.log",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/control_build.log",
+      "source_sha256": "96969b43a8e7fe3de6bac85c49f5c43579fe84c9ccd072fa4a18d6f1187ff71b",
+      "source_size_bytes": 10723
+    },
+    {
+      "path": "control_profile.log.gz",
+      "sha256": "de9176a6a9f0bd6a7ba019e4ec6fec3ba79256a9cdcee4a9b98f403f53f67441",
+      "size_bytes": 6256,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/control_profile.log",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/control_profile.log",
+      "source_sha256": "fc44d60abd11f43d4c3de608f0179ee18935844d7564b453e8912ad610ea7e5c",
+      "source_size_bytes": 43488
+    },
+    {
+      "path": "grouped.layers.json.gz",
+      "sha256": "7dbebd12d059c508613fe795552ba23c83583da690b75c88f3676830b711bb06",
+      "size_bytes": 11371,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.layers.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.layers.json",
+      "source_sha256": "a410999a9c37748bfa74d5992fc8bac41f0f62e350fe6b5134ebaee19251f0ec",
+      "source_size_bytes": 297380
+    },
+    {
+      "path": "grouped.profile.json.gz",
+      "sha256": "cf16d863aff329f94a25d383e5065da5abdeb9a7dc8940590cbc85ed46751e4e",
+      "size_bytes": 5172,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.profile.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped.profile.json",
+      "source_sha256": "51c11e757b856639f5b9100500de4ca25ad65942faa98208510df2446b2907c1",
+      "source_size_bytes": 41492
+    },
+    {
+      "path": "grouped_build.log.gz",
+      "sha256": "cc951f3ca952594abb776473b28154a494856dccdab3282b7a99b82c781e1e8c",
+      "size_bytes": 2714,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped_build.log",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped_build.log",
+      "source_sha256": "e401bd7315b86f4ed35713698129db93c733231206d24b745f04829fa041093a",
+      "source_size_bytes": 10823
+    },
+    {
+      "path": "grouped_profile.log.gz",
+      "sha256": "555e713e41a4942220750d16a7cf008e0ec954eef103c2561b05e9432d13f598",
+      "size_bytes": 6270,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped_profile.log",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/grouped_profile.log",
+      "source_sha256": "ea98b6a6456633cd198b7914ad5ba4b733e01ca3bc25984e5b1b35827ccc620e",
+      "source_size_bytes": 43491
+    },
+    {
+      "path": "metadata.json",
+      "sha256": "4ced5280b02a9e10bfe9da33d66387b56933a5f3fead840efcb416a6cdc84233",
+      "size_bytes": 10073,
+      "encoding": "identity",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/metadata.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/metadata.json",
+      "source_sha256": "4ced5280b02a9e10bfe9da33d66387b56933a5f3fead840efcb416a6cdc84233",
+      "source_size_bytes": 10073
+    },
+    {
+      "path": "r1_control.log.gz",
+      "sha256": "51f1b83876949e3fcc8a35737a2fc229edcbc24e3c0ae4a11d194e35cf494940",
+      "size_bytes": 3362,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_control.log",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_control.log",
+      "source_sha256": "c90299dfadcca4f4057b02c0ec6343111e67ac10dd4f5c9290077565409a9082",
+      "source_size_bytes": 21232
+    },
+    {
+      "path": "r1_control.output.json",
+      "sha256": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+      "size_bytes": 13688,
+      "encoding": "identity",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_control.output.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_control.output.json",
+      "source_sha256": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+      "source_size_bytes": 13688
+    },
+    {
+      "path": "r1_control.times.json.gz",
+      "sha256": "f5709d7b6d821df0a51c1c17cd944acb0a9b706e564e8076b0344f6cb2e8ffe5",
+      "size_bytes": 32215,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_control.times.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_control.times.json",
+      "source_sha256": "cbc7772adb97735d6cc5dd4f0d259499b8a445a55ffe5a57d0be18ea827a745d",
+      "source_size_bytes": 267857
+    },
+    {
+      "path": "r1_grouped.log.gz",
+      "sha256": "63112726ad3c5f4cf495f3087a67cbf6d6f5125782b0c62a078318f5d46aef43",
+      "size_bytes": 3329,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_grouped.log",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_grouped.log",
+      "source_sha256": "24812d414aea2fd9d24a64f694cdfcf99d0caa82e6581f72db5339f14187dd5d",
+      "source_size_bytes": 21220
+    },
+    {
+      "path": "r1_grouped.output.json",
+      "sha256": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+      "size_bytes": 13688,
+      "encoding": "identity",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_grouped.output.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_grouped.output.json",
+      "source_sha256": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+      "source_size_bytes": 13688
+    },
+    {
+      "path": "r1_grouped.times.json.gz",
+      "sha256": "82b134cd6fbb8adbddb475f6d9718411fb8095471e5c20c4f6f686dc9790613e",
+      "size_bytes": 33017,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_grouped.times.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r1_grouped.times.json",
+      "source_sha256": "c7a6f01bc1e91af1cbe2fdc9367341bd3fd1d9c1899160391f91fe181fe6ae19",
+      "source_size_bytes": 267962
+    },
+    {
+      "path": "r2_control.log.gz",
+      "sha256": "3708127a4c7cc0b01b99cd59067062c8646f0f694b70c9ec10445fa8d215caa1",
+      "size_bytes": 3392,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_control.log",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_control.log",
+      "source_sha256": "14903836f5ab4d058248f3aa96f0a75f0552fdde64b074120897151dc4344760",
+      "source_size_bytes": 21219
+    },
+    {
+      "path": "r2_control.output.json",
+      "sha256": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+      "size_bytes": 13688,
+      "encoding": "identity",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_control.output.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_control.output.json",
+      "source_sha256": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+      "source_size_bytes": 13688
+    },
+    {
+      "path": "r2_control.times.json.gz",
+      "sha256": "6814ff0e15fb5d8627f939c01ead4b4fed58e703e936f115d3a9572e0eaf8a10",
+      "size_bytes": 33110,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_control.times.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_control.times.json",
+      "source_sha256": "95b2fbaea9b62d788a9fae26b027a3d642e2331276d0be99e0796f410ed0a18f",
+      "source_size_bytes": 267846
+    },
+    {
+      "path": "r2_grouped.log.gz",
+      "sha256": "9d45e51a0013a0e0f7b0daa1d247815e51cb0e1bb7efa31f2bb71ba5150d4d2d",
+      "size_bytes": 3264,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_grouped.log",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_grouped.log",
+      "source_sha256": "9c88738a766e3f89c3d92c687254d04b3e1d6f39ca2747edae2b81f12334946d",
+      "source_size_bytes": 21192
+    },
+    {
+      "path": "r2_grouped.output.json",
+      "sha256": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+      "size_bytes": 13688,
+      "encoding": "identity",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_grouped.output.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_grouped.output.json",
+      "source_sha256": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+      "source_size_bytes": 13688
+    },
+    {
+      "path": "r2_grouped.times.json.gz",
+      "sha256": "e1391d194d24908fea0bbd5bf888ba80f7e4b1aca18ef17099b8d01f9903bcf1",
+      "size_bytes": 32948,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_grouped.times.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/r2_grouped.times.json",
+      "source_sha256": "48645243560c42df5679818f231879af6ee441b592bc8596c1b8f677f71e679b",
+      "source_size_bytes": 267927
+    },
+    {
+      "path": "raw_comparison.json",
+      "sha256": "d1e6833b3c9606b0dfa1d99ec61b88ca8e9ad822ca68c985aa915d1a8355bf35",
+      "size_bytes": 2208,
+      "encoding": "identity",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_comparison.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_comparison.json",
+      "source_sha256": "d1e6833b3c9606b0dfa1d99ec61b88ca8e9ad822ca68c985aa915d1a8355bf35",
+      "source_size_bytes": 2208
+    },
+    {
+      "path": "raw_control/blank_0.png.bin.gz",
+      "sha256": "a3f4f9fcc0fdcd9755bbf2f416674dfe5814bedcb0a243f1d04c9d3909c427bb",
+      "size_bytes": 916,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/blank_0.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/blank_0.png.bin",
+      "source_sha256": "8734a0f1216c971582b3a57cd68e311d8ea310bedf07b0c3924dfdb3a353b7c7",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/blank_114.png.bin.gz",
+      "sha256": "f0f8d209e4b9a3713a5843454e31f91797e918ccfb0fc71e1a553cf5dc1c4efc",
+      "size_bytes": 790,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/blank_114.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/blank_114.png.bin",
+      "source_sha256": "3bb4dddeb4d932d09705d851a7778e7a765d3cae1b074c4ccb583fe9a5cec1bf",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/blank_255.png.bin.gz",
+      "sha256": "7f98ec04707d2c2730fbce4538416fc31a4a81d2fb5f6c0fb8239b8ab59507ef",
+      "size_bytes": 806,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/blank_255.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/blank_255.png.bin",
+      "source_sha256": "cbc3d59e6539151f15c4ca832868d92337fa300e6422921cdd7baa7e18dfaa7f",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/bus_bright.png.bin.gz",
+      "sha256": "ff3e8fb9776257a940b57089baa4f4e631603d005a72495844eb412e67300a0b",
+      "size_bytes": 3529,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_bright.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_bright.png.bin",
+      "source_sha256": "991b069acac36ce045803b43f44a6698fdb20ca05d34fdb7c86e1afddb0dc97f",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/bus_crop.png.bin.gz",
+      "sha256": "00831d51cba9bc7e2a9f5f18b2f7757638b02af5180f3455578cce5172fdb604",
+      "size_bytes": 3469,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_crop.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_crop.png.bin",
+      "source_sha256": "899dca320de75ece4c439feb4c2722dde8c81fd454a2ac03ee83a896ca3141a7",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/bus_dark.png.bin.gz",
+      "sha256": "74944d602830f0f1fac2b321e5e94b8eba6537f7dfd01cb42b634c4ce45e9b97",
+      "size_bytes": 3485,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_dark.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_dark.png.bin",
+      "source_sha256": "75fd9cb709488a90d0065b7a1a71be20005224016b5afe29d89e7fef2588c315",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/bus_flip.png.bin.gz",
+      "sha256": "d5990bd5ba86831012c2ba040caa85d45e8d0df0d4ea48ffc8681522e683391b",
+      "size_bytes": 3449,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_flip.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_flip.png.bin",
+      "source_sha256": "0786b437bd16d3061f32b9825920fe51e4ea77d061ef7ae07262c2ff7b0ce5ba",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/bus_half.png.bin.gz",
+      "sha256": "44439500bd41334b37fa024e86203bbf942d993c6d0477629b0ad4176637a22a",
+      "size_bytes": 3504,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_half.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_half.png.bin",
+      "source_sha256": "78b41ab595acb7898f2f792346d8bd444eea7ce47f18479c140d73ab356fd986",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/bus_large.png.bin.gz",
+      "sha256": "9d19cd63dea87197a99983a2b3cf2bec8f8df5e64a7800ad36e41a8b189bf7ea",
+      "size_bytes": 3470,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_large.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_large.png.bin",
+      "source_sha256": "7f4562a2b38c61f75550c619ac4e1a5e894c7fd42b90ce8501780671dcf17ad9",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/bus_original.png.bin.gz",
+      "sha256": "a8d8b8a41819a7f07145f3d7e954ba3b2440e78db4512328944d208933d4ccc6",
+      "size_bytes": 3426,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_original.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_original.png.bin",
+      "source_sha256": "8aa5281290a3f82c4212818e15faac20532c8d072f6aa48bc3c8ada28ad1e0fb",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/bus_tiles.png.bin.gz",
+      "sha256": "2e40bd2801614d25640f8e60f8d2106544f1cf110c004e6a53eed8901bd1872e",
+      "size_bytes": 3457,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_tiles.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/bus_tiles.png.bin",
+      "source_sha256": "54ef82c14586c90f21e767a32d3c127b2c7134dd18dbe7c3656a875f2ab4279f",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/checker.png.bin.gz",
+      "sha256": "cc1c9cc280f7bc6c17b332c08c3666a00c1af3743d99fdb0dafd797953ae06fc",
+      "size_bytes": 3036,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/checker.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/checker.png.bin",
+      "source_sha256": "1dd2498bfd0f65f7aaa98bccbe97b9841ac55b0fde1294cedc0346a9083a8fa6",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/detections.csv",
+      "sha256": "23816ce845e4608fe38d188fb9489472d9258b61007f95e9464799272a64c313",
+      "size_bytes": 3692,
+      "encoding": "identity",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/detections.csv",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/detections.csv",
+      "source_sha256": "23816ce845e4608fe38d188fb9489472d9258b61007f95e9464799272a64c313",
+      "source_size_bytes": 3692
+    },
+    {
+      "path": "raw_control/noise.png.bin.gz",
+      "sha256": "df4eb48c159dce38fc71befda6a29e0babe70bf8d650b07167723663a180acce",
+      "size_bytes": 1974,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/noise.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/noise.png.bin",
+      "source_sha256": "4ec6453f9e0d15b1468ea1ba760a0be97c0887c04ea6e52a3c8ea394fa8cf387",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/zidane_bright.png.bin.gz",
+      "sha256": "01ddcb428bac050a6cad884e65aef8add2babfd7ad3115941204e98e7953046e",
+      "size_bytes": 3190,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_bright.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_bright.png.bin",
+      "source_sha256": "543700ea689cfe731692e0e962813f72b2286848a47e963a98e5ddf9eb51e79b",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/zidane_crop.png.bin.gz",
+      "sha256": "bb588cdf9336bd0f1fd0e2622238606066eac05acce8cbf85613879f210b029b",
+      "size_bytes": 3159,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_crop.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_crop.png.bin",
+      "source_sha256": "161298486b0825e5aafb8fe8cbd9cffba7ae6f04d2d67ae73b7be853d07d478d",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/zidane_dark.png.bin.gz",
+      "sha256": "8aaa9c785f6974742a6789f310cc78033a3ca42f3d69e133eb601c0d5de56756",
+      "size_bytes": 3286,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_dark.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_dark.png.bin",
+      "source_sha256": "48f473d827da67bfee4743035cdaaef9ed614c457b1c2cc88d9b1e1b17a5f585",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/zidane_flip.png.bin.gz",
+      "sha256": "f7fe61f746adb009112057eb4175c8a22d573b99a8c2cd1febc58d1f8c30b639",
+      "size_bytes": 3263,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_flip.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_flip.png.bin",
+      "source_sha256": "6f073ae761cc5f4ed99fe05aa14258fa5b8213dcb20f1288c4405495f63f526e",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/zidane_half.png.bin.gz",
+      "sha256": "cec4a4afa758914f795d2489540d30d6ae0a16ff6ad3091ae8cb0953678ec7fe",
+      "size_bytes": 3215,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_half.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_half.png.bin",
+      "source_sha256": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/zidane_large.png.bin.gz",
+      "sha256": "cec4a4afa758914f795d2489540d30d6ae0a16ff6ad3091ae8cb0953678ec7fe",
+      "size_bytes": 3215,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_large.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_large.png.bin",
+      "source_sha256": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/zidane_original.png.bin.gz",
+      "sha256": "cec4a4afa758914f795d2489540d30d6ae0a16ff6ad3091ae8cb0953678ec7fe",
+      "size_bytes": 3215,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_original.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_original.png.bin",
+      "source_sha256": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_control/zidane_tiles.png.bin.gz",
+      "sha256": "0f9818d72616eabb1126fe78d17990544987f0de93260695b4e94fbd2979560b",
+      "size_bytes": 3203,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_tiles.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_control/zidane_tiles.png.bin",
+      "source_sha256": "60424d873db3b5ad96e66a6ab0fee8302020172ac8b0b8f610352c46311cced6",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/blank_0.png.bin.gz",
+      "sha256": "a3f4f9fcc0fdcd9755bbf2f416674dfe5814bedcb0a243f1d04c9d3909c427bb",
+      "size_bytes": 916,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/blank_0.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/blank_0.png.bin",
+      "source_sha256": "8734a0f1216c971582b3a57cd68e311d8ea310bedf07b0c3924dfdb3a353b7c7",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/blank_114.png.bin.gz",
+      "sha256": "f0f8d209e4b9a3713a5843454e31f91797e918ccfb0fc71e1a553cf5dc1c4efc",
+      "size_bytes": 790,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/blank_114.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/blank_114.png.bin",
+      "source_sha256": "3bb4dddeb4d932d09705d851a7778e7a765d3cae1b074c4ccb583fe9a5cec1bf",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/blank_255.png.bin.gz",
+      "sha256": "7f98ec04707d2c2730fbce4538416fc31a4a81d2fb5f6c0fb8239b8ab59507ef",
+      "size_bytes": 806,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/blank_255.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/blank_255.png.bin",
+      "source_sha256": "cbc3d59e6539151f15c4ca832868d92337fa300e6422921cdd7baa7e18dfaa7f",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/bus_bright.png.bin.gz",
+      "sha256": "ff3e8fb9776257a940b57089baa4f4e631603d005a72495844eb412e67300a0b",
+      "size_bytes": 3529,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_bright.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_bright.png.bin",
+      "source_sha256": "991b069acac36ce045803b43f44a6698fdb20ca05d34fdb7c86e1afddb0dc97f",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/bus_crop.png.bin.gz",
+      "sha256": "00831d51cba9bc7e2a9f5f18b2f7757638b02af5180f3455578cce5172fdb604",
+      "size_bytes": 3469,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_crop.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_crop.png.bin",
+      "source_sha256": "899dca320de75ece4c439feb4c2722dde8c81fd454a2ac03ee83a896ca3141a7",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/bus_dark.png.bin.gz",
+      "sha256": "74944d602830f0f1fac2b321e5e94b8eba6537f7dfd01cb42b634c4ce45e9b97",
+      "size_bytes": 3485,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_dark.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_dark.png.bin",
+      "source_sha256": "75fd9cb709488a90d0065b7a1a71be20005224016b5afe29d89e7fef2588c315",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/bus_flip.png.bin.gz",
+      "sha256": "d5990bd5ba86831012c2ba040caa85d45e8d0df0d4ea48ffc8681522e683391b",
+      "size_bytes": 3449,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_flip.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_flip.png.bin",
+      "source_sha256": "0786b437bd16d3061f32b9825920fe51e4ea77d061ef7ae07262c2ff7b0ce5ba",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/bus_half.png.bin.gz",
+      "sha256": "44439500bd41334b37fa024e86203bbf942d993c6d0477629b0ad4176637a22a",
+      "size_bytes": 3504,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_half.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_half.png.bin",
+      "source_sha256": "78b41ab595acb7898f2f792346d8bd444eea7ce47f18479c140d73ab356fd986",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/bus_large.png.bin.gz",
+      "sha256": "9d19cd63dea87197a99983a2b3cf2bec8f8df5e64a7800ad36e41a8b189bf7ea",
+      "size_bytes": 3470,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_large.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_large.png.bin",
+      "source_sha256": "7f4562a2b38c61f75550c619ac4e1a5e894c7fd42b90ce8501780671dcf17ad9",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/bus_original.png.bin.gz",
+      "sha256": "a8d8b8a41819a7f07145f3d7e954ba3b2440e78db4512328944d208933d4ccc6",
+      "size_bytes": 3426,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_original.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_original.png.bin",
+      "source_sha256": "8aa5281290a3f82c4212818e15faac20532c8d072f6aa48bc3c8ada28ad1e0fb",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/bus_tiles.png.bin.gz",
+      "sha256": "2e40bd2801614d25640f8e60f8d2106544f1cf110c004e6a53eed8901bd1872e",
+      "size_bytes": 3457,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_tiles.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/bus_tiles.png.bin",
+      "source_sha256": "54ef82c14586c90f21e767a32d3c127b2c7134dd18dbe7c3656a875f2ab4279f",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/checker.png.bin.gz",
+      "sha256": "cc1c9cc280f7bc6c17b332c08c3666a00c1af3743d99fdb0dafd797953ae06fc",
+      "size_bytes": 3036,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/checker.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/checker.png.bin",
+      "source_sha256": "1dd2498bfd0f65f7aaa98bccbe97b9841ac55b0fde1294cedc0346a9083a8fa6",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/detections.csv",
+      "sha256": "23816ce845e4608fe38d188fb9489472d9258b61007f95e9464799272a64c313",
+      "size_bytes": 3692,
+      "encoding": "identity",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/detections.csv",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/detections.csv",
+      "source_sha256": "23816ce845e4608fe38d188fb9489472d9258b61007f95e9464799272a64c313",
+      "source_size_bytes": 3692
+    },
+    {
+      "path": "raw_grouped/noise.png.bin.gz",
+      "sha256": "df4eb48c159dce38fc71befda6a29e0babe70bf8d650b07167723663a180acce",
+      "size_bytes": 1974,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/noise.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/noise.png.bin",
+      "source_sha256": "4ec6453f9e0d15b1468ea1ba760a0be97c0887c04ea6e52a3c8ea394fa8cf387",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/zidane_bright.png.bin.gz",
+      "sha256": "01ddcb428bac050a6cad884e65aef8add2babfd7ad3115941204e98e7953046e",
+      "size_bytes": 3190,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_bright.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_bright.png.bin",
+      "source_sha256": "543700ea689cfe731692e0e962813f72b2286848a47e963a98e5ddf9eb51e79b",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/zidane_crop.png.bin.gz",
+      "sha256": "bb588cdf9336bd0f1fd0e2622238606066eac05acce8cbf85613879f210b029b",
+      "size_bytes": 3159,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_crop.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_crop.png.bin",
+      "source_sha256": "161298486b0825e5aafb8fe8cbd9cffba7ae6f04d2d67ae73b7be853d07d478d",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/zidane_dark.png.bin.gz",
+      "sha256": "8aaa9c785f6974742a6789f310cc78033a3ca42f3d69e133eb601c0d5de56756",
+      "size_bytes": 3286,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_dark.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_dark.png.bin",
+      "source_sha256": "48f473d827da67bfee4743035cdaaef9ed614c457b1c2cc88d9b1e1b17a5f585",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/zidane_flip.png.bin.gz",
+      "sha256": "f7fe61f746adb009112057eb4175c8a22d573b99a8c2cd1febc58d1f8c30b639",
+      "size_bytes": 3263,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_flip.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_flip.png.bin",
+      "source_sha256": "6f073ae761cc5f4ed99fe05aa14258fa5b8213dcb20f1288c4405495f63f526e",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/zidane_half.png.bin.gz",
+      "sha256": "cec4a4afa758914f795d2489540d30d6ae0a16ff6ad3091ae8cb0953678ec7fe",
+      "size_bytes": 3215,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_half.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_half.png.bin",
+      "source_sha256": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/zidane_large.png.bin.gz",
+      "sha256": "cec4a4afa758914f795d2489540d30d6ae0a16ff6ad3091ae8cb0953678ec7fe",
+      "size_bytes": 3215,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_large.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_large.png.bin",
+      "source_sha256": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/zidane_original.png.bin.gz",
+      "sha256": "cec4a4afa758914f795d2489540d30d6ae0a16ff6ad3091ae8cb0953678ec7fe",
+      "size_bytes": 3215,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_original.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_original.png.bin",
+      "source_sha256": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "raw_grouped/zidane_tiles.png.bin.gz",
+      "sha256": "0f9818d72616eabb1126fe78d17990544987f0de93260695b4e94fbd2979560b",
+      "size_bytes": 3203,
+      "encoding": "gzip",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_tiles.png.bin",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/raw_grouped/zidane_tiles.png.bin",
+      "source_sha256": "60424d873db3b5ad96e66a6ab0fee8302020172ac8b0b8f610352c46311cced6",
+      "source_size_bytes": 7200
+    },
+    {
+      "path": "summary.json",
+      "sha256": "c831aa0bd04f9b401fccbba31e5486da4066e18bbb9a0dc5ce1fda9dae2a0632",
+      "size_bytes": 340,
+      "encoding": "identity",
+      "original_source": "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/fixed_cache/summary.json",
+      "source_repo_path": "artifacts/grouped-topk-IAqxawtr/fixed_cache/summary.json",
+      "source_sha256": "c831aa0bd04f9b401fccbba31e5486da4066e18bbb9a0dc5ce1fda9dae2a0632",
+      "source_size_bytes": 340
+    }
+  ]
+}

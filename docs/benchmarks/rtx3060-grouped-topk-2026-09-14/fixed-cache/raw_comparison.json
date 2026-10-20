@@ -1,0 +1,30 @@
+{
+  "files_per_engine": 22,
+  "images": 21,
+  "three_graph_replays_each_passed": true,
+  "all_equal_to_original_control_a": true,
+  "sha256": {
+    "blank_0.png.bin": "8734a0f1216c971582b3a57cd68e311d8ea310bedf07b0c3924dfdb3a353b7c7",
+    "blank_114.png.bin": "3bb4dddeb4d932d09705d851a7778e7a765d3cae1b074c4ccb583fe9a5cec1bf",
+    "blank_255.png.bin": "cbc3d59e6539151f15c4ca832868d92337fa300e6422921cdd7baa7e18dfaa7f",
+    "bus_bright.png.bin": "991b069acac36ce045803b43f44a6698fdb20ca05d34fdb7c86e1afddb0dc97f",
+    "bus_crop.png.bin": "899dca320de75ece4c439feb4c2722dde8c81fd454a2ac03ee83a896ca3141a7",
+    "bus_dark.png.bin": "75fd9cb709488a90d0065b7a1a71be20005224016b5afe29d89e7fef2588c315",
+    "bus_flip.png.bin": "0786b437bd16d3061f32b9825920fe51e4ea77d061ef7ae07262c2ff7b0ce5ba",
+    "bus_half.png.bin": "78b41ab595acb7898f2f792346d8bd444eea7ce47f18479c140d73ab356fd986",
+    "bus_large.png.bin": "7f4562a2b38c61f75550c619ac4e1a5e894c7fd42b90ce8501780671dcf17ad9",
+    "bus_original.png.bin": "8aa5281290a3f82c4212818e15faac20532c8d072f6aa48bc3c8ada28ad1e0fb",
+    "bus_tiles.png.bin": "54ef82c14586c90f21e767a32d3c127b2c7134dd18dbe7c3656a875f2ab4279f",
+    "checker.png.bin": "1dd2498bfd0f65f7aaa98bccbe97b9841ac55b0fde1294cedc0346a9083a8fa6",
+    "detections.csv": "23816ce845e4608fe38d188fb9489472d9258b61007f95e9464799272a64c313",
+    "noise.png.bin": "4ec6453f9e0d15b1468ea1ba760a0be97c0887c04ea6e52a3c8ea394fa8cf387",
+    "zidane_bright.png.bin": "543700ea689cfe731692e0e962813f72b2286848a47e963a98e5ddf9eb51e79b",
+    "zidane_crop.png.bin": "161298486b0825e5aafb8fe8cbd9cffba7ae6f04d2d67ae73b7be853d07d478d",
+    "zidane_dark.png.bin": "48f473d827da67bfee4743035cdaaef9ed614c457b1c2cc88d9b1e1b17a5f585",
+    "zidane_flip.png.bin": "6f073ae761cc5f4ed99fe05aa14258fa5b8213dcb20f1288c4405495f63f526e",
+    "zidane_half.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "zidane_large.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "zidane_original.png.bin": "705e9fd93c7aaffa6a637b78ad9b029bf488f624035966994e683bcca4a92a27",
+    "zidane_tiles.png.bin": "60424d873db3b5ad96e66a6ab0fee8302020172ac8b0b8f610352c46311cced6"
+  }
+}

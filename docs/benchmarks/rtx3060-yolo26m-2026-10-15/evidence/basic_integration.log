@@ -1,0 +1,11 @@
+PASS 01-default: 3 measured rows, warmup=0 excluded, exact same-version detections and image outputs
+PASS 01-iterations-only: 6 measured rows, warmup=0 excluded, exact same-version detections and image outputs
+PASS 01-repeat-warmup: 9 measured rows, warmup=2 excluded, exact same-version detections and image outputs
+PASS 02-default: 600 measured rows, warmup=50 excluded, exact same-version detections and image outputs
+PASS 02-cpu-post: 9 measured rows, warmup=1 excluded, exact same-version detections and image outputs
+PASS 02-gpu-post: 9 measured rows, warmup=1 excluded, exact same-version detections and image outputs
+PASS 01: 11 invalid argument cases, empty/corrupt folders
+PASS 01: mixed folder continues after corrupt input, valid-image-only CSV/output, nonzero non-crash exit
+PASS 02: 15 invalid argument cases, empty/corrupt folders
+PASS 02: mixed folder continues after corrupt input, valid-image-only CSV/output, nonzero non-crash exit
+All basic integration tests passed. Temporary fixtures and outputs removed.

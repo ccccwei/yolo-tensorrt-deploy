@@ -1,0 +1,47 @@
+[
+  {
+    "name": "basic_integration",
+    "command": [
+      "python3",
+      "tests/basic_integration.py",
+      "--bin-dir",
+      "build/release/src",
+      "--engine",
+      "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.engine",
+      "--images",
+      "images"
+    ],
+    "returncode": 0,
+    "wall_s": 6.673970442265272
+  },
+  {
+    "name": "series_integration",
+    "command": [
+      "python3",
+      "tests/series_integration.py",
+      "--bin-dir",
+      "build/release/src",
+      "--engine",
+      "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.engine",
+      "--images",
+      "images"
+    ],
+    "returncode": 0,
+    "wall_s": 7.526139555964619
+  },
+  {
+    "name": "advanced_integration",
+    "command": [
+      "python3",
+      "tests/advanced_integration.py",
+      "--bin-dir",
+      "build/release/src",
+      "--engine",
+      "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.engine",
+      "--images",
+      "images"
+    ],
+    "returncode": 0,
+    "wall_s": 9.531609345693141
+  }
+]

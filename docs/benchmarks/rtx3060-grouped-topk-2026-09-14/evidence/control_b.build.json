@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/usr/local/TensorRT/bin/trtexec",
+    "--onnx=/home/aoi/ais/code/ccw/compete/yolo_deploy/weights/yolo26n.onnx",
+    "--saveEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine",
+    "--fp16",
+    "--memPoolSize=workspace:1024",
+    "--skipInference",
+    "--profilingVerbosity=detailed",
+    "--builderOptimizationLevel=3",
+    "--timingCacheFile=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/shared.cache",
+    "--exportLayerInfo=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.layers.json"
+  ],
+  "source_sha256": "c1753a66ca8cf9eb0165b2cb75e7b8be9226d126ca96c7dd99239dd8fc56c77b",
+  "cache_before": "23950a7f5a559d7c953a89941d3dae2ded26864a6738c17e1bcf4ffd9eb6b8d0",
+  "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 44, 32.93 W, 1777 MHz, 4 %\n",
+  "started_unix": 1789371499.1015282,
+  "returncode": 0,
+  "wall_s": 13.586431166972034,
+  "engine_sha256": "0cb135b24e1a3b411acf08ba09b52270f5fa3dd0debdded872617789b640adf2",
+  "cache_after": "3b8da1765a293b22cff1cbc96892f0dc364c4f321edda408cbf68f660141f5a3",
+  "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 47, 42.55 W, 1927 MHz, 100 %\n"
+}

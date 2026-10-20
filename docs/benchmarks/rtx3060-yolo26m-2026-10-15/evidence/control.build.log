@@ -1,0 +1,135 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v8601] # /usr/local/TensorRT/bin/trtexec --onnx=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/models/control.onnx --saveEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.engine --fp16 --memPoolSize=workspace:1024 --skipInference --profilingVerbosity=detailed --builderOptimizationLevel=3 --timingCacheFile=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.cache --exportLayerInfo=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.layers.json
+[10/15/2026-15:02:41] [I] === Model Options ===
+[10/15/2026-15:02:41] [I] Format: ONNX
+[10/15/2026-15:02:41] [I] Model: /home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/models/control.onnx
+[10/15/2026-15:02:41] [I] Output:
+[10/15/2026-15:02:41] [I] === Build Options ===
+[10/15/2026-15:02:41] [I] Max batch: explicit batch
+[10/15/2026-15:02:41] [I] Memory Pools: workspace: 1024 MiB, dlaSRAM: default, dlaLocalDRAM: default, dlaGlobalDRAM: default
+[10/15/2026-15:02:41] [I] minTiming: 1
+[10/15/2026-15:02:41] [I] avgTiming: 8
+[10/15/2026-15:02:41] [I] Precision: FP32+FP16
+[10/15/2026-15:02:41] [I] LayerPrecisions: 
+[10/15/2026-15:02:41] [I] Layer Device Types: 
+[10/15/2026-15:02:41] [I] Calibration: 
+[10/15/2026-15:02:41] [I] Refit: Disabled
+[10/15/2026-15:02:41] [I] Version Compatible: Disabled
+[10/15/2026-15:02:41] [I] TensorRT runtime: full
+[10/15/2026-15:02:41] [I] Lean DLL Path: 
+[10/15/2026-15:02:41] [I] Tempfile Controls: { in_memory: allow, temporary: allow }
+[10/15/2026-15:02:41] [I] Exclude Lean Runtime: Disabled
+[10/15/2026-15:02:41] [I] Sparsity: Disabled
+[10/15/2026-15:02:41] [I] Safe mode: Disabled
+[10/15/2026-15:02:41] [I] Build DLA standalone loadable: Disabled
+[10/15/2026-15:02:41] [I] Allow GPU fallback for DLA: Disabled
+[10/15/2026-15:02:41] [I] DirectIO mode: Disabled
+[10/15/2026-15:02:41] [I] Restricted mode: Disabled
+[10/15/2026-15:02:41] [I] Skip inference: Enabled
+[10/15/2026-15:02:41] [I] Save engine: /home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.engine
+[10/15/2026-15:02:41] [I] Load engine: 
+[10/15/2026-15:02:41] [I] Profiling verbosity: 2
+[10/15/2026-15:02:41] [I] Tactic sources: Using default tactic sources
+[10/15/2026-15:02:41] [I] timingCacheMode: global
+[10/15/2026-15:02:41] [I] timingCacheFile: /home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.cache
+[10/15/2026-15:02:41] [I] Heuristic: Disabled
+[10/15/2026-15:02:41] [I] Preview Features: Use default preview flags.
+[10/15/2026-15:02:41] [I] MaxAuxStreams: -1
+[10/15/2026-15:02:41] [I] BuilderOptimizationLevel: 3
+[10/15/2026-15:02:41] [I] Input(s)s format: fp32:CHW
+[10/15/2026-15:02:41] [I] Output(s)s format: fp32:CHW
+[10/15/2026-15:02:41] [I] Input build shapes: model
+[10/15/2026-15:02:41] [I] Input calibration shapes: model
+[10/15/2026-15:02:41] [I] === System Options ===
+[10/15/2026-15:02:41] [I] Device: 0
+[10/15/2026-15:02:41] [I] DLACore: 
+[10/15/2026-15:02:41] [I] Plugins:
+[10/15/2026-15:02:41] [I] setPluginsToSerialize:
+[10/15/2026-15:02:41] [I] dynamicPlugins:
+[10/15/2026-15:02:41] [I] ignoreParsedPluginLibs: 0
+[10/15/2026-15:02:41] [I] 
+[10/15/2026-15:02:41] [I] === Inference Options ===
+[10/15/2026-15:02:41] [I] Batch: Explicit
+[10/15/2026-15:02:41] [I] Input inference shapes: model
+[10/15/2026-15:02:41] [I] Iterations: 10
+[10/15/2026-15:02:41] [I] Duration: 3s (+ 200ms warm up)
+[10/15/2026-15:02:41] [I] Sleep time: 0ms
+[10/15/2026-15:02:41] [I] Idle time: 0ms
+[10/15/2026-15:02:41] [I] Inference Streams: 1
+[10/15/2026-15:02:41] [I] ExposeDMA: Disabled
+[10/15/2026-15:02:41] [I] Data transfers: Enabled
+[10/15/2026-15:02:41] [I] Spin-wait: Disabled
+[10/15/2026-15:02:41] [I] Multithreading: Disabled
+[10/15/2026-15:02:41] [I] CUDA Graph: Disabled
+[10/15/2026-15:02:41] [I] Separate profiling: Disabled
+[10/15/2026-15:02:41] [I] Time Deserialize: Disabled
+[10/15/2026-15:02:41] [I] Time Refit: Disabled
+[10/15/2026-15:02:41] [I] NVTX verbosity: 2
+[10/15/2026-15:02:41] [I] Persistent Cache Ratio: 0
+[10/15/2026-15:02:41] [I] Inputs:
+[10/15/2026-15:02:41] [I] === Reporting Options ===
+[10/15/2026-15:02:41] [I] Verbose: Disabled
+[10/15/2026-15:02:41] [I] Averages: 10 inferences
+[10/15/2026-15:02:41] [I] Percentiles: 90,95,99
+[10/15/2026-15:02:41] [I] Dump refittable layers:Disabled
+[10/15/2026-15:02:41] [I] Dump output: Disabled
+[10/15/2026-15:02:41] [I] Profile: Disabled
+[10/15/2026-15:02:41] [I] Export timing to JSON file: 
+[10/15/2026-15:02:41] [I] Export output to JSON file: 
+[10/15/2026-15:02:41] [I] Export profile to JSON file: 
+[10/15/2026-15:02:41] [I] 
+[10/15/2026-15:02:41] [I] === Device Information ===
+[10/15/2026-15:02:41] [I] Selected Device: NVIDIA GeForce RTX 3060
+[10/15/2026-15:02:41] [I] Compute Capability: 8.6
+[10/15/2026-15:02:41] [I] SMs: 28
+[10/15/2026-15:02:41] [I] Device Global Memory: 12044 MiB
+[10/15/2026-15:02:41] [I] Shared Memory per SM: 100 KiB
+[10/15/2026-15:02:41] [I] Memory Bus Width: 192 bits (ECC disabled)
+[10/15/2026-15:02:41] [I] Application Compute Clock Rate: 1.777 GHz
+[10/15/2026-15:02:41] [I] Application Memory Clock Rate: 7.501 GHz
+[10/15/2026-15:02:41] [I] 
+[10/15/2026-15:02:41] [I] Note: The application clock rates do not reflect the actual clock rates that the GPU is currently running at.
+[10/15/2026-15:02:41] [I] 
+[10/15/2026-15:02:41] [I] TensorRT version: 8.6.1
+[10/15/2026-15:02:41] [I] Loading standard plugins
+[10/15/2026-15:02:42] [I] [TRT] [MemUsageChange] Init CUDA: CPU +213, GPU +0, now: CPU 219, GPU 2402 (MiB)
+[10/15/2026-15:02:47] [I] [TRT] [MemUsageChange] Init builder kernel library: CPU +1222, GPU +266, now: CPU 1518, GPU 2668 (MiB)
+[10/15/2026-15:02:47] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See "Lazy Loading" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading
+[10/15/2026-15:02:47] [I] Start parsing network model.
+[10/15/2026-15:02:47] [I] [TRT] ----------------------------------------------------------------
+[10/15/2026-15:02:47] [I] [TRT] Input filename:   /home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/models/control.onnx
+[10/15/2026-15:02:47] [I] [TRT] ONNX IR version:  0.0.8
+[10/15/2026-15:02:47] [I] [TRT] Opset version:    16
+[10/15/2026-15:02:47] [I] [TRT] Producer name:    pytorch
+[10/15/2026-15:02:47] [I] [TRT] Producer version: 2.13.0
+[10/15/2026-15:02:47] [I] [TRT] Domain:           
+[10/15/2026-15:02:47] [I] [TRT] Model version:    0
+[10/15/2026-15:02:47] [I] [TRT] Doc string:       
+[10/15/2026-15:02:47] [I] [TRT] ----------------------------------------------------------------
+[10/15/2026-15:02:47] [W] [TRT] onnx2trt_utils.cpp:374: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+[10/15/2026-15:02:47] [I] Finished parsing network model. Parse time: 0.133003
+[10/15/2026-15:02:47] [W] Could not read timing cache from: /home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.cache. A new timing cache will be generated and written.
+[10/15/2026-15:02:47] [I] [TRT] Graph optimization time: 0.0615189 seconds.
+[10/15/2026-15:02:47] [I] [TRT] Global timing cache in use. Profiling results in this builder pass will be stored.
+[10/15/2026-15:07:40] [I] [TRT] Detected 1 inputs and 1 output network tensors.
+[10/15/2026-15:07:40] [I] [TRT] Total Host Persistent Memory: 633168
+[10/15/2026-15:07:40] [I] [TRT] Total Device Persistent Memory: 6144
+[10/15/2026-15:07:40] [I] [TRT] Total Scratch Memory: 2856448
+[10/15/2026-15:07:40] [I] [TRT] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 40 MiB, GPU 209 MiB
+[10/15/2026-15:07:40] [I] [TRT] [BlockAssignment] Started assigning block shifts. This will take 200 steps to complete.
+[10/15/2026-15:07:40] [I] [TRT] [BlockAssignment] Algorithm ShiftNTopDown took 14.6817ms to assign 10 blocks to 200 nodes requiring 34406912 bytes.
+[10/15/2026-15:07:40] [I] [TRT] Total Activation Memory: 34406400
+[10/15/2026-15:07:40] [W] [TRT] TensorRT encountered issues when converting weights between types and that could affect accuracy.
+[10/15/2026-15:07:40] [W] [TRT] If this is not the desired behavior, please modify the weights or retrain with regularization to adjust the magnitude of the weights.
+[10/15/2026-15:07:40] [W] [TRT] Check verbose logs for the list of affected weights.
+[10/15/2026-15:07:40] [W] [TRT] - 104 weights are affected by this issue: Detected subnormal FP16 values.
+[10/15/2026-15:07:40] [W] [TRT] - 1 weights are affected by this issue: Detected values less than smallest positive FP16 subnormal value and converted them to the FP16 minimum subnormalized value.
+[10/15/2026-15:07:40] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in building engine: CPU +39, GPU +40, now: CPU 39, GPU 40 (MiB)
+[10/15/2026-15:07:41] [I] [TRT] [MemUsageChange] Init CUDA: CPU +0, GPU +0, now: CPU 1717, GPU 2678 (MiB)
+[10/15/2026-15:07:41] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See "Lazy Loading" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading
+[10/15/2026-15:07:41] [I] Saved 753687 bytes of timing cache to /home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.cache
+[10/15/2026-15:07:41] [I] Engine built in 299.09 sec.
+[10/15/2026-15:07:41] [I] [TRT] Loaded engine size: 43 MiB
+[10/15/2026-15:07:41] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +39, now: CPU 0, GPU 39 (MiB)
+[10/15/2026-15:07:41] [I] Engine deserialized in 0.0241489 sec.
+[10/15/2026-15:07:41] [I] Skipped inference phase since --skipInference is added.
+&&&& PASSED TensorRT.trtexec [TensorRT v8601] # /usr/local/TensorRT/bin/trtexec --onnx=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/models/control.onnx --saveEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.engine --fp16 --memPoolSize=workspace:1024 --skipInference --profilingVerbosity=detailed --builderOptimizationLevel=3 --timingCacheFile=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.cache --exportLayerInfo=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/yolo26m-2026-10-15/engines/control.layers.json

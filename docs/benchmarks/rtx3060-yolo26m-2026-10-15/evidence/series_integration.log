@@ -1,0 +1,23 @@
+PASS 03-baseline: 9 measured jobs, CSV contract, exact ordered detections
+PASS 04-slots1: 9 measured jobs, CSV contract, exact ordered detections
+PASS 04-slots2: 9 measured jobs, CSV contract, exact ordered detections
+PASS 05-graph0: 9 measured jobs, CSV contract, exact ordered detections
+PASS 05-graph1: 9 measured jobs, CSV contract, exact ordered detections
+PASS 02-post0: 9 measured jobs, CSV contract, exact ordered detections
+PASS 02-post1: 9 measured jobs, CSV contract, exact ordered detections
+PASS 06-graph0: 9 measured jobs, CSV contract, exact ordered detections
+PASS 06-graph1: 9 measured jobs, CSV contract, exact ordered detections
+PASS 07-slots1-graph0: 9 measured jobs, CSV contract, exact ordered detections
+PASS 07-slots1-graph1: 9 measured jobs, CSV contract, exact ordered detections
+PASS 07-slots2-graph0: 9 measured jobs, CSV contract, exact ordered detections
+PASS 07-slots2-graph1: 9 measured jobs, CSV contract, exact ordered detections
+PASS 04-drain: 1 job, 2 slots, no warmup
+PASS 07-drain-graph0: 1 job, 2 slots, no warmup
+PASS 07-drain-graph1: 1 job, 2 slots, no warmup
+PASS 02: 7 invalid argument cases, empty/corrupt image folders
+PASS 03: 5 invalid argument cases, empty/corrupt image folders
+PASS 04: 7 invalid argument cases, empty/corrupt image folders
+PASS 05: 7 invalid argument cases, empty/corrupt image folders
+PASS 06: 7 invalid argument cases, empty/corrupt image folders
+PASS 07: 9 invalid argument cases, empty/corrupt image folders
+All series integration tests passed. Temporary fixtures and outputs removed.

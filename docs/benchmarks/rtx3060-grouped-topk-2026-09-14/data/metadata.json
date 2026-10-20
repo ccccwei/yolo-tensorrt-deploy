@@ -1,0 +1,641 @@
+{
+  "sha256": {
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine": "a0c530489f69c8cd145eeb00ec05b5f1694d5708d94f893e20f429cee4db28de",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine": "1bd991bc9ed123ad0c7cf8c3542819e0838232d2caaca025713c78d74a657aa9",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine": "b58a45ce1ea06554ceb7354dcd1f5f9aa58c4132be8a4d15f3b763b66f0a9ae8",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine": "0cb135b24e1a3b411acf08ba09b52270f5fa3dd0debdded872617789b640adf2",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input": "71055edd2976f991754af59806debd9c3067d18cc7e2bb181f98fe441b8d991a",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/run.py": "2f60b6078c38cb521df30f284ab47067de6015972d8e8d68d063c968e8678f6e",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin": "c67c8bcf7b4962b20fc6f07fb9387219e21347c8413945f925385e427aaf7834",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin": "f4b03e2416cb30fa162e74d9035b8d715f003a1b228571861eab7bfa5c0be35b",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/images/bus.jpg": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/images/zidane.jpg": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb"
+  },
+  "runs": [
+    {
+      "name": "r1_control_a_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r1_control_a_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r1_control_a_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 43, 32.64 W, 1777 MHz, 7500 MHz, 3 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 48, 120.11 W, 1950 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r1_control_a_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r1_control_a_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r1_control_a_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 48, 113.28 W, 1950 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 50, 114.64 W, 1950 MHz, 7500 MHz, 62 %\n"
+    },
+    {
+      "name": "r1_control_a_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 49, 114.64 W, 1950 MHz, 7500 MHz, 62 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 51, 106.98 W, 1950 MHz, 7500 MHz, 76 %\n"
+    },
+    {
+      "name": "r1_grouped_a_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r1_grouped_a_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r1_grouped_a_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 50, 106.98 W, 1950 MHz, 7500 MHz, 76 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 52, 126.56 W, 1950 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r1_grouped_a_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r1_grouped_a_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r1_grouped_a_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 51, 119.00 W, 1950 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 53, 125.87 W, 1950 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r1_grouped_a_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 52, 118.55 W, 1950 MHz, 7500 MHz, 54 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 53, 111.53 W, 1950 MHz, 7500 MHz, 99 %\n"
+    },
+    {
+      "name": "r1_grouped_b_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r1_grouped_b_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r1_grouped_b_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 53, 111.53 W, 1950 MHz, 7500 MHz, 99 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 54, 120.66 W, 1935 MHz, 7500 MHz, 59 %\n"
+    },
+    {
+      "name": "r1_grouped_b_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r1_grouped_b_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r1_grouped_b_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 54, 120.66 W, 1935 MHz, 7500 MHz, 59 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 55, 122.14 W, 1935 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r1_grouped_b_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 54, 122.14 W, 1935 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 56, 110.72 W, 1935 MHz, 7500 MHz, 99 %\n"
+    },
+    {
+      "name": "r1_control_b_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r1_control_b_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r1_control_b_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 55, 110.72 W, 1935 MHz, 7500 MHz, 99 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 56, 119.36 W, 1935 MHz, 7500 MHz, 68 %\n"
+    },
+    {
+      "name": "r1_control_b_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r1_control_b_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r1_control_b_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 56, 119.36 W, 1935 MHz, 7500 MHz, 68 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 57, 121.86 W, 1935 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r1_control_b_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 56, 114.48 W, 1935 MHz, 7500 MHz, 40 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 57, 110.52 W, 1935 MHz, 7500 MHz, 77 %\n"
+    },
+    {
+      "name": "r2_control_a_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r2_control_a_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r2_control_a_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 57, 110.52 W, 1935 MHz, 7500 MHz, 77 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 58, 122.13 W, 1935 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r2_control_a_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r2_control_a_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r2_control_a_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 57, 114.73 W, 1935 MHz, 7500 MHz, 38 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 58, 119.29 W, 1935 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r2_control_a_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 58, 119.29 W, 1935 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 59, 113.41 W, 1935 MHz, 7500 MHz, 99 %\n"
+    },
+    {
+      "name": "r2_control_b_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r2_control_b_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r2_control_b_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 59, 109.12 W, 1935 MHz, 7500 MHz, 67 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 60, 120.65 W, 1920 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r2_control_b_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r2_control_b_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r2_control_b_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 59, 120.65 W, 1920 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 60, 124.13 W, 1920 MHz, 7500 MHz, 95 %\n"
+    },
+    {
+      "name": "r2_control_b_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 59, 116.69 W, 1920 MHz, 7500 MHz, 95 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 60, 109.94 W, 1920 MHz, 7500 MHz, 72 %\n"
+    },
+    {
+      "name": "r2_grouped_b_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r2_grouped_b_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r2_grouped_b_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 60, 109.94 W, 1920 MHz, 7500 MHz, 72 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 61, 125.74 W, 1920 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r2_grouped_b_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r2_grouped_b_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r2_grouped_b_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 60, 125.74 W, 1920 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 61, 125.68 W, 1920 MHz, 7500 MHz, 76 %\n"
+    },
+    {
+      "name": "r2_grouped_b_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 61, 125.68 W, 1920 MHz, 7500 MHz, 76 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 62, 117.62 W, 1920 MHz, 7500 MHz, 99 %\n"
+    },
+    {
+      "name": "r2_grouped_a_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r2_grouped_a_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r2_grouped_a_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 61, 112.49 W, 1920 MHz, 7500 MHz, 63 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 62, 130.28 W, 1920 MHz, 7500 MHz, 97 %\n"
+    },
+    {
+      "name": "r2_grouped_a_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r2_grouped_a_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r2_grouped_a_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 62, 122.40 W, 1920 MHz, 7500 MHz, 97 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 63, 129.70 W, 1920 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r2_grouped_a_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 62, 121.88 W, 1920 MHz, 7500 MHz, 48 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 62, 117.68 W, 1920 MHz, 7500 MHz, 99 %\n"
+    },
+    {
+      "name": "r3_grouped_b_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r3_grouped_b_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r3_grouped_b_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 62, 110.90 W, 1920 MHz, 7500 MHz, 49 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 63, 131.05 W, 1920 MHz, 7500 MHz, 96 %\n"
+    },
+    {
+      "name": "r3_grouped_b_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r3_grouped_b_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r3_grouped_b_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 63, 123.15 W, 1920 MHz, 7500 MHz, 96 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 64, 129.81 W, 1912 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r3_grouped_b_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 63, 121.94 W, 1912 MHz, 7500 MHz, 45 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 64, 117.93 W, 1912 MHz, 7500 MHz, 99 %\n"
+    },
+    {
+      "name": "r3_control_b_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r3_control_b_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r3_control_b_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 64, 117.93 W, 1912 MHz, 7500 MHz, 99 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 64, 127.89 W, 1912 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r3_control_b_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r3_control_b_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r3_control_b_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 64, 120.76 W, 1912 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 64, 124.01 W, 1912 MHz, 7500 MHz, 80 %\n"
+    },
+    {
+      "name": "r3_control_b_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 64, 116.51 W, 1912 MHz, 7500 MHz, 80 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 65, 115.04 W, 1912 MHz, 7500 MHz, 99 %\n"
+    },
+    {
+      "name": "r3_control_a_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r3_control_a_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r3_control_a_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 64, 115.04 W, 1912 MHz, 7500 MHz, 99 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 65, 125.82 W, 1912 MHz, 7500 MHz, 91 %\n"
+    },
+    {
+      "name": "r3_control_a_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r3_control_a_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r3_control_a_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 64, 118.35 W, 1912 MHz, 7500 MHz, 91 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 65, 126.48 W, 1912 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r3_control_a_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 65, 119.83 W, 1912 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 65, 115.69 W, 1912 MHz, 7500 MHz, 99 %\n"
+    },
+    {
+      "name": "r3_grouped_a_bus_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r3_grouped_a_bus_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r3_grouped_a_bus_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 65, 110.44 W, 1912 MHz, 7500 MHz, 60 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 65, 126.70 W, 1912 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r3_grouped_a_zidane_engine",
+      "command": [
+        "/usr/local/TensorRT/bin/trtexec",
+        "--loadEngine=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine",
+        "--loadInputs=images:/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin",
+        "--noDataTransfers",
+        "--useCudaGraph",
+        "--infStreams=1",
+        "--warmUp=500",
+        "--duration=0",
+        "--iterations=1000",
+        "--exportTimes=/tmp/yolo-topk-benchmark-9vldqi9g/r3_grouped_a_zidane_engine/times.json",
+        "--exportOutput=/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/data/r3_grouped_a_zidane_engine/output.json"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 65, 126.70 W, 1912 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 66, 126.53 W, 1912 MHz, 7500 MHz, 100 %\n"
+    },
+    {
+      "name": "r3_grouped_a_pipeline11",
+      "command": [
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input",
+        "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine",
+        "/tmp/yolo-topk-benchmark-9vldqi9g/images",
+        "1000",
+        "200",
+        "1"
+      ],
+      "gpu_before": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 65, 126.53 W, 1912 MHz, 7500 MHz, 100 %\n",
+      "returncode": 0,
+      "gpu_after": "name, driver_version, temperature.gpu, power.draw [W], clocks.current.sm [MHz], clocks.current.memory [MHz], utilization.gpu [%]\nNVIDIA GeForce RTX 3060, 525.147.05, 66, 115.59 W, 1912 MHz, 7500 MHz, 99 %\n"
+    }
+  ],
+  "protocol": "3 rounds; each image 1000 measured. Engine:500ms warmup; pipeline11:200 warmups/image, REGISTERED=1. Sequential runs."
+}

@@ -1,0 +1,18 @@
+PASS 03-: 9 jobs, exact detections, valid CSV and throughput
+PASS 08-0: 9 jobs, exact detections, valid CSV and throughput
+PASS 08-1: 9 jobs, exact detections, valid CSV and throughput
+PASS 09-0: 9 jobs, exact detections, valid CSV and throughput
+PASS 09-1: 9 jobs, exact detections, valid CSV and throughput
+PASS 10-1-0: 9 jobs, exact detections, valid CSV and throughput
+PASS 10-1-1: 9 jobs, exact detections, valid CSV and throughput
+PASS 10-2-0: 9 jobs, exact detections, valid CSV and throughput
+PASS 10-2-1: 9 jobs, exact detections, valid CSV and throughput
+PASS 10-3-0: 9 jobs, exact detections, valid CSV and throughput
+PASS 10-3-1: 9 jobs, exact detections, valid CSV and throughput
+PASS 10-4-0: 9 jobs, exact detections, valid CSV and throughput
+PASS 10-4-1: 9 jobs, exact detections, valid CSV and throughput
+PASS 10: ten drain cases, including one job / four slots
+PASS 08: invalid arguments and empty/corrupt folders
+PASS 09: invalid arguments and empty/corrupt folders
+PASS 10: invalid arguments and empty/corrupt folders
+All advanced integration tests passed.

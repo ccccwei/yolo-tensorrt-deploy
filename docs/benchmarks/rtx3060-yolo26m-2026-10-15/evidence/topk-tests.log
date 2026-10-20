@@ -1,0 +1,10 @@
+test_invalid_contracts (__main__.GroupedTopKTest) ... ok
+test_minimum_group_size (__main__.GroupedTopKTest) ... ok
+test_never_overwrite (__main__.GroupedTopKTest) ... ok
+test_numeric_cases (__main__.GroupedTopKTest) ... ok
+test_preservation (__main__.GroupedTopKTest) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.063s
+
+OK

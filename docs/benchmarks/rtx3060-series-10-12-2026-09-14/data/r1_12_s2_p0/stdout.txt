@@ -1,0 +1,9 @@
+[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See "Lazy Loading" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading
+Images: 2 | Iterations per image: 1000 | Warmup per image: 200 | Slots: 2 | Split streams: 0 | Contexts: 1
+Per-slot buffers: pinned=2772000 device=7687200 bytes (engine/context/driver memory excluded)
+  CPU staging: mean=0.266 p50=0.254 p95=0.414 p99=0.495 ms
+  GPU span (H2D+CUDA+TRT+D2H): mean=1.553 p50=1.551 p95=1.634 p99=1.652 ms
+  CPU postprocess: mean=0.001 p50=0.001 p95=0.002 p99=0.003 ms
+  Request latency: mean=3.108 p50=3.112 p95=3.241 p99=3.270 ms
+Throughput: 643.225 FPS (2000 samples / 3109.331 ms)
+Saved: "results/12_split_streams"

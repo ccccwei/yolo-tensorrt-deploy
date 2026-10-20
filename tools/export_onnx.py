@@ -9,7 +9,7 @@ from ultralytics import YOLO
 
 
 WEIGHTS_DIR = Path(__file__).resolve().parent.parent / "weights"
-DEFAULT_MODELS = ("yolo11n.pt", "yolo26n.pt")
+DEFAULT_MODELS = ("yolo26m.pt",)
 
 
 def main():
@@ -18,7 +18,7 @@ def main():
         "models",
         nargs="*",
         default=DEFAULT_MODELS,
-        help="checkpoint names, for example yolo11n.pt",
+        help="checkpoint names (default: yolo26m.pt)",
     )
     args = parser.parse_args()
 

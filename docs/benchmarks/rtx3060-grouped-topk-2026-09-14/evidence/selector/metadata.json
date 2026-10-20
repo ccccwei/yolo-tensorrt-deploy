@@ -1,0 +1,99 @@
+{
+  "scope": "Actual ONNX tail after Split: decoded boxes + sigmoid scores -> output0",
+  "required_precision": "FP32 selector build (do not enable --fp16); ties include FP16-rounded source scores",
+  "input_shapes": {
+    "boxes": [
+      1,
+      8400,
+      4
+    ],
+    "scores": [
+      1,
+      8400,
+      80
+    ]
+  },
+  "source_sha256": {
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/weights/yolo26n.onnx": "c1753a66ca8cf9eb0165b2cb75e7b8be9226d126ca96c7dd99239dd8fc56c77b",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped8.onnx": "07d6b58f86a25bfb064a2b9d169b737ef23df36792bd202c157edcd20a3335b0"
+  },
+  "cases": {
+    "unique": {
+      "control": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.6405830383300781
+      },
+      "grouped": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.6405830383300781
+      },
+      "reference_rows_identical": true
+    },
+    "fp16_rounded_ties": {
+      "control": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.640625
+      },
+      "grouped": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.640625
+      },
+      "reference_rows_identical": true
+    },
+    "high_confidence_ties": {
+      "control": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.75
+      },
+      "grouped": {
+        "rows": 300,
+        "above_threshold": 300,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.75
+      },
+      "reference_rows_identical": true
+    },
+    "threshold_multiclass": {
+      "control": {
+        "rows": 300,
+        "above_threshold": 260,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.2499999850988388
+      },
+      "grouped": {
+        "rows": 300,
+        "above_threshold": 260,
+        "distinct_anchor_class_pairs": 300,
+        "minimum_selected_score": 0.2499999850988388
+      },
+      "reference_rows_identical": true
+    }
+  },
+  "fixture_sha256": {
+    "boxes.bin": "9677035e9d8083ec08ec03d6012cf5ebaa4efa4c5221c252d6acffbdbc2162e0",
+    "control.onnx": "609b0e718dc59015fcf6a8942edf94729d4ca84b2966913a02a4edfe0f75ec03",
+    "fp16_rounded_ties/control.reference.npy": "156158edda42fe6eb1b310e6aec8086e966366cd43aac9b4fb0c2e557b1c3c9e",
+    "fp16_rounded_ties/grouped.reference.npy": "156158edda42fe6eb1b310e6aec8086e966366cd43aac9b4fb0c2e557b1c3c9e",
+    "fp16_rounded_ties/scores.bin": "f34ff3ad5df16aecd371d2e11779fa557a0929f107fc5182dfa27e310b5ffd47",
+    "grouped.onnx": "0c320e2be8106400388b608366f16f876e20e0bc164ad80bb63669f311b0cbfc",
+    "high_confidence_ties/control.reference.npy": "e3f35b693c328fdaac7b329ab6804548a681c92690e6fef8139dc57e523ace3a",
+    "high_confidence_ties/grouped.reference.npy": "e3f35b693c328fdaac7b329ab6804548a681c92690e6fef8139dc57e523ace3a",
+    "high_confidence_ties/scores.bin": "00058e22982b3eaa6fd75ef43de503b655217d62b721972123cfb98c716380d7",
+    "threshold_multiclass/control.reference.npy": "974ed42fc33c8c7929e28526163a8a0a34ecea6eeb470461d0ea8bcf7df07cff",
+    "threshold_multiclass/grouped.reference.npy": "974ed42fc33c8c7929e28526163a8a0a34ecea6eeb470461d0ea8bcf7df07cff",
+    "threshold_multiclass/scores.bin": "0c1d5df7bf3aa5796d554e1c914fa80a145dca2213a037d6ddd2c7122c83b450",
+    "unique/control.reference.npy": "37ea542be10415dd4f0d86956daa338c26e86eaf6fa50158e323cc935a56a7ab",
+    "unique/grouped.reference.npy": "37ea542be10415dd4f0d86956daa338c26e86eaf6fa50158e323cc935a56a7ab",
+    "unique/scores.bin": "118c4cc144bddb3ae47bd38cce87ddb4fab15e44fb9f0297efd92ae12ae98f4e"
+  }
+}

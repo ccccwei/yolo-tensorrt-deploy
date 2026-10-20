@@ -1,0 +1,16 @@
+[  8%] Built target yolo_cuda_prepost
+[ 12%] Built target yolo_baseline
+[ 18%] Built target yolo_pinned_memory
+[ 24%] Built target yolo_async_pipeline
+[ 30%] Built target yolo_cuda_graph
+[ 46%] Built target yolo_graph_pipeline
+[ 46%] Built target yolo_full_graph
+[ 52%] Built target yolo_registered_input
+[ 58%] Built target yolo_preprocess_maps
+[ 64%] Built target yolo_split_streams
+[ 82%] Built target preprocess_maps_test
+[ 82%] Built target gpu_postprocess_test
+[ 82%] Built target pinned_memory_test
+[ 88%] Built target preprocess_test
+[ 94%] Built target registered_input_test
+[100%] Built target preprocess_maps_benchmark

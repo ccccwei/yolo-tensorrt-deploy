@@ -1,0 +1,212 @@
+[
+  {
+    "file": "bus_original.png",
+    "shape": [
+      1080,
+      810,
+      3
+    ],
+    "recipe": "Original JPEG decoded with cv2 5.0.0",
+    "sha256": "bf5a9f8f6a89bb2ec24dff2121b2614344e76abc8a884bc66a46689ac0ee39c6"
+  },
+  {
+    "file": "bus_flip.png",
+    "shape": [
+      1080,
+      810,
+      3
+    ],
+    "recipe": "Horizontal mirror",
+    "sha256": "dbfbbdcf7fd91c2b9bc76feec9836e22d4c91ffb235b42c885cbde527505386e"
+  },
+  {
+    "file": "bus_half.png",
+    "shape": [
+      540,
+      405,
+      3
+    ],
+    "recipe": "Half-size INTER_LINEAR",
+    "sha256": "2a3efc98dfef48f04b15883608c7ca79831b0cdd0200faddddaaa2bed5c2485a"
+  },
+  {
+    "file": "bus_large.png",
+    "shape": [
+      1620,
+      1215,
+      3
+    ],
+    "recipe": "1.5-size INTER_LINEAR",
+    "sha256": "c9c0f635c638158bb800b4cdab9a35244215a9e7052c254529856199e6b85e07"
+  },
+  {
+    "file": "bus_dark.png",
+    "shape": [
+      1080,
+      810,
+      3
+    ],
+    "recipe": "Brightness times0.35",
+    "sha256": "e5cf7a4112f924f9711f25c56550f9093866b9abb17fc6a836b80c06031b0918"
+  },
+  {
+    "file": "bus_bright.png",
+    "shape": [
+      1080,
+      810,
+      3
+    ],
+    "recipe": "Brightness times1.6",
+    "sha256": "7fd210044af3c21b4ccad25674d7901e618fdccca48578a5f244be6ebab259e1"
+  },
+  {
+    "file": "bus_crop.png",
+    "shape": [
+      648,
+      486,
+      3
+    ],
+    "recipe": "Center60percent crop",
+    "sha256": "aa5dd4425aa51de33d08ed059fb9928acf4292de032692b4680a7aaf8d22c4f1"
+  },
+  {
+    "file": "bus_tiles.png",
+    "shape": [
+      640,
+      640,
+      3
+    ],
+    "recipe": "Four320squaretiles; dense synthetic case",
+    "sha256": "39fd75d22008437c9097f40fda90351acd79938577bff11183190b3e8ac3453d"
+  },
+  {
+    "file": "zidane_original.png",
+    "shape": [
+      720,
+      1280,
+      3
+    ],
+    "recipe": "Original JPEG decoded with cv2 5.0.0",
+    "sha256": "6c2f6c030c660af02e1827b63e34ecd9045afd4751fd02abb760e06db6bbe7bf"
+  },
+  {
+    "file": "zidane_flip.png",
+    "shape": [
+      720,
+      1280,
+      3
+    ],
+    "recipe": "Horizontal mirror",
+    "sha256": "3afdfb501075dfd7ea468436537ae5b74871ccf715d6e13fb89a24c32ffb7668"
+  },
+  {
+    "file": "zidane_half.png",
+    "shape": [
+      360,
+      640,
+      3
+    ],
+    "recipe": "Half-size INTER_LINEAR",
+    "sha256": "edef7a9a66b1ad7e8a8d141e2afae69348ba0932bb9feedeea6705321d469d55"
+  },
+  {
+    "file": "zidane_large.png",
+    "shape": [
+      1080,
+      1920,
+      3
+    ],
+    "recipe": "1.5-size INTER_LINEAR",
+    "sha256": "ee5b209969008629c174f66e2ebeca863671fb275171ae7ba54920b14824d576"
+  },
+  {
+    "file": "zidane_dark.png",
+    "shape": [
+      720,
+      1280,
+      3
+    ],
+    "recipe": "Brightness times0.35",
+    "sha256": "507e26212c74e055dffd1ddc9952d06eeb5ad16e28d40c492584a5349f651b7f"
+  },
+  {
+    "file": "zidane_bright.png",
+    "shape": [
+      720,
+      1280,
+      3
+    ],
+    "recipe": "Brightness times1.6",
+    "sha256": "b73637855e10fa56165c6d78aeea6505ee911c1a2badcefcd1c849b0cf4d51e4"
+  },
+  {
+    "file": "zidane_crop.png",
+    "shape": [
+      432,
+      768,
+      3
+    ],
+    "recipe": "Center60percent crop",
+    "sha256": "509f6abbf00ce9f9dc8251fd671fcf0d90a24d18e951176efb7c5daae1e3f583"
+  },
+  {
+    "file": "zidane_tiles.png",
+    "shape": [
+      640,
+      640,
+      3
+    ],
+    "recipe": "Four320squaretiles; dense synthetic case",
+    "sha256": "a6588ad52ce3ccddee3986547ab26b16357333b89d9e3bb0bd8870c8b63bcb80"
+  },
+  {
+    "file": "blank_0.png",
+    "shape": [
+      479,
+      641,
+      3
+    ],
+    "recipe": "Constant BGR",
+    "sha256": "b44d13cc93611de3da3b081b55fb01613094e2a97acc5db0661604566462c52b"
+  },
+  {
+    "file": "blank_114.png",
+    "shape": [
+      479,
+      641,
+      3
+    ],
+    "recipe": "Constant BGR",
+    "sha256": "3836a0ce148335e7977c0cc1063b74bc57cb7e47290a78cbd6e3e7cc47348a6c"
+  },
+  {
+    "file": "blank_255.png",
+    "shape": [
+      479,
+      641,
+      3
+    ],
+    "recipe": "Constant BGR",
+    "sha256": "93407c28655e22de8ad30c2b57640ced76c74e6b03d024f2b0499b075fc1d719"
+  },
+  {
+    "file": "noise.png",
+    "shape": [
+      63,
+      81,
+      3
+    ],
+    "recipe": "Seed260013 integer noise",
+    "sha256": "00537b6e4683cdecf018b97e89538ffa101be28f371c1ce10277c446beab4648"
+  },
+  {
+    "file": "checker.png",
+    "shape": [
+      19,
+      31,
+      3
+    ],
+    "recipe": "19x31 alternating checker",
+    "sha256": "cb0cffec3150c5363902d566a88c89cfd1c311ea201f5be23cd85227f836c29c"
+  }
+]

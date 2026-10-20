@@ -1,0 +1,104 @@
+{
+  "runs": 33,
+  "samples": 66000,
+  "per_version": {
+    "01": {
+      "round_p50_ms": [
+        4.51419,
+        4.547508,
+        4.563071
+      ],
+      "detections_stable_across_rounds": true
+    },
+    "02": {
+      "round_p50_ms": [
+        3.773331,
+        3.806398,
+        3.803481
+      ],
+      "detections_stable_across_rounds": true
+    },
+    "03": {
+      "round_p50_ms": [
+        3.846683,
+        3.857675,
+        3.865768
+      ],
+      "detections_stable_across_rounds": true
+    },
+    "04": {
+      "round_p50_ms": [
+        6.280738,
+        6.330288,
+        6.351616
+      ],
+      "detections_stable_across_rounds": true
+    },
+    "05": {
+      "round_p50_ms": [
+        3.597315,
+        3.635575,
+        3.632703
+      ],
+      "detections_stable_across_rounds": true
+    },
+    "06": {
+      "round_p50_ms": [
+        3.606722,
+        3.645942,
+        3.643781
+      ],
+      "detections_stable_across_rounds": true
+    },
+    "07": {
+      "round_p50_ms": [
+        6.494877,
+        6.543227,
+        6.546753
+      ],
+      "detections_stable_across_rounds": true
+    },
+    "08": {
+      "round_p50_ms": [
+        3.619163,
+        3.625282,
+        3.631234
+      ],
+      "detections_stable_across_rounds": true
+    },
+    "09": {
+      "round_p50_ms": [
+        3.510996,
+        3.517734,
+        3.524072
+      ],
+      "detections_stable_across_rounds": true
+    },
+    "10": {
+      "round_p50_ms": [
+        7.142506,
+        7.151875,
+        7.157373
+      ],
+      "detections_stable_across_rounds": true
+    },
+    "11": {
+      "round_p50_ms": [
+        3.479035,
+        3.479169,
+        3.491283
+      ],
+      "detections_stable_across_rounds": true
+    }
+  },
+  "all_recorded_file_hashes_match": true,
+  "registered_control_vs_grouped_sample_detections_identical": true,
+  "gpu_temperature_c_range": [
+    45.0,
+    77.0
+  ],
+  "gpu_sm_clock_mhz_range": [
+    210.0,
+    1935.0
+  ]
+}

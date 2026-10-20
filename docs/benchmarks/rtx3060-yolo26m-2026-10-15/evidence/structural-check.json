@@ -1,0 +1,41 @@
+{
+  "control_io": {
+    "inputs": [
+      [
+        "images",
+        [
+          1,
+          3,
+          640,
+          640
+        ],
+        1
+      ]
+    ],
+    "outputs": [
+      [
+        "output0",
+        [
+          1,
+          300,
+          6
+        ],
+        1
+      ]
+    ]
+  },
+  "control_nodes": 478,
+  "grouped_nodes": 500,
+  "control_topk_nodes": [
+    "/model.23/TopK",
+    "/model.23/TopK_1"
+  ],
+  "grouped_topk_nodes": [
+    "/model.23/TopK/grouped/local/TopK",
+    "/model.23/TopK/grouped/merge/TopK",
+    "/model.23/TopK_1/grouped/local/TopK",
+    "/model.23/TopK_1/grouped/merge/TopK"
+  ],
+  "initializers_identical": true,
+  "non_target_nodes_identical": true
+}

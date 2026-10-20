@@ -1,0 +1,318 @@
+{
+  "date": "2026-09-14",
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "driver": "525.147.05",
+    "os_kernel": "Linux 6.5.0-rt6",
+    "compiler": "GCC 11.4.0",
+    "cuda_toolkit": "11.8.89",
+    "tensorrt": "8.6.1",
+    "opencv": "3.4.20",
+    "build_type": "Release",
+    "cuda_architectures": "native (sm_86)",
+    "gpu_clocks_locked": false
+  },
+  "protocol": {
+    "model": "YOLO26n",
+    "engine_precision": "FP16 with FP32 I/O",
+    "batch": 1,
+    "input_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "images": {
+      "bus.jpg": [
+        810,
+        1080
+      ],
+      "zidane.jpg": [
+        1280,
+        720
+      ]
+    },
+    "rounds": 5,
+    "iterations_per_image_per_round": 1000,
+    "warmup_iterations_per_image_per_round": 200,
+    "measurement": "Synchronized CPU wall clock: preprocess + H2D/TRT/D2H + postprocess; excludes initialization, image decoding, drawing, file I/O, logging and warmup",
+    "percentile": "Nearest rank over all 10000 measured total_ms values per version",
+    "speedup": "Pooled total_ms P50 of 02 divided by pooled total_ms P50 of the version"
+  },
+  "summary": {
+    "02_benchmark": {
+      "pre": {
+        "n": 10000,
+        "mean": 0.6029548845000006,
+        "p50": 0.584578,
+        "p95": 0.666103,
+        "p99": 0.700443
+      },
+      "infer": {
+        "n": 10000,
+        "mean": 1.6219519368000026,
+        "p50": 1.610537,
+        "p95": 1.718241,
+        "p99": 1.801394
+      },
+      "post": {
+        "n": 10000,
+        "mean": 0.001379098799999993,
+        "p50": 0.001365,
+        "p95": 0.001805,
+        "p99": 0.002304
+      },
+      "total": {
+        "n": 10000,
+        "mean": 2.226285920099987,
+        "p50": 2.207885,
+        "p95": 2.340579,
+        "p99": 2.458415
+      },
+      "rounds": [
+        {
+          "n": 2000,
+          "mean": 2.217597185000003,
+          "p50": 2.182719,
+          "p95": 2.360121,
+          "p99": 2.463022
+        },
+        {
+          "n": 2000,
+          "mean": 2.2417810834999994,
+          "p50": 2.251541,
+          "p95": 2.294792,
+          "p99": 2.34549
+        },
+        {
+          "n": 2000,
+          "mean": 2.239618895000001,
+          "p50": 2.252677,
+          "p95": 2.328821,
+          "p99": 2.47704
+        },
+        {
+          "n": 2000,
+          "mean": 2.2333004145000044,
+          "p50": 2.237569,
+          "p95": 2.374864,
+          "p99": 2.463461
+        },
+        {
+          "n": 2000,
+          "mean": 2.199132022500001,
+          "p50": 2.172693,
+          "p95": 2.344083,
+          "p99": 2.503224
+        }
+      ],
+      "images": {
+        "bus.jpg": {
+          "n": 5000,
+          "mean": 2.2521889910000055,
+          "p50": 2.259007,
+          "p95": 2.363076,
+          "p99": 2.457022
+        },
+        "zidane.jpg": {
+          "n": 5000,
+          "mean": 2.2003828491999973,
+          "p50": 2.183174,
+          "p95": 2.296252,
+          "p99": 2.461728
+        }
+      }
+    },
+    "03_cuda_preprocess": {
+      "pre": {
+        "n": 10000,
+        "mean": 0.2547652179999989,
+        "p50": 0.243131,
+        "p95": 0.317128,
+        "p99": 0.417675
+      },
+      "infer": {
+        "n": 10000,
+        "mean": 1.2740789707999984,
+        "p50": 1.274468,
+        "p95": 1.284654,
+        "p99": 1.287709
+      },
+      "post": {
+        "n": 10000,
+        "mean": 0.0014353240999999929,
+        "p50": 0.001366,
+        "p95": 0.001904,
+        "p99": 0.002789
+      },
+      "total": {
+        "n": 10000,
+        "mean": 1.5302795129000037,
+        "p50": 1.521231,
+        "p95": 1.594954,
+        "p99": 1.702831
+      },
+      "rounds": [
+        {
+          "n": 2000,
+          "mean": 1.5393334780000012,
+          "p50": 1.526296,
+          "p95": 1.625003,
+          "p99": 1.716833
+        },
+        {
+          "n": 2000,
+          "mean": 1.5204377480000009,
+          "p50": 1.521992,
+          "p95": 1.533624,
+          "p99": 1.546634
+        },
+        {
+          "n": 2000,
+          "mean": 1.5218527064999983,
+          "p50": 1.513631,
+          "p95": 1.559789,
+          "p99": 1.634413
+        },
+        {
+          "n": 2000,
+          "mean": 1.5238156704999997,
+          "p50": 1.511265,
+          "p95": 1.585941,
+          "p99": 1.805047
+        },
+        {
+          "n": 2000,
+          "mean": 1.5459579614999999,
+          "p50": 1.52779,
+          "p95": 1.640702,
+          "p99": 1.741366
+        }
+      ],
+      "images": {
+        "bus.jpg": {
+          "n": 5000,
+          "mean": 1.5237470092000012,
+          "p50": 1.519096,
+          "p95": 1.562775,
+          "p99": 1.625951
+        },
+        "zidane.jpg": {
+          "n": 5000,
+          "mean": 1.5368120165999994,
+          "p50": 1.522919,
+          "p95": 1.624825,
+          "p99": 1.743582
+        }
+      }
+    }
+  },
+  "speedup_p50": 1.451380493823752,
+  "detection_checks": {
+    "all_rounds_same_detection_counts_and_class_order": true,
+    "max_box_coordinate_delta_pixels": 1,
+    "max_score_delta": 0.001953125
+  },
+  "sha256": {
+    "weights/yolo26n.fp16.engine": "b8ca405e8d4e8d49623b3f7c6c6cef8ec6111585e1ac48f076560aca1efc7311",
+    "images/bus.jpg": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+    "images/zidane.jpg": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb",
+    "src/02_benchmark/main.cpp": "2f6947ff0506b806a29bf590a7cbaf1d086ca117935b048fa0359985e3b675ba",
+    "src/03_cuda_preprocess/main.cpp": "e50d2dd5e7d56a4d3685fc722c46d30779b972c967e13efc3db62cd6a10eff51",
+    "src/03_cuda_preprocess/preprocess.cu": "4b65cc1d01cb9c0a72783dab600e9c0ce1ea34b1d5d199aa9733dad2e720f92a",
+    "build/release/src/yolo_benchmark": "4061b0a478c22406ded2e4ad7bf6b427986b3d801131a8b174ddc069577fb690",
+    "build/release/src/yolo_cuda_preprocess": "fbcd47505b94b965fa763079543a84ace3c79472968271d1055cb071d971ecbd"
+  },
+  "runs": [
+    {
+      "round": 1,
+      "version": "02_benchmark",
+      "started_utc": "2026-09-14 03:17:12 UTC",
+      "gpu_before": {
+        "columns": "pstate, graphics_clock_MHz, temperature_C, power_W, gpu_utilization_percent",
+        "values": "P8, 210 MHz, 40, 5.62 W, 0 %"
+      }
+    },
+    {
+      "round": 1,
+      "version": "03_cuda_preprocess",
+      "started_utc": "2026-09-14 03:17:18 UTC",
+      "gpu_before": {
+        "columns": "pstate, graphics_clock_MHz, temperature_C, power_W, gpu_utilization_percent",
+        "values": "P0, 1935 MHz, 46, 76.32 W, 71 %"
+      }
+    },
+    {
+      "round": 2,
+      "version": "03_cuda_preprocess",
+      "started_utc": "2026-09-14 03:17:23 UTC",
+      "gpu_before": {
+        "columns": "pstate, graphics_clock_MHz, temperature_C, power_W, gpu_utilization_percent",
+        "values": "P0, 1920 MHz, 48, 89.10 W, 64 %"
+      }
+    },
+    {
+      "round": 2,
+      "version": "02_benchmark",
+      "started_utc": "2026-09-14 03:17:27 UTC",
+      "gpu_before": {
+        "columns": "pstate, graphics_clock_MHz, temperature_C, power_W, gpu_utilization_percent",
+        "values": "P0, 1920 MHz, 50, 94.77 W, 63 %"
+      }
+    },
+    {
+      "round": 3,
+      "version": "02_benchmark",
+      "started_utc": "2026-09-14 03:17:33 UTC",
+      "gpu_before": {
+        "columns": "pstate, graphics_clock_MHz, temperature_C, power_W, gpu_utilization_percent",
+        "values": "P0, 1920 MHz, 50, 72.53 W, 2 %"
+      }
+    },
+    {
+      "round": 3,
+      "version": "03_cuda_preprocess",
+      "started_utc": "2026-09-14 03:17:39 UTC",
+      "gpu_before": {
+        "columns": "pstate, graphics_clock_MHz, temperature_C, power_W, gpu_utilization_percent",
+        "values": "P0, 1920 MHz, 52, 78.43 W, 53 %"
+      }
+    },
+    {
+      "round": 4,
+      "version": "03_cuda_preprocess",
+      "started_utc": "2026-09-14 03:17:43 UTC",
+      "gpu_before": {
+        "columns": "pstate, graphics_clock_MHz, temperature_C, power_W, gpu_utilization_percent",
+        "values": "P0, 1942 MHz, 54, 92.61 W, 28 %"
+      }
+    },
+    {
+      "round": 4,
+      "version": "02_benchmark",
+      "started_utc": "2026-09-14 03:17:47 UTC",
+      "gpu_before": {
+        "columns": "pstate, graphics_clock_MHz, temperature_C, power_W, gpu_utilization_percent",
+        "values": "P0, 1942 MHz, 55, 97.32 W, 75 %"
+      }
+    },
+    {
+      "round": 5,
+      "version": "02_benchmark",
+      "started_utc": "2026-09-14 03:17:53 UTC",
+      "gpu_before": {
+        "columns": "pstate, graphics_clock_MHz, temperature_C, power_W, gpu_utilization_percent",
+        "values": "P0, 1942 MHz, 55, 75.24 W, 9 %"
+      }
+    },
+    {
+      "round": 5,
+      "version": "03_cuda_preprocess",
+      "started_utc": "2026-09-14 03:17:59 UTC",
+      "gpu_before": {
+        "columns": "pstate, graphics_clock_MHz, temperature_C, power_W, gpu_utilization_percent",
+        "values": "P0, 1942 MHz, 57, 75.77 W, 70 %"
+      }
+    }
+  ]
+}

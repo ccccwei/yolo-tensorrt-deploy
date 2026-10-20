@@ -1,0 +1,1925 @@
+{
+  "onnx": {
+    "original_nodes": 445,
+    "grouped_nodes": 467,
+    "original_topk_nodes": 2,
+    "grouped_topk_nodes": 4,
+    "replaced_nodes": [
+      "/model.23/TopK",
+      "/model.23/TopK_1"
+    ],
+    "preserved_unrelated_nodes_byte_exact": 443,
+    "preserved_unrelated_node_order": true,
+    "non_node_model_proto_byte_exact": true,
+    "preserved_initializers_byte_exact": 204,
+    "initializer_sha256": [
+      {
+        "name": "model.0.conv.weight",
+        "sha256": "6d0a242bdc9aed618dd6a048edd3a09873c5e0ea51da392b84390e52f55a4ce3"
+      },
+      {
+        "name": "model.0.conv.bias",
+        "sha256": "54acf2e3f4c44a5b33f5894ba28c55d53f545bcd27fecb8aa746bd0e7abaafbd"
+      },
+      {
+        "name": "model.1.conv.weight",
+        "sha256": "777f7a26b134d9000547390642654f1ec3cf8648ea4b7f21875bc0d59be6213a"
+      },
+      {
+        "name": "model.1.conv.bias",
+        "sha256": "20e0fab2481a80331168d6126d8e1a15c08f88b52783c86e9897af2fd1d6feb9"
+      },
+      {
+        "name": "model.2.cv1.conv.weight",
+        "sha256": "c723ea8a23724df9fee47b5e3b0e3e82ff492f77d0fc206f25bbb03320e263f1"
+      },
+      {
+        "name": "model.2.cv1.conv.bias",
+        "sha256": "1856b7b9f5dd2b9e2de361fcf0c3a94bf4be89c3e92590bf6ee6492ae3a636be"
+      },
+      {
+        "name": "model.2.cv2.conv.weight",
+        "sha256": "a145f18e83df8fbedb6d8452d693a8bd829a7f3220a00e127794f04aac383819"
+      },
+      {
+        "name": "model.2.cv2.conv.bias",
+        "sha256": "93b74fc4e598e85dbd9aa90317fdc98672b7977c84ecad2ef6c218a0c0298d66"
+      },
+      {
+        "name": "model.2.m.0.cv1.conv.weight",
+        "sha256": "a2f8b7329f1b2c490feb218691a2032022c3bb08dc41bf151113fb95e259185d"
+      },
+      {
+        "name": "model.2.m.0.cv1.conv.bias",
+        "sha256": "76730c8acd5c83eece08d5e8fa3d3ec2fa45fe33175a0da89306a4768ccfb1c7"
+      },
+      {
+        "name": "model.2.m.0.cv2.conv.weight",
+        "sha256": "5b4e149e7422fd71697c11b8678a3e014daf2310431477b37e57209803488a42"
+      },
+      {
+        "name": "model.2.m.0.cv2.conv.bias",
+        "sha256": "d6db748f431b02073627be3492d0dd22f75aa470e624941a4d66bdff9c93e8a3"
+      },
+      {
+        "name": "model.3.conv.weight",
+        "sha256": "921d05218a5e28db7ba5d737bf51582e28cdd9ca4ce135d71043ea7c6c805442"
+      },
+      {
+        "name": "model.3.conv.bias",
+        "sha256": "69492029fc3ecdf0fa6951f4012647c4309593b5a6bc42fbdebd0396ec1e2361"
+      },
+      {
+        "name": "model.4.cv1.conv.weight",
+        "sha256": "b950901dd53ca038d2d80031a26093755108cc6832930d6d91ede5094c7435c7"
+      },
+      {
+        "name": "model.4.cv1.conv.bias",
+        "sha256": "4efcbc50a0b2c5ce1efb365124726046e26187be3946c56951277ba0a185d8c8"
+      },
+      {
+        "name": "model.4.cv2.conv.weight",
+        "sha256": "9acaf8631f7cd2347d58f868bd2809d79d905ec28fd0800a9adc521552925553"
+      },
+      {
+        "name": "model.4.cv2.conv.bias",
+        "sha256": "dec8979833d56d923c7c07cf01e6600af04c2010b96b949ad42e14700808b208"
+      },
+      {
+        "name": "model.4.m.0.cv1.conv.weight",
+        "sha256": "efafad02ba5f445506eb8114d2b65fa441172441888aaeaa0970b91ac840bcfa"
+      },
+      {
+        "name": "model.4.m.0.cv1.conv.bias",
+        "sha256": "f5832bc1d61b320c1a81f00647efe55b980c14bfa47bf0ceb77198223ee67e4a"
+      },
+      {
+        "name": "model.4.m.0.cv2.conv.weight",
+        "sha256": "fb1e07c6d2b4805dfc3dc0b9331159b3f1432fed09ef3fc459718351921c0285"
+      },
+      {
+        "name": "model.4.m.0.cv2.conv.bias",
+        "sha256": "a7d5a164ad522f4eee2e6c2775b3d887b0842960ae05b029709b26daa67f7f38"
+      },
+      {
+        "name": "model.5.conv.weight",
+        "sha256": "41698d96234b9adf450e00ded440d9d1e38915e782cd2acf0f799fabbc8d8fe2"
+      },
+      {
+        "name": "model.5.conv.bias",
+        "sha256": "2c05d785df0fdc5fe4deee527a463bf1b5707e9a1c37971dfd94c67a96774b46"
+      },
+      {
+        "name": "model.6.cv1.conv.weight",
+        "sha256": "2e87385c8999c846ab06b5887b723f431adcc8782af1af1f105ae0d558908da8"
+      },
+      {
+        "name": "model.6.cv1.conv.bias",
+        "sha256": "f1de258dbb95faf7ce8031c8c6d334975f2961ae716f5f49e219cd7e0e47ddef"
+      },
+      {
+        "name": "model.6.cv2.conv.weight",
+        "sha256": "cb906351099958db7a95f11a29e57b43b1a78f360183404caf1aa24d425ac14e"
+      },
+      {
+        "name": "model.6.cv2.conv.bias",
+        "sha256": "86a457e4b5e5e1796801bcfa111973cb7f3cd8636b1957b36fb08c261bfb5dad"
+      },
+      {
+        "name": "model.6.m.0.cv1.conv.weight",
+        "sha256": "57072bfb815cef1e2e3d251d7ecaed54d1c3fa7e3fb5ec449399cdf0f5300603"
+      },
+      {
+        "name": "model.6.m.0.cv1.conv.bias",
+        "sha256": "0a96c3cfa76313e758f12add6ec8d280bb81aa508878554daf7147ea033ac400"
+      },
+      {
+        "name": "model.6.m.0.cv2.conv.weight",
+        "sha256": "5025b820dc3638bf87df8e50a0fe96a6594d6017ebd5afcef044f4460cefbc3b"
+      },
+      {
+        "name": "model.6.m.0.cv2.conv.bias",
+        "sha256": "cad088c7df69a477beb45a943c72a0e82ac37a9be048f0d8d3be38d94a54eb1f"
+      },
+      {
+        "name": "model.6.m.0.cv3.conv.weight",
+        "sha256": "fc26c4ac6aabd693e27e0de9b5f7ad6cee38cdf8236b12e3e61dacba3f355737"
+      },
+      {
+        "name": "model.6.m.0.cv3.conv.bias",
+        "sha256": "47e7dba2a5901c52aeb5f374a011b7319360bbda5e7eac7ce2eca693889134f4"
+      },
+      {
+        "name": "model.6.m.0.m.0.cv1.conv.weight",
+        "sha256": "c6fe3282db99436af26740e30592a1bbe60f9b3619afe94f131efc29eabc072d"
+      },
+      {
+        "name": "model.6.m.0.m.0.cv1.conv.bias",
+        "sha256": "d23548b42a296bc12b30314da878727642d23177de2168d33ec00130aa71d560"
+      },
+      {
+        "name": "model.6.m.0.m.0.cv2.conv.weight",
+        "sha256": "ed433c8cd63835163f5bf6cb8d86cc6630e8678cd44508513604c6688102e849"
+      },
+      {
+        "name": "model.6.m.0.m.0.cv2.conv.bias",
+        "sha256": "da7368ced3b849889482915125f23b15fe763e0fcf0fdbc94940053f178c6dad"
+      },
+      {
+        "name": "model.6.m.0.m.1.cv1.conv.weight",
+        "sha256": "3ddef6e9816b418efac6bfff3ef06a57c7ab95a3bd12751039fbe0d25493a789"
+      },
+      {
+        "name": "model.6.m.0.m.1.cv1.conv.bias",
+        "sha256": "f3644f50dae8cf5a130ad7b39f07624d271c12c3999441d902463e1fec8a9ce8"
+      },
+      {
+        "name": "model.6.m.0.m.1.cv2.conv.weight",
+        "sha256": "7c08c9b4fedf8e00de24ec7f845dcb47c1cb57550ca899fb7861744fdae45ece"
+      },
+      {
+        "name": "model.6.m.0.m.1.cv2.conv.bias",
+        "sha256": "013f85d5d5b6a3af0051791e7b30a1d6950753473d96eef3d5a6a20a202d50d3"
+      },
+      {
+        "name": "model.7.conv.weight",
+        "sha256": "474e5dcb0065bc6dd7e3a2048be0da8f1d1b7f0c6f4d7c814b1304cd03ef04c2"
+      },
+      {
+        "name": "model.7.conv.bias",
+        "sha256": "e1a2fc2ce9b6975ff9d2aca7095d71c6a20b7dd7f3f56551ba2e4136bd1e0986"
+      },
+      {
+        "name": "model.8.cv1.conv.weight",
+        "sha256": "73d988da152b92cf2086d39abff865ff8a15c33b6484243b8a1c31ab22e58554"
+      },
+      {
+        "name": "model.8.cv1.conv.bias",
+        "sha256": "b002c5cf8c5ece83d820d92b78c41d4d22f511c67d49db28fd698705b72ac7f5"
+      },
+      {
+        "name": "model.8.cv2.conv.weight",
+        "sha256": "eb042268dbbeb7128fdd60e7021977d90f7757957d16dc99e04ed777ce47db6a"
+      },
+      {
+        "name": "model.8.cv2.conv.bias",
+        "sha256": "f7762a91408d7261fdea61092ef6ee514acee3ae40c26849c9d0611059a5296b"
+      },
+      {
+        "name": "model.8.m.0.cv1.conv.weight",
+        "sha256": "11d01639434460d14147cdf5296f836ab574f35d05008a4a3809fc6410e6ecb7"
+      },
+      {
+        "name": "model.8.m.0.cv1.conv.bias",
+        "sha256": "1ef20e0fac6553dde47071e0f9063ce5f9738a43e358e75c09c5d7423e3554e5"
+      },
+      {
+        "name": "model.8.m.0.cv2.conv.weight",
+        "sha256": "d5440198c48179e2ccfb78213a9f7ceb574043b783f2f0dee066a127e50c1b65"
+      },
+      {
+        "name": "model.8.m.0.cv2.conv.bias",
+        "sha256": "c3969b27f0a9d465d71b2c68a7d6abc79bb02791c7c52f76600d6f1314bf9c29"
+      },
+      {
+        "name": "model.8.m.0.cv3.conv.weight",
+        "sha256": "19ebe2cd2e8e2f5b8a2cd2762a2c553ceeb04b7eb39a839ab4acc5a5b9ee146f"
+      },
+      {
+        "name": "model.8.m.0.cv3.conv.bias",
+        "sha256": "eced3d5d6e44e996115164fc8b75476aa3484f2ab9c26b76fbaec1d8231bab7e"
+      },
+      {
+        "name": "model.8.m.0.m.0.cv1.conv.weight",
+        "sha256": "c4cfc72595e7a6106fe2f59756646c4a2fd8ae5ea6042a069cc55925b351cdec"
+      },
+      {
+        "name": "model.8.m.0.m.0.cv1.conv.bias",
+        "sha256": "0e8f7e08d5c3c70d6680487a2f6727cdc890ebbf9d82eafb8386acdb91c567f7"
+      },
+      {
+        "name": "model.8.m.0.m.0.cv2.conv.weight",
+        "sha256": "15b9e5d41533554ad3f472d4b0f080dfb2ae8d2d8a09e8af3a18b0c8f75219bb"
+      },
+      {
+        "name": "model.8.m.0.m.0.cv2.conv.bias",
+        "sha256": "a80ba9751bffad27f9a80b5242f6279b1877ee988be92bc510f425e2fdde32be"
+      },
+      {
+        "name": "model.8.m.0.m.1.cv1.conv.weight",
+        "sha256": "157982d48bde120143090749fd8adb043072c2843bbf2b9669cdda76f69ec6f5"
+      },
+      {
+        "name": "model.8.m.0.m.1.cv1.conv.bias",
+        "sha256": "db8a4f9153a3483fcfb3fbc48d804cb4f18cd5d3425fca39129f8d082bc5d921"
+      },
+      {
+        "name": "model.8.m.0.m.1.cv2.conv.weight",
+        "sha256": "5c44236d429fdf33c1c9d4ce354e775df9658acc4dab1c3da48e592ed9ace132"
+      },
+      {
+        "name": "model.8.m.0.m.1.cv2.conv.bias",
+        "sha256": "a61719e666ca486cd3a8e68592b8dbd7643f4587e8e2d932f551508cc012df22"
+      },
+      {
+        "name": "model.9.cv1.conv.weight",
+        "sha256": "ff2ffa91a899a61d83f011f1befa3da3e64b414790b58ddf8860e9bdf8b63b32"
+      },
+      {
+        "name": "model.9.cv1.conv.bias",
+        "sha256": "ca8f1b0582219538e820c0286c9501efd865dd5c39f3f4cbc689698719a67fdd"
+      },
+      {
+        "name": "model.9.cv2.conv.weight",
+        "sha256": "ee5140d0321346adbc4aa85aa02abaec5060c48d89549e8eefe2f55d8d3d8886"
+      },
+      {
+        "name": "model.9.cv2.conv.bias",
+        "sha256": "3f9c381aab9c057403bec499fc8a11dfc983d373f9fa2217df0f0f3113122589"
+      },
+      {
+        "name": "model.10.cv1.conv.weight",
+        "sha256": "2aefdb977e1bcbdd7e034db50628cfaf870ef164e958b57850fc6af27c676aa2"
+      },
+      {
+        "name": "model.10.cv1.conv.bias",
+        "sha256": "247d750526853b1d18ac5a8021e354321164a45f98e5240d7708d7c51e1dfd73"
+      },
+      {
+        "name": "model.10.cv2.conv.weight",
+        "sha256": "85b1ca9ca75810f9657fc4f4024666cd1306cf664f7fc568d53c71eea1b8f7fa"
+      },
+      {
+        "name": "model.10.cv2.conv.bias",
+        "sha256": "9edf47be098af79f3619ae2936193f5835b6acf850571e1ab4d8ed7ce0e9d5e4"
+      },
+      {
+        "name": "model.10.m.0.attn.qkv.conv.weight",
+        "sha256": "7d799f273d2378ea3083db58f5d8627ff57e26bd00cfcd509e4daad6f6ebc8a5"
+      },
+      {
+        "name": "model.10.m.0.attn.qkv.conv.bias",
+        "sha256": "22f23b4d9d42d2e6a9ec365fb4170e52579ac9bf9ec85d8ccef0024f6e640073"
+      },
+      {
+        "name": "model.10.m.0.attn.proj.conv.weight",
+        "sha256": "8a23a58d8b69fe9952fee5daceda919b0787564d3999b60f6ca2f9aa42ee2e47"
+      },
+      {
+        "name": "model.10.m.0.attn.proj.conv.bias",
+        "sha256": "f33f9a97e18811d0327bea58c879ba2b43fd90a7e49ba896de4b20fc4946aea2"
+      },
+      {
+        "name": "model.10.m.0.attn.pe.conv.weight",
+        "sha256": "934374daeb8f838bb658279fe30082f1c5ae80a4a10566b78b176d14ff757568"
+      },
+      {
+        "name": "model.10.m.0.attn.pe.conv.bias",
+        "sha256": "ca130ef82e675fa905d747c5af6ceb0532e6235887ce2d6fed25f8d94bbe8b15"
+      },
+      {
+        "name": "model.10.m.0.ffn.0.conv.weight",
+        "sha256": "7aeb41a4a3b86bdb04bf5f9cc46e7a54cdbd7fabf3d2fb5e8a2f908d0af63927"
+      },
+      {
+        "name": "model.10.m.0.ffn.0.conv.bias",
+        "sha256": "07fcbaaf7c7cb4f48526583f1ac768463df75d6fb1ec78ef31a172e8e08cceb2"
+      },
+      {
+        "name": "model.10.m.0.ffn.1.conv.weight",
+        "sha256": "f042e4783b65986e38116319ba5f2545d22689b83248470dd7c35c8dffdab7c7"
+      },
+      {
+        "name": "model.10.m.0.ffn.1.conv.bias",
+        "sha256": "ced0241f09359b20d63973cc25596756eef3354e190bfca06304ea6d53c4a019"
+      },
+      {
+        "name": "model.13.cv1.conv.weight",
+        "sha256": "c706fc195279fdf4ae0e500801e3a5155651b0289eacdfa4411ea6cf5d4fed6f"
+      },
+      {
+        "name": "model.13.cv1.conv.bias",
+        "sha256": "57e7e796a46c6df9940048df7fd131fe4901301f371ec962693a536c69fc36c5"
+      },
+      {
+        "name": "model.13.cv2.conv.weight",
+        "sha256": "48dfb5132b9ca1ccf3716f8cc48676bb321bc7a4cd1d766a4e6bbdb7181dd5f2"
+      },
+      {
+        "name": "model.13.cv2.conv.bias",
+        "sha256": "fb0685fef0a554f3db3573dab606e4e6f04419ebc9393129d1bf521b83691d71"
+      },
+      {
+        "name": "model.13.m.0.cv1.conv.weight",
+        "sha256": "870d54b261efc048f113819426278837e88c7efd5006b975aa595c5b6ce3d159"
+      },
+      {
+        "name": "model.13.m.0.cv1.conv.bias",
+        "sha256": "d82864c1c7d5fc7a53130270a81c168af46660dddee3241de1b13b6c8c5783bf"
+      },
+      {
+        "name": "model.13.m.0.cv2.conv.weight",
+        "sha256": "34b5cb52d94b3dd10405fc22f97cfb38902e84ca550258f8dce56982f8d1eab6"
+      },
+      {
+        "name": "model.13.m.0.cv2.conv.bias",
+        "sha256": "44678319d395514c6f9df4686191b32261cb83091c4a4a78e87f1ba6ca79d0c8"
+      },
+      {
+        "name": "model.13.m.0.cv3.conv.weight",
+        "sha256": "31dc1b8c727fbc4d6830607eddd2924ba77384ee374bd34091c401a3b711420e"
+      },
+      {
+        "name": "model.13.m.0.cv3.conv.bias",
+        "sha256": "178d0c9d688baf9bf763590d17ffba7be19b81d74a372610678ce348a41a7193"
+      },
+      {
+        "name": "model.13.m.0.m.0.cv1.conv.weight",
+        "sha256": "0fa4f49e8fb5cb1c55578c89d1c3144f009c873bcfd40b1597f93353843044de"
+      },
+      {
+        "name": "model.13.m.0.m.0.cv1.conv.bias",
+        "sha256": "54ee0a0506effb1cbc890817dcf07305f75eb1bf7c122d5a3aeb020a895afd65"
+      },
+      {
+        "name": "model.13.m.0.m.0.cv2.conv.weight",
+        "sha256": "ee3c7fdafead087910c6673d5d5fc181a0a649047e473d11eb6ca6e7ac9b3624"
+      },
+      {
+        "name": "model.13.m.0.m.0.cv2.conv.bias",
+        "sha256": "07d5690c80f8f1d9513950c4507623a4a3fd64adeb28d4c94c911995de2c404e"
+      },
+      {
+        "name": "model.13.m.0.m.1.cv1.conv.weight",
+        "sha256": "d7f69483eb4b4fb6b27914d5edbc587c749ab08fcae5ba9cb78947844dc323e6"
+      },
+      {
+        "name": "model.13.m.0.m.1.cv1.conv.bias",
+        "sha256": "13626281fbba2f954c484c9b234cc4157b29a0d278a6f85f009451bc3c7751ff"
+      },
+      {
+        "name": "model.13.m.0.m.1.cv2.conv.weight",
+        "sha256": "0bb846e3c586ed982443fd7646f4b72efe940b6ed1231ffc1fde38efb32c4115"
+      },
+      {
+        "name": "model.13.m.0.m.1.cv2.conv.bias",
+        "sha256": "cb0ffaa56cbd07b0eb31e231c1180f7755c2d270e2efd968edebc9c364a4f6f8"
+      },
+      {
+        "name": "model.16.cv1.conv.weight",
+        "sha256": "833dffeab50dfd00d93d15832238ec0c2dc1dd68074950774c5f80a2e6e490b2"
+      },
+      {
+        "name": "model.16.cv1.conv.bias",
+        "sha256": "c5e7090c210ada33e42f88d25c4f65f7cccf7972de555b51f11c344aac0fc0a5"
+      },
+      {
+        "name": "model.16.cv2.conv.weight",
+        "sha256": "9a81895da8e0cf754f835f6a9b9088698bfa1f8a9b5ba063e5c21dbfd82f2e6f"
+      },
+      {
+        "name": "model.16.cv2.conv.bias",
+        "sha256": "e87ae962a9c0d95553a95fd11e86b054d6869c16f1edb79b5cedf0f7928b4ae9"
+      },
+      {
+        "name": "model.16.m.0.cv1.conv.weight",
+        "sha256": "54e5718c4405f63776464ecf119bb58a1edbce61600c82ea4448c7ba08845839"
+      },
+      {
+        "name": "model.16.m.0.cv1.conv.bias",
+        "sha256": "2aba46f9a44c3ba5a4b7a04c3ebe660251aa2da6c1ccda4e6dc47c94a8e5fb1d"
+      },
+      {
+        "name": "model.16.m.0.cv2.conv.weight",
+        "sha256": "d94b796fc5920937e1e87130111940a0f4f370b9f6fce03a1db2fcb880310c57"
+      },
+      {
+        "name": "model.16.m.0.cv2.conv.bias",
+        "sha256": "52999845ebe5728322c135a5ae6146cefdab5560f3e459ab562f038f86f8814b"
+      },
+      {
+        "name": "model.16.m.0.cv3.conv.weight",
+        "sha256": "522854cb89beafa7e655390ddbebe1d5f5984b45be1dd845b8f6fa7c99cdf5e1"
+      },
+      {
+        "name": "model.16.m.0.cv3.conv.bias",
+        "sha256": "c4c92ebdf33b4339ae83e7e9ce75b408947dbc27bd0e2f43d9b6c8ca881aef62"
+      },
+      {
+        "name": "model.16.m.0.m.0.cv1.conv.weight",
+        "sha256": "782875ed5469d5983e1d2f53bac67abc0350bd0666059baa0e69cbe2b8a8b684"
+      },
+      {
+        "name": "model.16.m.0.m.0.cv1.conv.bias",
+        "sha256": "4bed2e3cb62bd0d96ee83f0aadedb1947180ce9197749a7618fdaa6ce695c674"
+      },
+      {
+        "name": "model.16.m.0.m.0.cv2.conv.weight",
+        "sha256": "7119ba2f26e005fe545221abd59fc588e5836aa7ce3b0a5dfbfa99c6c55a28ff"
+      },
+      {
+        "name": "model.16.m.0.m.0.cv2.conv.bias",
+        "sha256": "eaef8009e61276b0ccd2731e0acad4c80da65e5b1528d17b349edb70b8ba5d27"
+      },
+      {
+        "name": "model.16.m.0.m.1.cv1.conv.weight",
+        "sha256": "c846a5c0c78f69822a78a307eda53993002c4ca13229a07ecc7fc6d1f33d2bad"
+      },
+      {
+        "name": "model.16.m.0.m.1.cv1.conv.bias",
+        "sha256": "11a82ae46ca6758dc540ab15d36c289bc95a382a607189cd490c06b4f1fb803a"
+      },
+      {
+        "name": "model.16.m.0.m.1.cv2.conv.weight",
+        "sha256": "d36ed4d874b0480772f4ddb006054a50a74f7e3cac22866789c01425020a53d1"
+      },
+      {
+        "name": "model.16.m.0.m.1.cv2.conv.bias",
+        "sha256": "43f88af6802846e11413b2204c056d4b1992a7fbdef1bb4ba16159e69a33d3ce"
+      },
+      {
+        "name": "model.17.conv.weight",
+        "sha256": "9e8ac2c31c84a672f01fd0314d7f005c8103b96eb24c2001298db76f7cb62560"
+      },
+      {
+        "name": "model.17.conv.bias",
+        "sha256": "ea153a2d646f935eeff6fcf085988c9bd9b9095f60a987059041af9eb0940e70"
+      },
+      {
+        "name": "model.19.cv1.conv.weight",
+        "sha256": "99ef07850ada2ce956afbb84715e3b3816080df51762ad35475edbebf0c5997a"
+      },
+      {
+        "name": "model.19.cv1.conv.bias",
+        "sha256": "51c80fe3ae90df1340eec33f1294a303eeae7b20f8755c28002f6ac8ae4c3674"
+      },
+      {
+        "name": "model.19.cv2.conv.weight",
+        "sha256": "1948ebe33ad02b48645ea42e6b96dc986ce170cbe943fba3a72eaf4ec7b7b4ac"
+      },
+      {
+        "name": "model.19.cv2.conv.bias",
+        "sha256": "34c38a49425609c047b460b7b4baba07d5ac9da8efc6c7d229ea8ca87f2b5038"
+      },
+      {
+        "name": "model.19.m.0.cv1.conv.weight",
+        "sha256": "9cc34b482350ad080aa75b4c75553dfa07ae419285e2d24c38b126a07374fb69"
+      },
+      {
+        "name": "model.19.m.0.cv1.conv.bias",
+        "sha256": "a2720e077af31289675c865621b18e8cb32ca273f416237ea92bc40697dca8fe"
+      },
+      {
+        "name": "model.19.m.0.cv2.conv.weight",
+        "sha256": "ab8098aee4432881fbde59e0845e1f59db4deb6b6f98db698bd6b1a44e9ff6b3"
+      },
+      {
+        "name": "model.19.m.0.cv2.conv.bias",
+        "sha256": "2189de55d09fc9fcddd0c62ec4c5ed8efd272a718824f760301748360f1f2fe3"
+      },
+      {
+        "name": "model.19.m.0.cv3.conv.weight",
+        "sha256": "8523c91fa907ac6ee691e7de0f81e3f9544b1688f1f9ff9b7969b99555782011"
+      },
+      {
+        "name": "model.19.m.0.cv3.conv.bias",
+        "sha256": "5f66d95166b0869b4d75a8140b33c2921ea7550677a4c636ea81cce009cceb3d"
+      },
+      {
+        "name": "model.19.m.0.m.0.cv1.conv.weight",
+        "sha256": "5ae87a954ac9a63da961e8ff39660744d55a4d8ce0ce00019012f415c9862f1f"
+      },
+      {
+        "name": "model.19.m.0.m.0.cv1.conv.bias",
+        "sha256": "60d031d4f81e139173f4d6561b4ea38bc8bd2997bb72b57a23e9eaedbf3e63ae"
+      },
+      {
+        "name": "model.19.m.0.m.0.cv2.conv.weight",
+        "sha256": "1a9ab5133dfb451f742a9f3ebb5a7d5ecc0845898f37aba934523d60bc473386"
+      },
+      {
+        "name": "model.19.m.0.m.0.cv2.conv.bias",
+        "sha256": "095d54d1b46dc5619970b0f0d273e66b9eca0beceb4639daeeb0201a563c3e0b"
+      },
+      {
+        "name": "model.19.m.0.m.1.cv1.conv.weight",
+        "sha256": "55efa01a27199bfe3612fbd0c5898476c6fd25168e02999dfdee4533ee5c44ed"
+      },
+      {
+        "name": "model.19.m.0.m.1.cv1.conv.bias",
+        "sha256": "8095b63a7595d9ee15e3e2ed3032f8199fbc8dfc6a6a107494865d26aca30f18"
+      },
+      {
+        "name": "model.19.m.0.m.1.cv2.conv.weight",
+        "sha256": "4184ea4ef15478fc6c9e6fe69b50e647d1ad4f86ba72203b6b71b4fbb962f747"
+      },
+      {
+        "name": "model.19.m.0.m.1.cv2.conv.bias",
+        "sha256": "ecdfd6497f8e3351ad7b2215efff732220ac3ebbb192b9cc9b02c68ed7c190c7"
+      },
+      {
+        "name": "model.20.conv.weight",
+        "sha256": "7d437faf24dd6d991f2279206060d890d77590db8578eb5c2ebaee4e96f93a0a"
+      },
+      {
+        "name": "model.20.conv.bias",
+        "sha256": "3b562be552bb5c5e806efc67fcefc6739e26eeb32cca79a195b9bc3953bf2d72"
+      },
+      {
+        "name": "model.22.cv1.conv.weight",
+        "sha256": "ba75caa6baba3ee9190df0f3c603442d68943ae64dd03c50fc36e4898d5ceb46"
+      },
+      {
+        "name": "model.22.cv1.conv.bias",
+        "sha256": "a5c3ffa2769179058e8290e24dc0f95d8617d07676b8c51d1918ae60318bae27"
+      },
+      {
+        "name": "model.22.cv2.conv.weight",
+        "sha256": "591c264a681185415174fd2a9d64c417428781c7dbed938d31ea34f0835bb6b9"
+      },
+      {
+        "name": "model.22.cv2.conv.bias",
+        "sha256": "52417687b88d6164177850e2860916a702bc1572e472e65e00f8b47bec768de6"
+      },
+      {
+        "name": "model.22.m.0.0.cv1.conv.weight",
+        "sha256": "9c6907ced6b03971311618302c3a9a67268c67cbf942b273bac57e8766d7fb0a"
+      },
+      {
+        "name": "model.22.m.0.0.cv1.conv.bias",
+        "sha256": "7dc8291077933c4d0f757c5b482f68cc07d74b4add620b6284acbb1b8d92464b"
+      },
+      {
+        "name": "model.22.m.0.0.cv2.conv.weight",
+        "sha256": "7b4a64549420d6aa95196b141e5075757de8d3371561e330476c97009ebc50f1"
+      },
+      {
+        "name": "model.22.m.0.0.cv2.conv.bias",
+        "sha256": "212425ad2cbb8f36b865966bb1aef2b0dbc27d29ee06ae55d7c4fe8e416407a2"
+      },
+      {
+        "name": "model.22.m.0.1.attn.qkv.conv.weight",
+        "sha256": "cf412d41f83a012d18c0b39b7c7220d2250fc63baaafaf304ec68ae0b48a600d"
+      },
+      {
+        "name": "model.22.m.0.1.attn.qkv.conv.bias",
+        "sha256": "901c5baa57f6e2d4fb5783b994db2b0af204f811d4d8a51f8c91bbb4278eeea6"
+      },
+      {
+        "name": "model.22.m.0.1.attn.proj.conv.weight",
+        "sha256": "8c8e85e8996853bdb08266522a291ccea8abb2ae3699d3bf7fd6f25ea8aa7f02"
+      },
+      {
+        "name": "model.22.m.0.1.attn.proj.conv.bias",
+        "sha256": "39fee6ccb44f58c5bd98a20a92a4aed2e35d64ac07b75d750e90f1a445406c11"
+      },
+      {
+        "name": "model.22.m.0.1.attn.pe.conv.weight",
+        "sha256": "2d4e3eed8226bdb232265d2c2260d6253610f4d9848c64567726955fb2e97037"
+      },
+      {
+        "name": "model.22.m.0.1.attn.pe.conv.bias",
+        "sha256": "85413b8ce45bee2f5a475f425d1311322876a6765a4007e066c3a291cb9effe9"
+      },
+      {
+        "name": "model.22.m.0.1.ffn.0.conv.weight",
+        "sha256": "d90bbafadd423f1ad90030a0af0de3b57daa38036b62c3aeb99a3e62781464e3"
+      },
+      {
+        "name": "model.22.m.0.1.ffn.0.conv.bias",
+        "sha256": "0861f9f7eaf143cda2aa1712a36084eae66bae27000ed31288012f471e6c8bb4"
+      },
+      {
+        "name": "model.22.m.0.1.ffn.1.conv.weight",
+        "sha256": "b7e4d7142f1206b64b37c468ff53d7585f9881b82a1d91c17d7066ffeec2234d"
+      },
+      {
+        "name": "model.22.m.0.1.ffn.1.conv.bias",
+        "sha256": "87eda402102ec0f9c12e965dec3b27fc53725eaf1550ca1fedb6a4e137c2d24d"
+      },
+      {
+        "name": "model.23.one2one_cv2.0.0.conv.weight",
+        "sha256": "7372172fc36ee477bfc3715750199fc2866f9961bc600033f80de8320f9eef4b"
+      },
+      {
+        "name": "model.23.one2one_cv2.0.0.conv.bias",
+        "sha256": "fb5d7e7eb287d343a0327beabb7e981f713e12d1c60d0620722f6ccc1f93e780"
+      },
+      {
+        "name": "model.23.one2one_cv2.0.1.conv.weight",
+        "sha256": "b07e64d3825810b41a7ed5a9cad51bbeb0f2fded5886aad31a95d571a8cbb0ba"
+      },
+      {
+        "name": "model.23.one2one_cv2.0.1.conv.bias",
+        "sha256": "c7d12108e84739cdfd373e6c6e492e20e64eae9db883987689f900fb42383578"
+      },
+      {
+        "name": "model.23.one2one_cv2.0.2.weight",
+        "sha256": "06211db97bc49a51390aee516b7cf207360a6c729bb3ef3ffdb5f3968a7ec2db"
+      },
+      {
+        "name": "model.23.one2one_cv2.0.2.bias",
+        "sha256": "a67061568b348a4ee852a3e356775af4302def2167499c6b9652ecbef63fc910"
+      },
+      {
+        "name": "model.23.one2one_cv2.1.0.conv.weight",
+        "sha256": "5f28c85e1ed6727c1e8bbad35d396fa3dde1b176e1319100d52efa53b709e5c7"
+      },
+      {
+        "name": "model.23.one2one_cv2.1.0.conv.bias",
+        "sha256": "c3fac0913fbb9bbf42f2363293de35712665dfda6fbac3294871d78dd7af8a3a"
+      },
+      {
+        "name": "model.23.one2one_cv2.1.1.conv.weight",
+        "sha256": "25829c8852acd61b4fd3f70a6c47437b05ce5c180e1f421437cee849f434eb2e"
+      },
+      {
+        "name": "model.23.one2one_cv2.1.1.conv.bias",
+        "sha256": "1c5e599c4b2290386916bfdf282b3af2326fbaac3d8271d14ccaf874da63106e"
+      },
+      {
+        "name": "model.23.one2one_cv2.1.2.weight",
+        "sha256": "5cf75f798d1479a6ebb8494aca025cf2d2cedf41e279f966dc10fe4c33748451"
+      },
+      {
+        "name": "model.23.one2one_cv2.1.2.bias",
+        "sha256": "e8a135f7e10b3de0b829432816fd5a614b8ddce38caf5b017b8f6b2d24149716"
+      },
+      {
+        "name": "model.23.one2one_cv2.2.0.conv.weight",
+        "sha256": "b5de1304b08115ed453823a6b73a64d666d111d5069cddda2f2c8829ca2d00d6"
+      },
+      {
+        "name": "model.23.one2one_cv2.2.0.conv.bias",
+        "sha256": "83089e01b10634ee77391a45a5ab651d2edb940a6854da368da24bc6871abcd4"
+      },
+      {
+        "name": "model.23.one2one_cv2.2.1.conv.weight",
+        "sha256": "e2c9057a70e5d5f14acee418df360927bbf19e208551584f702033aa755b381b"
+      },
+      {
+        "name": "model.23.one2one_cv2.2.1.conv.bias",
+        "sha256": "e55a0eb469486c12e8f62f35aad1e7ffc77522c658c6d464a7e6772660512bc5"
+      },
+      {
+        "name": "model.23.one2one_cv2.2.2.weight",
+        "sha256": "48bb796eda401f18ac564e9be19fee3dc00a9754072507eaf974403da72f3ad0"
+      },
+      {
+        "name": "model.23.one2one_cv2.2.2.bias",
+        "sha256": "b8dc9e5a3928e2483548fa722367d83342edd72fd1b10442e67b82ed411e695a"
+      },
+      {
+        "name": "model.23.one2one_cv3.0.0.0.conv.weight",
+        "sha256": "5193aba51a1477478be6396416244a6839371198f8514d3a20dda2f162608929"
+      },
+      {
+        "name": "model.23.one2one_cv3.0.0.0.conv.bias",
+        "sha256": "522f54bef6e02d2c17bcbbf92a375093b10ccbc058fc5d32f0e465690a0d906b"
+      },
+      {
+        "name": "model.23.one2one_cv3.0.0.1.conv.weight",
+        "sha256": "7b155182ba4c1d11225ac1ffbfc5690d9cae41be9f69ceb0017fdc05c008dca9"
+      },
+      {
+        "name": "model.23.one2one_cv3.0.0.1.conv.bias",
+        "sha256": "b80a947c9f1973af93974659ab68071ba89e165cab6d0778ed01c3c09fb0a95e"
+      },
+      {
+        "name": "model.23.one2one_cv3.0.1.0.conv.weight",
+        "sha256": "781e3817aa37122ae16f5e20f54c2d8fe3c225e0aaa94187bf6a5684d25242a7"
+      },
+      {
+        "name": "model.23.one2one_cv3.0.1.0.conv.bias",
+        "sha256": "db2e4c4eb195494bcee425b12e4221e6c4142436001c52c41d68a19c95e6c17f"
+      },
+      {
+        "name": "model.23.one2one_cv3.0.1.1.conv.weight",
+        "sha256": "b08092cb5cc2da9178acb9eabde0f8c73c6c51e8d1543b06b49435ab5bf3e0c8"
+      },
+      {
+        "name": "model.23.one2one_cv3.0.1.1.conv.bias",
+        "sha256": "81dea5e5da4c3968471daa94e79c9735d8b5f51c3effc9041f8d64e328e52a7b"
+      },
+      {
+        "name": "model.23.one2one_cv3.0.2.weight",
+        "sha256": "504245bc97257d45951ced48fa1014fd299227ad45f12aa1193bb3e433b9fb0a"
+      },
+      {
+        "name": "model.23.one2one_cv3.0.2.bias",
+        "sha256": "8ce0f51de4d2a86b7a8d786bf06390492d501c7227177cc2543dff6bf950ecaa"
+      },
+      {
+        "name": "model.23.one2one_cv3.1.0.0.conv.weight",
+        "sha256": "6a6f9d834b20444667f01a978f8513e56e4bd1d3ef1bd413edb4783a4f226c50"
+      },
+      {
+        "name": "model.23.one2one_cv3.1.0.0.conv.bias",
+        "sha256": "ac7b12fcf85d3ef012d740483688f263f6df079a23573848bbbc1c58a7025578"
+      },
+      {
+        "name": "model.23.one2one_cv3.1.0.1.conv.weight",
+        "sha256": "b78e6fd28ee64ccdb338b1418ca278adcba1bfb1a160fb32b4a4b4bec67c5eaa"
+      },
+      {
+        "name": "model.23.one2one_cv3.1.0.1.conv.bias",
+        "sha256": "96de83f8e258d68c274f1ee1489979c206727f3321558eefb1adae2ca097e838"
+      },
+      {
+        "name": "model.23.one2one_cv3.1.1.0.conv.weight",
+        "sha256": "a271a50ad04b318c6bbc7627996215c6a02b97623498257e9d4c044c594f43cc"
+      },
+      {
+        "name": "model.23.one2one_cv3.1.1.0.conv.bias",
+        "sha256": "c842a1f02a1bb184d36b2f6415bb87fdd133c1d7c7ce0aafd55156eba9a79635"
+      },
+      {
+        "name": "model.23.one2one_cv3.1.1.1.conv.weight",
+        "sha256": "108492f5d1c86db8ae698b96952cc9edd031b062e0a43dfe4359cccd7250c006"
+      },
+      {
+        "name": "model.23.one2one_cv3.1.1.1.conv.bias",
+        "sha256": "43512c1a6a099efcce35c3f2282e4b75bd9660170c55459b22d130ebd68ec00d"
+      },
+      {
+        "name": "model.23.one2one_cv3.1.2.weight",
+        "sha256": "28cce97ccf466767ee45adb57f5d39dddc0edbb700095f32e9492da44aa3ae4b"
+      },
+      {
+        "name": "model.23.one2one_cv3.1.2.bias",
+        "sha256": "21180b971038586f4a976e371a935e849df49a9d7ea30e77be5e899af4ff50bd"
+      },
+      {
+        "name": "model.23.one2one_cv3.2.0.0.conv.weight",
+        "sha256": "ccacc5a508280797759d63a14340275d0446199fd740f856cf6f39f03f705d6a"
+      },
+      {
+        "name": "model.23.one2one_cv3.2.0.0.conv.bias",
+        "sha256": "c26dcf6e18b8679c2e26a99c6e60664a79c09b413981d574c31ee59ef00cf758"
+      },
+      {
+        "name": "model.23.one2one_cv3.2.0.1.conv.weight",
+        "sha256": "61e2c9c65f1fe47fe10baa177aca241170982532c7c1753ae2e6e109deeae061"
+      },
+      {
+        "name": "model.23.one2one_cv3.2.0.1.conv.bias",
+        "sha256": "508a2a56a8bcda251217f9354b4e54287f33cc07a35f1b0cfd968378691ffdf2"
+      },
+      {
+        "name": "model.23.one2one_cv3.2.1.0.conv.weight",
+        "sha256": "8ab14e482b514d319f45b1c01a1159576346a344aad782a9013e27672e453065"
+      },
+      {
+        "name": "model.23.one2one_cv3.2.1.0.conv.bias",
+        "sha256": "fa81e5c81523fe52a8a99f3d90f5ac403fd1b9c89b8898bd81212ca96b300bac"
+      },
+      {
+        "name": "model.23.one2one_cv3.2.1.1.conv.weight",
+        "sha256": "98ad4b3a4e6798290f9b92ceaf0503f15b714fe9e0b69a959bc5e99a7feef831"
+      },
+      {
+        "name": "model.23.one2one_cv3.2.1.1.conv.bias",
+        "sha256": "a695c597f42322fb18ad8b31e3d181bf6eb45f5d600fe683425887236ae5911d"
+      },
+      {
+        "name": "model.23.one2one_cv3.2.2.weight",
+        "sha256": "6198d427e2d2627799fa087a8c09a884a1a052898706da1cf3fce5cac56efe6d"
+      },
+      {
+        "name": "model.23.one2one_cv3.2.2.bias",
+        "sha256": "3e23fa77334baef69e41d0923ec5d1dec9422c7c1bbed00cc5159940c456a392"
+      }
+    ]
+  },
+  "engines": {
+    "control_a": {
+      "layer_records": 223,
+      "layer_types": {
+        "Reformat": 57,
+        "CaskConvolution": 72,
+        "NoOp": 34,
+        "PointWiseV2": 21,
+        "CaskJitConv": 9,
+        "CaskGemmConvolution": 16,
+        "CaskPooling": 3,
+        "Scale": 2,
+        "CaskGemmMatrixMultiply": 4,
+        "CaskSoftMaxV2": 2,
+        "Resize": 2,
+        "Myelin": 1
+      },
+      "bindings": [
+        "images",
+        "output0"
+      ],
+      "engine_size_bytes": 8348596
+    },
+    "control_b": {
+      "layer_records": 216,
+      "layer_types": {
+        "Reformat": 50,
+        "CaskConvolution": 72,
+        "NoOp": 34,
+        "PointWiseV2": 21,
+        "CaskJitConv": 9,
+        "CaskGemmConvolution": 16,
+        "CaskPooling": 3,
+        "Scale": 2,
+        "CaskGemmMatrixMultiply": 4,
+        "CaskSoftMaxV2": 2,
+        "Resize": 2,
+        "Myelin": 1
+      },
+      "bindings": [
+        "images",
+        "output0"
+      ],
+      "engine_size_bytes": 8340460
+    },
+    "grouped_a": {
+      "layer_records": 216,
+      "layer_types": {
+        "Reformat": 50,
+        "CaskConvolution": 72,
+        "NoOp": 34,
+        "PointWiseV2": 21,
+        "CaskJitConv": 9,
+        "CaskGemmConvolution": 16,
+        "CaskPooling": 3,
+        "Scale": 2,
+        "CaskGemmMatrixMultiply": 4,
+        "CaskSoftMaxV2": 2,
+        "Resize": 2,
+        "Myelin": 1
+      },
+      "bindings": [
+        "images",
+        "output0"
+      ],
+      "engine_size_bytes": 8369460
+    },
+    "grouped_b": {
+      "layer_records": 216,
+      "layer_types": {
+        "Reformat": 50,
+        "CaskConvolution": 72,
+        "NoOp": 34,
+        "PointWiseV2": 21,
+        "CaskJitConv": 9,
+        "CaskGemmConvolution": 16,
+        "CaskPooling": 3,
+        "Scale": 2,
+        "CaskGemmMatrixMultiply": 4,
+        "CaskSoftMaxV2": 2,
+        "Resize": 2,
+        "Myelin": 1
+      },
+      "bindings": [
+        "images",
+        "output0"
+      ],
+      "engine_size_bytes": 8369460
+    }
+  },
+  "comparisons": [
+    {
+      "left": "control_a",
+      "right": "control_b",
+      "all_inspector_records_equal": false,
+      "layer_counts": [
+        223,
+        216
+      ],
+      "exact_common_records": 215,
+      "common_record_order_equal": true,
+      "bindings_equal": true,
+      "deleted_records": [
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv3.0/one2one_cv3.0.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                80,
+                80
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                80,
+                80
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv3.1/one2one_cv3.1.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                40,
+                40
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 1 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                40,
+                40
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv3.2/one2one_cv3.2.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                20,
+                20
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 2 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                20,
+                20
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 3 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv2.0/one2one_cv2.0.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                80,
+                80
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 3 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                80,
+                80
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x00000000000003e8",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 4 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv2.1/one2one_cv2.1.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                40,
+                40
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 4 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                40,
+                40
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 5 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv2.2/one2one_cv2.2.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                20,
+                20
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 5 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                20,
+                20
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Output Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "Reformatted Output Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                300,
+                6
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "output0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                300,
+                6
+              ],
+              "Format/Datatype": "Row major linear FP32"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        }
+      ],
+      "added_records": [],
+      "changed_records": [
+        {
+          "name": "{ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "fields": {
+            "Inputs": {
+              "left": [
+                {
+                  "Name": "Reformatted Input Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    80,
+                    80
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                },
+                {
+                  "Name": "Reformatted Input Tensor 1 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    40,
+                    40
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                },
+                {
+                  "Name": "Reformatted Input Tensor 2 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    20,
+                    20
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                },
+                {
+                  "Name": "Reformatted Input Tensor 3 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    80,
+                    80
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                },
+                {
+                  "Name": "Reformatted Input Tensor 4 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    40,
+                    40
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                },
+                {
+                  "Name": "Reformatted Input Tensor 5 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    20,
+                    20
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                }
+              ],
+              "right": [
+                {
+                  "Name": "/model.23/one2one_cv3.0/one2one_cv3.0.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    80,
+                    80
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                },
+                {
+                  "Name": "/model.23/one2one_cv3.1/one2one_cv3.1.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    40,
+                    40
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                },
+                {
+                  "Name": "/model.23/one2one_cv3.2/one2one_cv3.2.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    20,
+                    20
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                },
+                {
+                  "Name": "/model.23/one2one_cv2.0/one2one_cv2.0.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    80,
+                    80
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                },
+                {
+                  "Name": "/model.23/one2one_cv2.1/one2one_cv2.1.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    40,
+                    40
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                },
+                {
+                  "Name": "/model.23/one2one_cv2.2/one2one_cv2.2.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    20,
+                    20
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                }
+              ]
+            },
+            "Outputs": {
+              "left": [
+                {
+                  "Name": "Reformatted Output Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    300,
+                    6
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                }
+              ],
+              "right": [
+                {
+                  "Name": "output0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    300,
+                    6
+                  ],
+                  "Format/Datatype": "Row major linear FP32"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "changed_public_tactic_records": []
+    },
+    {
+      "left": "grouped_a",
+      "right": "grouped_b",
+      "all_inspector_records_equal": true,
+      "layer_counts": [
+        216,
+        216
+      ],
+      "exact_common_records": 216,
+      "common_record_order_equal": true,
+      "bindings_equal": true,
+      "deleted_records": [],
+      "added_records": [],
+      "changed_records": [],
+      "changed_public_tactic_records": []
+    },
+    {
+      "left": "control_a",
+      "right": "grouped_a",
+      "all_inspector_records_equal": false,
+      "layer_counts": [
+        223,
+        216
+      ],
+      "exact_common_records": 215,
+      "common_record_order_equal": true,
+      "bindings_equal": true,
+      "deleted_records": [
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv3.0/one2one_cv3.0.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                80,
+                80
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                80,
+                80
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 1 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv3.1/one2one_cv3.1.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                40,
+                40
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 1 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                40,
+                40
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 2 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv3.2/one2one_cv3.2.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                20,
+                20
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 2 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                80,
+                20,
+                20
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 3 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv2.0/one2one_cv2.0.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                80,
+                80
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 3 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                80,
+                80
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x00000000000003e8",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 4 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv2.1/one2one_cv2.1.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                40,
+                40
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 4 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                40,
+                40
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Input Tensor 5 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "/model.23/one2one_cv2.2/one2one_cv2.2.2/Conv_output_0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                20,
+                20
+              ],
+              "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "Reformatted Input Tensor 5 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                4,
+                20,
+                20
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        },
+        {
+          "Name": "Reformatting CopyNode for Output Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "LayerType": "Reformat",
+          "Inputs": [
+            {
+              "Name": "Reformatted Output Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                300,
+                6
+              ],
+              "Format/Datatype": "Row major linear FP16 format"
+            }
+          ],
+          "Outputs": [
+            {
+              "Name": "output0",
+              "Location": "Device",
+              "Dimensions": [
+                1,
+                300,
+                6
+              ],
+              "Format/Datatype": "Row major linear FP32"
+            }
+          ],
+          "ParameterType": "Reformat",
+          "Origin": "REFORMAT",
+          "TacticValue": "0x0000000000000000",
+          "StreamId": 0,
+          "Metadata": ""
+        }
+      ],
+      "added_records": [],
+      "changed_records": [
+        {
+          "name": "{ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+          "fields": {
+            "Inputs": {
+              "left": [
+                {
+                  "Name": "Reformatted Input Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    80,
+                    80
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                },
+                {
+                  "Name": "Reformatted Input Tensor 1 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    40,
+                    40
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                },
+                {
+                  "Name": "Reformatted Input Tensor 2 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    20,
+                    20
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                },
+                {
+                  "Name": "Reformatted Input Tensor 3 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    80,
+                    80
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                },
+                {
+                  "Name": "Reformatted Input Tensor 4 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    40,
+                    40
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                },
+                {
+                  "Name": "Reformatted Input Tensor 5 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    20,
+                    20
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                }
+              ],
+              "right": [
+                {
+                  "Name": "/model.23/one2one_cv3.0/one2one_cv3.0.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    80,
+                    80
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                },
+                {
+                  "Name": "/model.23/one2one_cv3.1/one2one_cv3.1.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    40,
+                    40
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                },
+                {
+                  "Name": "/model.23/one2one_cv3.2/one2one_cv3.2.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    80,
+                    20,
+                    20
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                },
+                {
+                  "Name": "/model.23/one2one_cv2.0/one2one_cv2.0.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    80,
+                    80
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                },
+                {
+                  "Name": "/model.23/one2one_cv2.1/one2one_cv2.1.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    40,
+                    40
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                },
+                {
+                  "Name": "/model.23/one2one_cv2.2/one2one_cv2.2.2/Conv_output_0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    4,
+                    20,
+                    20
+                  ],
+                  "Format/Datatype": "Channel major FP16 format where channel % 8 == 0"
+                }
+              ]
+            },
+            "Outputs": {
+              "left": [
+                {
+                  "Name": "Reformatted Output Tensor 0 to {ForeignNode[/model.23/Reshape_3.../model.23/Concat_4]}",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    300,
+                    6
+                  ],
+                  "Format/Datatype": "Row major linear FP16 format"
+                }
+              ],
+              "right": [
+                {
+                  "Name": "output0",
+                  "Location": "Device",
+                  "Dimensions": [
+                    1,
+                    300,
+                    6
+                  ],
+                  "Format/Datatype": "Row major linear FP32"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "changed_public_tactic_records": []
+    },
+    {
+      "left": "control_b",
+      "right": "grouped_b",
+      "all_inspector_records_equal": true,
+      "layer_counts": [
+        216,
+        216
+      ],
+      "exact_common_records": 216,
+      "common_record_order_equal": true,
+      "bindings_equal": true,
+      "deleted_records": [],
+      "added_records": [],
+      "changed_records": [],
+      "changed_public_tactic_records": []
+    }
+  ],
+  "builds": {
+    "same_flags_excluding_model_and_output_paths": true,
+    "common_flags": [
+      "/usr/local/TensorRT/bin/trtexec",
+      "--fp16",
+      "--memPoolSize=workspace:1024",
+      "--skipInference",
+      "--profilingVerbosity=detailed",
+      "--builderOptimizationLevel=3",
+      "--timingCacheFile=/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/shared.cache"
+    ],
+    "order_by_start": [
+      {
+        "label": "control_a",
+        "started_unix": 1789370867.933812,
+        "cache_before": null,
+        "cache_after": "64b0827d7f6e61e5d61595954ba6bb1825f6017d592850b487c949c509b71487",
+        "wall_s": 276.77976813702844
+      },
+      {
+        "label": "grouped_a",
+        "started_unix": 1789371373.5058494,
+        "cache_before": "64b0827d7f6e61e5d61595954ba6bb1825f6017d592850b487c949c509b71487",
+        "cache_after": "d2a8fc8c531e6e5f04a8de061af047ac975ac5f33048f3761949f77cfc1b6895",
+        "wall_s": 12.584348859963939
+      },
+      {
+        "label": "grouped_b",
+        "started_unix": 1789371485.8044186,
+        "cache_before": "d2a8fc8c531e6e5f04a8de061af047ac975ac5f33048f3761949f77cfc1b6895",
+        "cache_after": "23950a7f5a559d7c953a89941d3dae2ded26864a6738c17e1bcf4ffd9eb6b8d0",
+        "wall_s": 13.235255265026353
+      },
+      {
+        "label": "control_b",
+        "started_unix": 1789371499.1015282,
+        "cache_before": "23950a7f5a559d7c953a89941d3dae2ded26864a6738c17e1bcf4ffd9eb6b8d0",
+        "cache_after": "3b8da1765a293b22cff1cbc96892f0dc364c4f321edda408cbf68f660141f5a3",
+        "wall_s": 13.586431166972034
+      }
+    ]
+  },
+  "interpretation": [
+    "control_a has 223 layer records; control_b, grouped_a and grouped_b have identical 216-record public Inspector JSON",
+    "The only common record change is ForeignNode inputs/outputs; seven explicit Reformat records disappear",
+    "All other 215 records, their relative order, bindings and public tactic fields are unchanged",
+    "The same original ONNX rebuild also removed the seven Reformats: the removal is not uniquely attributable to grouped TopK",
+    "A sequentially evolving timing cache and build conditions are confounders, not evidence of a specific cause",
+    "Inspector does not expose the complete ForeignNode implementation; equal records do not prove equal compiled code or kernel counts"
+  ],
+  "file_sha256": {
+    "tools/grouped_topk.py": "4003c57c77ba3400fafaf0fe3b2d23a24cf205da3af595c82c05c95aafdba0be",
+    "tests/test_grouped_topk.py": "c1f917ffb589545a8c88c276d88a43e65938c3df607a50d1ce05b0084f0584b2",
+    "tests/topk_cases.py": "10183563180a0e5dfe246ab113aac4d0ba5097ae91bb8a088c356df6252baeb4",
+    "src/06_cuda_graph/main.cpp": "7e464983768990930b8ccd96d64da2f59c3034db21ffec33816001462a4b602c",
+    "src/06_cuda_graph/preprocess.cu": "4b65cc1d01cb9c0a72783dab600e9c0ce1ea34b1d5d199aa9733dad2e720f92a",
+    "src/CMakeLists.txt": "e29476e5c486ead9940a119932ee50aa63d4acc61372e4edf5032fe6ad7d2aa9",
+    "CMakeLists.txt": "6e6a5a20659c3bd54f338fdf91b85c0821adc4f1163b0240d59e1d04fa41a137",
+    "CMakePresets.json": "bbb32f924d7a01935714e16accf1ac861964889c32b227f521cf1fa71bef4069",
+    "weights/yolo26n.onnx": "c1753a66ca8cf9eb0165b2cb75e7b8be9226d126ca96c7dd99239dd8fc56c77b",
+    "images/bus.jpg": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+    "images/zidane.jpg": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb",
+    "artifacts/grouped-topk-IAqxawtr/grouped8.onnx": "07d6b58f86a25bfb064a2b9d169b737ef23df36792bd202c157edcd20a3335b0",
+    "artifacts/grouped-topk-IAqxawtr/inspect_structure.py": "ca64bc709cd57852d564d56982a40b7c7047c656ad8e869110a36e6340d805fb",
+    "artifacts/grouped-topk-IAqxawtr/build_one.py": "b1f681f2ccdf7b2b372d3e2f4a7d9916d5a4a1729a40ac0b032421ebf9ef1716",
+    "artifacts/grouped-topk-IAqxawtr/image_cases.py": "ed2d76bfdd5fb3de8f964b5e4c1b0c280062a6685d1cdada60acfcf0ff2260cb",
+    "artifacts/grouped-topk-IAqxawtr/infer_raw.cpp": "ec9da411e3d5ad2778c8186c8652efe41828f99ac32627baeaf08183d016d6e7",
+    "artifacts/grouped-topk-IAqxawtr/infer_raw": "c411c31bb4b1aec80146237ed175d6335c31fa128111c102caaca21852ce774f",
+    "artifacts/grouped-topk-IAqxawtr/compare_raw.py": "58cee438ba08d873966aa50f7460844ea82a8df1ff8f3896035a6594d1ed2d01",
+    "artifacts/grouped-topk-IAqxawtr/comparison.json": "f153d9bd384830395ed2036664d0dda3b9957b81ce40542d5071a94e32478c80",
+    "artifacts/grouped-topk-IAqxawtr/run_selector.py": "fbc6ea66c83cb12589c6b3cb14780b76a5db29ce4a0ebcd452d451a94106661b",
+    "artifacts/grouped-topk-IAqxawtr/selector_gpu.json": "c55f1c6eec4c01cc2ef27ad85895a9b59bc89c9d69e19de568d195531a9ac9ad",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/metadata.json": "6c234af5a3700301c82dd1cee7f48c2a76428accba270979caf4fce1b621b328",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/blank_0.png": "b44d13cc93611de3da3b081b55fb01613094e2a97acc5db0661604566462c52b",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/blank_114.png": "3836a0ce148335e7977c0cc1063b74bc57cb7e47290a78cbd6e3e7cc47348a6c",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/blank_255.png": "93407c28655e22de8ad30c2b57640ced76c74e6b03d024f2b0499b075fc1d719",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/bus_bright.png": "7fd210044af3c21b4ccad25674d7901e618fdccca48578a5f244be6ebab259e1",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/bus_crop.png": "aa5dd4425aa51de33d08ed059fb9928acf4292de032692b4680a7aaf8d22c4f1",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/bus_dark.png": "e5cf7a4112f924f9711f25c56550f9093866b9abb17fc6a836b80c06031b0918",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/bus_flip.png": "dbfbbdcf7fd91c2b9bc76feec9836e22d4c91ffb235b42c885cbde527505386e",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/bus_half.png": "2a3efc98dfef48f04b15883608c7ca79831b0cdd0200faddddaaa2bed5c2485a",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/bus_large.png": "c9c0f635c638158bb800b4cdab9a35244215a9e7052c254529856199e6b85e07",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/bus_original.png": "bf5a9f8f6a89bb2ec24dff2121b2614344e76abc8a884bc66a46689ac0ee39c6",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/bus_tiles.png": "39fd75d22008437c9097f40fda90351acd79938577bff11183190b3e8ac3453d",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/checker.png": "cb0cffec3150c5363902d566a88c89cfd1c311ea201f5be23cd85227f836c29c",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/noise.png": "00537b6e4683cdecf018b97e89538ffa101be28f371c1ce10277c446beab4648",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/zidane_bright.png": "b73637855e10fa56165c6d78aeea6505ee911c1a2badcefcd1c849b0cf4d51e4",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/zidane_crop.png": "509f6abbf00ce9f9dc8251fd671fcf0d90a24d18e951176efb7c5daae1e3f583",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/zidane_dark.png": "507e26212c74e055dffd1ddc9952d06eeb5ad16e28d40c492584a5349f651b7f",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/zidane_flip.png": "3afdfb501075dfd7ea468436537ae5b74871ccf715d6e13fb89a24c32ffb7668",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/zidane_half.png": "edef7a9a66b1ad7e8a8d141e2afae69348ba0932bb9feedeea6705321d469d55",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/zidane_large.png": "ee5b209969008629c174f66e2ebeca863671fb275171ae7ba54920b14824d576",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/zidane_original.png": "6c2f6c030c660af02e1827b63e34ecd9045afd4751fd02abb760e06db6bbe7bf",
+    "artifacts/grouped-topk-IAqxawtr/image_cases/zidane_tiles.png": "a6588ad52ce3ccddee3986547ab26b16357333b89d9e3bb0bd8870c8b63bcb80",
+    "artifacts/grouped-topk-IAqxawtr/control_a.build.json": "9fb788758bc3419db38127eba89374045d477be6a52c6ad80a62e4ed76288870",
+    "artifacts/grouped-topk-IAqxawtr/control_a.layers.json": "ce3e703588e09a4726a2827f1c259dda035e3fe714829646f7d1ca9827586c74",
+    "artifacts/grouped-topk-IAqxawtr/control_a.engine": "a0c530489f69c8cd145eeb00ec05b5f1694d5708d94f893e20f429cee4db28de",
+    "artifacts/grouped-topk-IAqxawtr/control_b.build.json": "f8649bbed3dc3be6469ead9bdb43811c91762439fad879157e64e18b1797934d",
+    "artifacts/grouped-topk-IAqxawtr/control_b.layers.json": "a410999a9c37748bfa74d5992fc8bac41f0f62e350fe6b5134ebaee19251f0ec",
+    "artifacts/grouped-topk-IAqxawtr/control_b.engine": "0cb135b24e1a3b411acf08ba09b52270f5fa3dd0debdded872617789b640adf2",
+    "artifacts/grouped-topk-IAqxawtr/grouped_a.build.json": "c652f61a25d58d79371c627a4b06c2f4be3485ac8f0098dce744004712314698",
+    "artifacts/grouped-topk-IAqxawtr/grouped_a.layers.json": "a410999a9c37748bfa74d5992fc8bac41f0f62e350fe6b5134ebaee19251f0ec",
+    "artifacts/grouped-topk-IAqxawtr/grouped_a.engine": "1bd991bc9ed123ad0c7cf8c3542819e0838232d2caaca025713c78d74a657aa9",
+    "artifacts/grouped-topk-IAqxawtr/grouped_b.build.json": "f54cd8341c730902d3269bf81ae8d484d356b6bdfa735b1d7d0fabd5a57cbefd",
+    "artifacts/grouped-topk-IAqxawtr/grouped_b.layers.json": "a410999a9c37748bfa74d5992fc8bac41f0f62e350fe6b5134ebaee19251f0ec",
+    "artifacts/grouped-topk-IAqxawtr/grouped_b.engine": "b58a45ce1ea06554ceb7354dcd1f5f9aa58c4132be8a4d15f3b763b66f0a9ae8"
+  }
+}

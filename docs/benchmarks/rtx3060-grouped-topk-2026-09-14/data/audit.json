@@ -1,0 +1,1404 @@
+{
+  "status": "passed",
+  "engine_runs": 24,
+  "pipeline_runs": 12,
+  "engine_samples": 24000,
+  "pipeline_samples": 24000,
+  "total_samples": 48000,
+  "summary_recomputed": {
+    "control_a": {
+      "engine_gpu_ms": {
+        "n": 6000,
+        "mean": 1.078438525,
+        "p50": 1.07727,
+        "p95": 1.0874,
+        "p99": 1.0885
+      },
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 6000,
+          "mean": 9.947133333333333e-05,
+          "p50": 9.3e-05,
+          "p95": 0.000145,
+          "p99": 0.000198
+        },
+        "gpu_ms": {
+          "n": 6000,
+          "mean": 1.277870431615,
+          "p50": 1.27433598,
+          "p95": 1.31932795,
+          "p99": 1.33683205
+        },
+        "postprocess_ms": {
+          "n": 6000,
+          "mean": 0.0015463838333333332,
+          "p50": 0.001457,
+          "p95": 0.002123,
+          "p99": 0.002754
+        },
+        "total_ms": {
+          "n": 6000,
+          "mean": 1.2846363125,
+          "p50": 1.281318,
+          "p95": 1.326529,
+          "p99": 1.344265
+        }
+      },
+      "pipeline_fps": 777.9800858803659,
+      "pipeline_wall_ms": 7712.27967
+    },
+    "control_b": {
+      "engine_gpu_ms": {
+        "n": 6000,
+        "mean": 1.0850611716666667,
+        "p50": 1.08533,
+        "p95": 1.09131,
+        "p99": 1.09241
+      },
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 6000,
+          "mean": 5.46855e-05,
+          "p50": 4.1e-05,
+          "p95": 9.5e-05,
+          "p99": 0.000205
+        },
+        "gpu_ms": {
+          "n": 6000,
+          "mean": 1.2871296755633332,
+          "p50": 1.27708805,
+          "p95": 1.33116806,
+          "p99": 1.36697602
+        },
+        "postprocess_ms": {
+          "n": 6000,
+          "mean": 0.0012902723333333335,
+          "p50": 0.00128,
+          "p95": 0.001979,
+          "p99": 0.002675
+        },
+        "total_ms": {
+          "n": 6000,
+          "mean": 1.2933167165,
+          "p50": 1.283227,
+          "p95": 1.337706,
+          "p99": 1.373631
+        }
+      },
+      "pipeline_fps": 772.8975896111765,
+      "pipeline_wall_ms": 7762.994839999999
+    },
+    "grouped_a": {
+      "engine_gpu_ms": {
+        "n": 6000,
+        "mean": 1.0379156033333334,
+        "p50": 1.03992,
+        "p95": 1.04584,
+        "p99": 1.04694
+      },
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 6000,
+          "mean": 0.00010251083333333333,
+          "p50": 9.1e-05,
+          "p95": 0.000145,
+          "p99": 0.000213
+        },
+        "gpu_ms": {
+          "n": 6000,
+          "mean": 1.2390952362933334,
+          "p50": 1.23027205,
+          "p95": 1.28185594,
+          "p99": 1.30931199
+        },
+        "postprocess_ms": {
+          "n": 6000,
+          "mean": 0.0016438183333333332,
+          "p50": 0.001519,
+          "p95": 0.002383,
+          "p99": 0.00302
+        },
+        "total_ms": {
+          "n": 6000,
+          "mean": 1.246008891,
+          "p50": 1.237226,
+          "p95": 1.289294,
+          "p99": 1.318208
+        }
+      },
+      "pipeline_fps": 802.0653514319717,
+      "pipeline_wall_ms": 7480.687190000001
+    },
+    "grouped_b": {
+      "engine_gpu_ms": {
+        "n": 6000,
+        "mean": 1.0382962016666668,
+        "p50": 1.039,
+        "p95": 1.04218,
+        "p99": 1.04492
+      },
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 6000,
+          "mean": 7.681183333333334e-05,
+          "p50": 8.7e-05,
+          "p95": 0.000131,
+          "p99": 0.000217
+        },
+        "gpu_ms": {
+          "n": 6000,
+          "mean": 1.2417582984666666,
+          "p50": 1.23212802,
+          "p95": 1.28316796,
+          "p99": 1.32601595
+        },
+        "postprocess_ms": {
+          "n": 6000,
+          "mean": 0.0014506913333333334,
+          "p50": 0.001394,
+          "p95": 0.002173,
+          "p99": 0.002986
+        },
+        "total_ms": {
+          "n": 6000,
+          "mean": 1.2482647538333334,
+          "p50": 1.238582,
+          "p95": 1.289965,
+          "p99": 1.333688
+        }
+      },
+      "pipeline_fps": 800.7368754405012,
+      "pipeline_wall_ms": 7493.09815
+    }
+  },
+  "maximum_summary_numeric_difference": 1.9539925233402755e-14,
+  "run_checks": [
+    {
+      "run": "r1_control_a_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.07720822,
+        "p50": 1.07874,
+        "p95": 1.08105,
+        "p99": 1.08197
+      }
+    },
+    {
+      "run": "r1_control_a_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.06949618,
+        "p50": 1.06946,
+        "p95": 1.07166,
+        "p99": 1.07263
+      }
+    },
+    {
+      "run": "r1_control_a_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 8.2968e-05,
+          "p50": 9e-05,
+          "p95": 0.000114,
+          "p99": 0.000198
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.2728451029549999,
+          "p50": 1.26265597,
+          "p95": 1.31120002,
+          "p99": 1.33644795
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.0014631435,
+          "p50": 0.001405,
+          "p95": 0.002071,
+          "p99": 0.002754
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.279351506,
+          "p50": 1.269309,
+          "p95": 1.318277,
+          "p99": 1.344638
+        }
+      },
+      "pipeline_wall_ms": 2559.85156,
+      "pipeline_fps": 781.2953029198302
+    },
+    {
+      "run": "r1_control_b_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0802244,
+        "p50": 1.08026,
+        "p95": 1.08224,
+        "p99": 1.08301
+      }
+    },
+    {
+      "run": "r1_control_b_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.07969528,
+        "p50": 1.07971,
+        "p95": 1.08167,
+        "p99": 1.08289
+      }
+    },
+    {
+      "run": "r1_control_b_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 3.2596e-05,
+          "p50": 2.6e-05,
+          "p95": 4.9e-05,
+          "p99": 0.000191
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.281900673765,
+          "p50": 1.27369595,
+          "p95": 1.31871998,
+          "p99": 1.35014403
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.0011831069999999999,
+          "p50": 0.001105,
+          "p95": 0.001768,
+          "p99": 0.002686
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.2878193995,
+          "p50": 1.279751,
+          "p95": 1.324799,
+          "p99": 1.355741
+        }
+      },
+      "pipeline_wall_ms": 2576.54518,
+      "pipeline_fps": 776.233234924295
+    },
+    {
+      "run": "r1_grouped_a_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0295935999999999,
+        "p50": 1.02954,
+        "p95": 1.03162,
+        "p99": 1.03259
+      }
+    },
+    {
+      "run": "r1_grouped_a_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.02910412,
+        "p50": 1.02917,
+        "p95": 1.03119,
+        "p99": 1.03235
+      }
+    },
+    {
+      "run": "r1_grouped_a_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 8.738700000000001e-05,
+          "p50": 8.3e-05,
+          "p95": 0.000107,
+          "p99": 0.000158
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.22933948712,
+          "p50": 1.21920002,
+          "p95": 1.26700795,
+          "p99": 1.28300798
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.0016317880000000001,
+          "p50": 0.001486,
+          "p95": 0.002341,
+          "p99": 0.002825
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.236047152,
+          "p50": 1.225818,
+          "p95": 1.273842,
+          "p99": 1.289839
+        }
+      },
+      "pipeline_wall_ms": 2473.36622,
+      "pipeline_fps": 808.6145851866612
+    },
+    {
+      "run": "r1_grouped_b_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0351789100000002,
+        "p50": 1.03528,
+        "p95": 1.03735,
+        "p99": 1.03851
+      }
+    },
+    {
+      "run": "r1_grouped_b_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0344483,
+        "p50": 1.03442,
+        "p95": 1.03662,
+        "p99": 1.0376
+      }
+    },
+    {
+      "run": "r1_grouped_b_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 5.87595e-05,
+          "p50": 2.7e-05,
+          "p95": 0.000138,
+          "p99": 0.000284
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.240322687485,
+          "p50": 1.23059201,
+          "p95": 1.29561603,
+          "p99": 1.33100796
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.0012865329999999999,
+          "p50": 0.001191,
+          "p95": 0.002039,
+          "p99": 0.002986
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.2466038289999999,
+          "p50": 1.236613,
+          "p95": 1.302083,
+          "p99": 1.338482
+        }
+      },
+      "pipeline_wall_ms": 2494.41864,
+      "pipeline_fps": 801.7900315241391
+    },
+    {
+      "run": "r2_control_a_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.07600395,
+        "p50": 1.07605,
+        "p95": 1.078,
+        "p99": 1.07892
+      }
+    },
+    {
+      "run": "r2_control_a_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.07577702,
+        "p50": 1.07581,
+        "p95": 1.07776,
+        "p99": 1.07855
+      }
+    },
+    {
+      "run": "r2_control_a_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 8.455800000000001e-05,
+          "p50": 8.2e-05,
+          "p95": 9.6e-05,
+          "p99": 0.000153
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.272513039955,
+          "p50": 1.26211202,
+          "p95": 1.312832,
+          "p99": 1.33936
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.001555708,
+          "p50": 0.001431,
+          "p95": 0.002176,
+          "p99": 0.002792
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.2791530275,
+          "p50": 1.268705,
+          "p95": 1.319671,
+          "p99": 1.346953
+        }
+      },
+      "pipeline_wall_ms": 2559.52031,
+      "pipeline_fps": 781.3964172060038
+    },
+    {
+      "run": "r2_control_b_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0852484500000001,
+        "p50": 1.08557,
+        "p95": 1.08783,
+        "p99": 1.08875
+      }
+    },
+    {
+      "run": "r2_control_b_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.08511894,
+        "p50": 1.08514,
+        "p95": 1.0871,
+        "p99": 1.08789
+      }
+    },
+    {
+      "run": "r2_control_b_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 4.90075e-05,
+          "p50": 4e-05,
+          "p95": 0.00011,
+          "p99": 0.00035
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.2919057459949999,
+          "p50": 1.27923203,
+          "p95": 1.34924805,
+          "p99": 1.39584005
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.00113579,
+          "p50": 0.00106,
+          "p95": 0.001816,
+          "p99": 0.002684
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.297887174,
+          "p50": 1.285163,
+          "p95": 1.356033,
+          "p99": 1.40283
+        }
+      },
+      "pipeline_wall_ms": 2596.74432,
+      "pipeline_fps": 770.1951958058005
+    },
+    {
+      "run": "r2_grouped_a_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0402727999999999,
+        "p50": 1.04028,
+        "p95": 1.04236,
+        "p99": 1.04309
+      }
+    },
+    {
+      "run": "r2_grouped_a_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.03955031,
+        "p50": 1.03949,
+        "p95": 1.04163,
+        "p99": 1.0426
+      }
+    },
+    {
+      "run": "r2_grouped_a_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 8.974699999999999e-05,
+          "p50": 8.5e-05,
+          "p95": 0.000128,
+          "p99": 0.00017
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.24306659134,
+          "p50": 1.23215997,
+          "p95": 1.29091203,
+          "p99": 1.33766401
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.001588878,
+          "p50": 0.001435,
+          "p95": 0.002383,
+          "p99": 0.003543
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.2498739095,
+          "p50": 1.23877,
+          "p95": 1.298036,
+          "p99": 1.347952
+        }
+      },
+      "pipeline_wall_ms": 2501.03006,
+      "pipeline_fps": 799.6705165550869
+    },
+    {
+      "run": "r2_grouped_b_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.03997011,
+        "p50": 1.03992,
+        "p95": 1.04199,
+        "p99": 1.04291
+      }
+    },
+    {
+      "run": "r2_grouped_b_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0396582699999999,
+        "p50": 1.03967,
+        "p95": 1.04175,
+        "p99": 1.0426
+      }
+    },
+    {
+      "run": "r2_grouped_b_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 7.2226e-05,
+          "p50": 8.1e-05,
+          "p95": 0.000109,
+          "p99": 0.000168
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.24004881551,
+          "p50": 1.22751999,
+          "p95": 1.27926397,
+          "p99": 1.35113597
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.0014508995,
+          "p50": 0.001381,
+          "p95": 0.002124,
+          "p99": 0.003161
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.2465580870000001,
+          "p50": 1.233708,
+          "p95": 1.285641,
+          "p99": 1.362089
+        }
+      },
+      "pipeline_wall_ms": 2494.20328,
+      "pipeline_fps": 801.8592614472064
+    },
+    {
+      "run": "r3_control_a_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0864399,
+        "p50": 1.08643,
+        "p95": 1.0885,
+        "p99": 1.08923
+      }
+    },
+    {
+      "run": "r3_control_a_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.08570588,
+        "p50": 1.08569,
+        "p95": 1.08777,
+        "p99": 1.0885
+      }
+    },
+    {
+      "run": "r3_control_a_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 0.000130888,
+          "p50": 0.000125,
+          "p95": 0.00017,
+          "p99": 0.000215
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.288253151935,
+          "p50": 1.27980804,
+          "p95": 1.32415998,
+          "p99": 1.33462405
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.0016203,
+          "p50": 0.001517,
+          "p95": 0.002092,
+          "p99": 0.002725
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.2954044040000001,
+          "p50": 1.286975,
+          "p95": 1.331544,
+          "p99": 1.342175
+        }
+      },
+      "pipeline_wall_ms": 2592.9078,
+      "pipeline_fps": 771.3347925444939
+    },
+    {
+      "run": "r3_control_b_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.09000199,
+        "p50": 1.08997,
+        "p95": 1.09204,
+        "p99": 1.0929
+      }
+    },
+    {
+      "run": "r3_control_b_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.09007797,
+        "p50": 1.09009,
+        "p95": 1.09216,
+        "p99": 1.09277
+      }
+    },
+    {
+      "run": "r3_control_b_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 8.2453e-05,
+          "p50": 8e-05,
+          "p95": 9.6e-05,
+          "p99": 0.000126
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.2875826069299998,
+          "p50": 1.27756798,
+          "p95": 1.32556796,
+          "p99": 1.33536005
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.00155192,
+          "p50": 0.001439,
+          "p95": 0.002138,
+          "p99": 0.002656
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.2942435760000002,
+          "p50": 1.284071,
+          "p95": 1.332375,
+          "p99": 1.342381
+        }
+      },
+      "pipeline_wall_ms": 2589.70534,
+      "pipeline_fps": 772.2886341965067
+    },
+    {
+      "run": "r3_grouped_a_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0445586699999998,
+        "p50": 1.04456,
+        "p95": 1.04663,
+        "p99": 1.04761
+      }
+    },
+    {
+      "run": "r3_grouped_a_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.04441412,
+        "p50": 1.04443,
+        "p95": 1.04651,
+        "p99": 1.04749
+      }
+    },
+    {
+      "run": "r3_grouped_a_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 0.0001303985,
+          "p50": 0.000126,
+          "p95": 0.000189,
+          "p99": 0.000294
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.24487963042,
+          "p50": 1.23414397,
+          "p95": 1.28585601,
+          "p99": 1.30118406
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.0017107889999999999,
+          "p50": 0.001599,
+          "p95": 0.002423,
+          "p99": 0.002887
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.2521056115,
+          "p50": 1.241398,
+          "p95": 1.293558,
+          "p99": 1.308608
+        }
+      },
+      "pipeline_wall_ms": 2506.29091,
+      "pipeline_fps": 797.9919617551499
+    },
+    {
+      "run": "r3_grouped_b_bus_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0398999100000001,
+        "p50": 1.03992,
+        "p95": 1.04199,
+        "p99": 1.04285
+      }
+    },
+    {
+      "run": "r3_grouped_b_zidane_engine",
+      "samples": 1000,
+      "engine_gpu_ms": {
+        "n": 1000,
+        "mean": 1.0406217100000001,
+        "p50": 1.04016,
+        "p95": 1.04504,
+        "p99": 1.04663
+      }
+    },
+    {
+      "run": "r3_grouped_b_pipeline11",
+      "samples": 2000,
+      "pipeline_ms": {
+        "staging_ms": {
+          "n": 2000,
+          "mean": 9.944999999999999e-05,
+          "p50": 9.4e-05,
+          "p95": 0.000117,
+          "p99": 0.000246
+        },
+        "gpu_ms": {
+          "n": 2000,
+          "mean": 1.244903392405,
+          "p50": 1.23465598,
+          "p95": 1.28099203,
+          "p99": 1.29014397
+        },
+        "postprocess_ms": {
+          "n": 2000,
+          "mean": 0.0016146415000000002,
+          "p50": 0.001465,
+          "p95": 0.002336,
+          "p99": 0.002821
+        },
+        "total_ms": {
+          "n": 2000,
+          "mean": 1.2516323455,
+          "p50": 1.241333,
+          "p95": 1.287787,
+          "p99": 1.297924
+        }
+      },
+      "pipeline_wall_ms": 2504.47623,
+      "pipeline_fps": 798.5701665054332
+    }
+  ],
+  "warnings_by_run": {
+    "r1_control_a_bus_engine": [
+      "[09/14/2026-15:45:43] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_control_a_zidane_engine": [
+      "[09/14/2026-15:45:45] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_control_a_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_grouped_a_bus_engine": [
+      "[09/14/2026-15:45:50] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_grouped_a_zidane_engine": [
+      "[09/14/2026-15:45:52] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_grouped_a_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_grouped_b_bus_engine": [
+      "[09/14/2026-15:45:57] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_grouped_b_zidane_engine": [
+      "[09/14/2026-15:45:59] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_grouped_b_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_control_b_bus_engine": [
+      "[09/14/2026-15:46:04] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_control_b_zidane_engine": [
+      "[09/14/2026-15:46:06] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r1_control_b_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_control_a_bus_engine": [
+      "[09/14/2026-15:46:12] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_control_a_zidane_engine": [
+      "[09/14/2026-15:46:14] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_control_a_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_control_b_bus_engine": [
+      "[09/14/2026-15:46:19] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_control_b_zidane_engine": [
+      "[09/14/2026-15:46:21] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_control_b_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_grouped_b_bus_engine": [
+      "[09/14/2026-15:46:26] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_grouped_b_zidane_engine": [
+      "[09/14/2026-15:46:28] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_grouped_b_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_grouped_a_bus_engine": [
+      "[09/14/2026-15:46:34] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_grouped_a_zidane_engine": [
+      "[09/14/2026-15:46:35] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r2_grouped_a_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_grouped_b_bus_engine": [
+      "[09/14/2026-15:46:41] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_grouped_b_zidane_engine": [
+      "[09/14/2026-15:46:43] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_grouped_b_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_control_b_bus_engine": [
+      "[09/14/2026-15:46:48] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_control_b_zidane_engine": [
+      "[09/14/2026-15:46:50] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_control_b_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_control_a_bus_engine": [
+      "[09/14/2026-15:46:55] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_control_a_zidane_engine": [
+      "[09/14/2026-15:46:57] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_control_a_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_grouped_a_bus_engine": [
+      "[09/14/2026-15:47:03] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_grouped_a_zidane_engine": [
+      "[09/14/2026-15:47:05] [W] [TRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ],
+    "r3_grouped_a_pipeline11": [
+      "[TensorRT] CUDA lazy loading is not enabled. Enabling it can significantly reduce device memory usage and speed up TensorRT initialization. See \"Lazy Loading\" section of CUDA documentation https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#lazy-loading"
+    ]
+  },
+  "last_engine_outputs_equal_per_image": true,
+  "last_pipeline_detection_csvs_byte_identical": true,
+  "external_hashes_skipped": false,
+  "verified_external_sha256": {
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_a.engine": "a0c530489f69c8cd145eeb00ec05b5f1694d5708d94f893e20f429cee4db28de",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_a.engine": "1bd991bc9ed123ad0c7cf8c3542819e0838232d2caaca025713c78d74a657aa9",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/grouped_b.engine": "b58a45ce1ea06554ceb7354dcd1f5f9aa58c4132be8a4d15f3b763b66f0a9ae8",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/control_b.engine": "0cb135b24e1a3b411acf08ba09b52270f5fa3dd0debdded872617789b640adf2",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/build/release/src/yolo_registered_input": "71055edd2976f991754af59806debd9c3067d18cc7e2bb181f98fe441b8d991a",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/docs/benchmarks/rtx3060-grouped-topk-2026-09-14/run.py": "2f60b6078c38cb521df30f284ab47067de6015972d8e8d68d063c968e8678f6e",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/bus.bin": "c67c8bcf7b4962b20fc6f07fb9387219e21347c8413945f925385e427aaf7834",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/artifacts/grouped-topk-IAqxawtr/inputs/zidane.bin": "f4b03e2416cb30fa162e74d9035b8d715f003a1b228571861eab7bfa5c0be35b",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/images/bus.jpg": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+    "/home/aoi/ais/code/ccw/compete/yolo_deploy/images/zidane.jpg": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb"
+  },
+  "pipeline_timing_scope": {
+    "staging_ms": "CPU geometry calculation; REGISTERED=1 does not copy to pinned staging",
+    "gpu_ms": "CUDA event interval around Graph H2D + CUDA preprocessing + TensorRT + D2H, not model-only",
+    "postprocess_ms": "CPU confidence filtering, coordinate recovery and invalid-box rejection; no drawing",
+    "total_ms": "Host-clock request start through completed CPU postprocess, including launch/synchronization overhead",
+    "wall_ms": "Measured loop, including timing-query and record bookkeeping; excludes warmup/setup/teardown, decode, drawing, file IO"
+  },
+  "limitations": [
+    "Engine-only uses GPU-resident fixed input and trtexec pipelined Graph submission; not host request latency or end-to-end FPS",
+    "Only final exported output per engine run and final detection list per image are archived, not output on every timed request",
+    "Engine output JSON uses text-rounded scores; the separate 21-image binary-output audit is the bitwise correctness evidence",
+    "48k measurements repeat two images; this is not 48k independent inputs, labeled accuracy or statistical significance",
+    "Two builds per variant used an evolving cache; control_a and control_b Inspector layouts differ, so retain separate build summaries",
+    "No locked GPU clocks or controlled-background guarantee; GPU telemetry and run order remain in metadata"
+  ],
+  "rounds": {
+    "1": {
+      "control": {
+        "engine_gpu_ms": {
+          "n": 4000,
+          "mean": 1.07665602,
+          "p50": 1.07898,
+          "p95": 1.0816,
+          "p99": 1.08258
+        },
+        "pipeline_ms": {
+          "staging_ms": {
+            "n": 4000,
+            "mean": 5.7782e-05,
+            "p50": 2.8e-05,
+            "p95": 0.000108,
+            "p99": 0.000196
+          },
+          "gpu_ms": {
+            "n": 4000,
+            "mean": 1.27737288836,
+            "p50": 1.27132797,
+            "p95": 1.31631994,
+            "p99": 1.34246397
+          },
+          "postprocess_ms": {
+            "n": 4000,
+            "mean": 0.00132312525,
+            "p50": 0.001304,
+            "p95": 0.00198,
+            "p99": 0.002754
+          },
+          "total_ms": {
+            "n": 4000,
+            "mean": 1.2835854527500001,
+            "p50": 1.277392,
+            "p95": 1.322906,
+            "p99": 1.349014
+          }
+        },
+        "pipeline_fps": 778.7560428986644,
+        "pipeline_wall_ms": 5136.39674
+      },
+      "grouped": {
+        "engine_gpu_ms": {
+          "n": 4000,
+          "mean": 1.0320812325,
+          "p50": 1.03186,
+          "p95": 1.03668,
+          "p99": 1.0376
+        },
+        "pipeline_ms": {
+          "staging_ms": {
+            "n": 4000,
+            "mean": 7.307325e-05,
+            "p50": 7.9e-05,
+            "p95": 0.000132,
+            "p99": 0.000209
+          },
+          "gpu_ms": {
+            "n": 4000,
+            "mean": 1.2348310873025,
+            "p50": 1.22563195,
+            "p95": 1.28163195,
+            "p99": 1.31747198
+          },
+          "postprocess_ms": {
+            "n": 4000,
+            "mean": 0.0014591605,
+            "p50": 0.001404,
+            "p95": 0.002246,
+            "p99": 0.002885
+          },
+          "total_ms": {
+            "n": 4000,
+            "mean": 1.2413254905,
+            "p50": 1.232078,
+            "p95": 1.288112,
+            "p99": 1.324422
+          }
+        },
+        "pipeline_fps": 805.1878478489506,
+        "pipeline_wall_ms": 4967.78486
+      }
+    },
+    "2": {
+      "control": {
+        "engine_gpu_ms": {
+          "n": 4000,
+          "mean": 1.08053709,
+          "p50": 1.07892,
+          "p95": 1.08704,
+          "p99": 1.08801
+        },
+        "pipeline_ms": {
+          "staging_ms": {
+            "n": 4000,
+            "mean": 6.678275e-05,
+            "p50": 7.4e-05,
+            "p95": 9.9e-05,
+            "p99": 0.000248
+          },
+          "gpu_ms": {
+            "n": 4000,
+            "mean": 1.2822093929749998,
+            "p50": 1.27350402,
+            "p95": 1.33676803,
+            "p99": 1.37414396
+          },
+          "postprocess_ms": {
+            "n": 4000,
+            "mean": 0.001345749,
+            "p50": 0.001324,
+            "p95": 0.002067,
+            "p99": 0.002766
+          },
+          "total_ms": {
+            "n": 4000,
+            "mean": 1.28852010075,
+            "p50": 1.279463,
+            "p95": 1.343455,
+            "p99": 1.381532
+          }
+        },
+        "pipeline_fps": 775.7553746809928,
+        "pipeline_wall_ms": 5156.26463
+      },
+      "grouped": {
+        "engine_gpu_ms": {
+          "n": 4000,
+          "mean": 1.0398628725,
+          "p50": 1.03986,
+          "p95": 1.04199,
+          "p99": 1.04285
+        },
+        "pipeline_ms": {
+          "staging_ms": {
+            "n": 4000,
+            "mean": 8.098650000000001e-05,
+            "p50": 8.2e-05,
+            "p95": 0.00012,
+            "p99": 0.00017
+          },
+          "gpu_ms": {
+            "n": 4000,
+            "mean": 1.241557703425,
+            "p50": 1.22985601,
+            "p95": 1.28278399,
+            "p99": 1.34352005
+          },
+          "postprocess_ms": {
+            "n": 4000,
+            "mean": 0.00151988875,
+            "p50": 0.00141,
+            "p95": 0.002248,
+            "p99": 0.003341
+          },
+          "total_ms": {
+            "n": 4000,
+            "mean": 1.24821599825,
+            "p50": 1.236335,
+            "p95": 1.290156,
+            "p99": 1.356455
+          }
+        },
+        "pipeline_fps": 800.7633933673255,
+        "pipeline_wall_ms": 4995.233340000001
+      }
+    },
+    "3": {
+      "control": {
+        "engine_gpu_ms": {
+          "n": 4000,
+          "mean": 1.088056435,
+          "p50": 1.08813,
+          "p95": 1.09167,
+          "p99": 1.09265
+        },
+        "pipeline_ms": {
+          "staging_ms": {
+            "n": 4000,
+            "mean": 0.0001066705,
+            "p50": 0.000111,
+            "p95": 0.000148,
+            "p99": 0.000197
+          },
+          "gpu_ms": {
+            "n": 4000,
+            "mean": 1.2879178794325001,
+            "p50": 1.27868795,
+            "p95": 1.32460797,
+            "p99": 1.335168
+          },
+          "postprocess_ms": {
+            "n": 4000,
+            "mean": 0.00158611,
+            "p50": 0.001483,
+            "p95": 0.002109,
+            "p99": 0.002674
+          },
+          "total_ms": {
+            "n": 4000,
+            "mean": 1.29482399,
+            "p50": 1.285551,
+            "p95": 1.331894,
+            "p99": 1.342381
+          }
+        },
+        "pipeline_fps": 771.8114186697718,
+        "pipeline_wall_ms": 5182.6131399999995
+      },
+      "grouped": {
+        "engine_gpu_ms": {
+          "n": 4000,
+          "mean": 1.0423736025,
+          "p50": 1.04279,
+          "p95": 1.0462,
+          "p99": 1.04724
+        },
+        "pipeline_ms": {
+          "staging_ms": {
+            "n": 4000,
+            "mean": 0.00011492425,
+            "p50": 0.000113,
+            "p95": 0.000161,
+            "p99": 0.000263
+          },
+          "gpu_ms": {
+            "n": 4000,
+            "mean": 1.2448915114125,
+            "p50": 1.234496,
+            "p95": 1.28294396,
+            "p99": 1.29926395
+          },
+          "postprocess_ms": {
+            "n": 4000,
+            "mean": 0.00166271525,
+            "p50": 0.001554,
+            "p95": 0.002373,
+            "p99": 0.002887
+          },
+          "total_ms": {
+            "n": 4000,
+            "mean": 1.2518689785,
+            "p50": 1.241367,
+            "p95": 1.290047,
+            "p99": 1.306406
+          }
+        },
+        "pipeline_fps": 798.2809594300963,
+        "pipeline_wall_ms": 5010.76714
+      }
+    }
+  },
+  "archive_sha256": {
+    "metadata.json": "20958b70f5f416d6419479b0001eb32d0d6b30cb2125584cdcf7cbdb4a40f72d",
+    "r1_control_a_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r1_control_a_bus_engine/stdout.txt": "3a1998f805c757b1d2cbc2db31c0df05f10549fd87a1096cf59411d00d41a9f1",
+    "r1_control_a_bus_engine/times.json.gz": "980e065393a37c2a4e7d8b5d251190c41ad0c7c45f90a3b6dffe88aa5bf435a0",
+    "r1_control_a_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r1_control_a_pipeline11/setup.csv": "1630d9adf9922494ac789cd4945ed34079a4d8cff77b70827279c1f81c20233e",
+    "r1_control_a_pipeline11/stdout.txt": "47cba8a63edeb81e8479c318176ab7a703996237f7a17323cb70e75c1b679b9f",
+    "r1_control_a_pipeline11/throughput.csv": "c757ae5821bae4af7a993d3fc5fd8192d272e85770b8d5ad7f525261aa7afc94",
+    "r1_control_a_pipeline11/timings.csv": "2f6b5b514f656796399587133ec9eac2ef6cb8ee58aa0ceac3e2e570e9a6c9a9",
+    "r1_control_a_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r1_control_a_zidane_engine/stdout.txt": "52ad18acd97418b373ae6b01c7241fc53bb018e0ed8be919541a001914bfbadb",
+    "r1_control_a_zidane_engine/times.json.gz": "1b4b72fa1e01e7ca4d211501f542aacf8f0e37449bddb006306dcd9db7eebe4c",
+    "r1_control_b_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r1_control_b_bus_engine/stdout.txt": "2e861b20e1b0eabfcc01f22a9ea2e874f8f42b1641c33792fbd058c0048edb58",
+    "r1_control_b_bus_engine/times.json.gz": "5aa18a737c875d926a9d741845d75e22861ce56341f774925dd4b227532510c6",
+    "r1_control_b_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r1_control_b_pipeline11/setup.csv": "a26a4d3e6d939154254c2448315d319bfc52157acbe1ddf63922d156a7f8f115",
+    "r1_control_b_pipeline11/stdout.txt": "b45bc8f2fc2590a3186115b83bfcdee8226cc38f360616a97a07cdc249d75da3",
+    "r1_control_b_pipeline11/throughput.csv": "3073933911de5955e18995c131f0dbec42183351293e8720ba5664150bd67488",
+    "r1_control_b_pipeline11/timings.csv": "d42bb11f9bf64c0cadf4d42f7338a123947c2b3f79985312471c3a49c6860e25",
+    "r1_control_b_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r1_control_b_zidane_engine/stdout.txt": "c25422112339387984e6051fa13cd1a323d8860b70a2ab5544518e8699a23847",
+    "r1_control_b_zidane_engine/times.json.gz": "5c81e8b7729b8c4a6d0c8e35cf19306e3219b3ee48cb9369ecdb8a14bf2dd1bc",
+    "r1_grouped_a_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r1_grouped_a_bus_engine/stdout.txt": "3fbb38b87ef887ceb9938a21d0f7a931a6f0ba800525d57aac1dae6dba7211b6",
+    "r1_grouped_a_bus_engine/times.json.gz": "075daa58a7816a9ee604f181e00f8768cbbe457824d5c2f631595dd5ec8456c9",
+    "r1_grouped_a_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r1_grouped_a_pipeline11/setup.csv": "8180629d91c494cdad48e59cbd0c1ffde27b0551e66c8da923f16042c92fa034",
+    "r1_grouped_a_pipeline11/stdout.txt": "5eeaca6e151ce010abee451bb8f5d01b3f42ca71b2145bf30d749798678ee1c5",
+    "r1_grouped_a_pipeline11/throughput.csv": "08c81904823098f4a69a71ae14830970e90c4d3631b10c7e7f476b540112e10f",
+    "r1_grouped_a_pipeline11/timings.csv": "7a8932891872752b8e15d1fe78defd3842d7b85affee032481456c5f7baa005e",
+    "r1_grouped_a_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r1_grouped_a_zidane_engine/stdout.txt": "624f153e0f40b54f997729b1c9c3e59d8ba07e2cb998d94f4df70baa3b30d51f",
+    "r1_grouped_a_zidane_engine/times.json.gz": "cad599105ed54d5d49389cf4933b1af9cd3ef8d2af59f3d58babb91e4a6b8d90",
+    "r1_grouped_b_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r1_grouped_b_bus_engine/stdout.txt": "aa11b6593467e558ff072a37a95bf56ad951dbe95bd404baa53891153322bd7c",
+    "r1_grouped_b_bus_engine/times.json.gz": "e2ffc5beafd666142d6aa6fae9a0302a94bae7d7d327bae5301e80c836cea35f",
+    "r1_grouped_b_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r1_grouped_b_pipeline11/setup.csv": "81f811866689ec8c1b83aabcc8f357190f048e77c8fe87ee6a185bfee63bba34",
+    "r1_grouped_b_pipeline11/stdout.txt": "89a441bb02b756226a6811f477f8c2d06c374dce855d8a9ce72b342f758cab74",
+    "r1_grouped_b_pipeline11/throughput.csv": "4c1dc3f38a7d266d57ba795474d29a636921dd0e1a2ca45858997cce5ed73aac",
+    "r1_grouped_b_pipeline11/timings.csv": "75c814fd5db924c8f7115d0ad7faf07d5bd8d65169e3c223529eb5dacaacede3",
+    "r1_grouped_b_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r1_grouped_b_zidane_engine/stdout.txt": "b2d089a68727a69906d82fc25a4a45698d55888171401447a6425d0a94251ab5",
+    "r1_grouped_b_zidane_engine/times.json.gz": "09583661bb3054c0c33517734a6eab36e610b7a45d20553dbbb4dc83c88c87ab",
+    "r2_control_a_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r2_control_a_bus_engine/stdout.txt": "c938b92a6295f7bcac751d0ae8db67958ccb4605c717614922febb6e4b25e46e",
+    "r2_control_a_bus_engine/times.json.gz": "82e0ab63072e83978b61252e5446d234021c3a681628d8c3a2e7b7211b52a276",
+    "r2_control_a_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r2_control_a_pipeline11/setup.csv": "978252a75baea723daf4ca10a4e562a33f9a39c0993fd19bf020481ad89b7af0",
+    "r2_control_a_pipeline11/stdout.txt": "ff3348d2f5e1e598be87f170f2da7c49887c43349b7a6b114a81c00ec11b1dd6",
+    "r2_control_a_pipeline11/throughput.csv": "4b29f2ecd3b06dad20e2e2e31628a60f7a1e6a5fb6ec72213742d4aa93ff5876",
+    "r2_control_a_pipeline11/timings.csv": "c6278a2bafe8f600db546d764f9e638762eafb391a826a45f4eb2f22c6c4f1f3",
+    "r2_control_a_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r2_control_a_zidane_engine/stdout.txt": "8d7b481c2a4fda1331e585996e60089d1f735cd8c5b9bcdfa727ca1a31703864",
+    "r2_control_a_zidane_engine/times.json.gz": "d898edd8030391457e7900b8411733b875b71232ba8efa5516a5f1b39cc826c9",
+    "r2_control_b_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r2_control_b_bus_engine/stdout.txt": "54b31f06d93845a32a81f7c30676d616ba9fdf50cec887108f7b93a32ce78ca9",
+    "r2_control_b_bus_engine/times.json.gz": "9a7d2e9cccc44eb17aede687a0d7c2ba8df0d02dcb430f6ee2a149d81936d785",
+    "r2_control_b_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r2_control_b_pipeline11/setup.csv": "135533bf0ddc7cf2a75257caef041ea20c16555603377b680eb31386a093f045",
+    "r2_control_b_pipeline11/stdout.txt": "56b1f7b8a2c28245a345ec9e79e5a15090be01a08b1617af0777ea09dab1ead5",
+    "r2_control_b_pipeline11/throughput.csv": "de3f57a82d56adf31d8db17afa88eafc10af80ebd1e6d47a5c137c22b5f11aaa",
+    "r2_control_b_pipeline11/timings.csv": "75122cf18714a4864d16afe06b9949ae98a32ac658401313a694a8c216690b75",
+    "r2_control_b_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r2_control_b_zidane_engine/stdout.txt": "ff8f37a8a7cbe48a00c93bcc363be5d98523f8ad721e8b53c92aeefd171c5f11",
+    "r2_control_b_zidane_engine/times.json.gz": "5de37488f1a946f580ca1f7bc9c7046d360c7f2ee6145aa552a2296657022ec8",
+    "r2_grouped_a_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r2_grouped_a_bus_engine/stdout.txt": "1f7be0925ca785196d6a42b2956711d00c98621d4f459c9d0cbae015ffe695db",
+    "r2_grouped_a_bus_engine/times.json.gz": "a77fe258f3a9f6b8c7446c3dcababe7447b521540c3d65261b9bb313fae32bda",
+    "r2_grouped_a_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r2_grouped_a_pipeline11/setup.csv": "8f849d427cce8519d88b973c253d30ef63ce0f2cd6afdd1b34c71e643206c0bb",
+    "r2_grouped_a_pipeline11/stdout.txt": "74dadc2646d49d1bfdc28cd237bc713bce4106efe8da2dbb7990a5f41292fd3f",
+    "r2_grouped_a_pipeline11/throughput.csv": "2517f486edc05dd9cccb55baeb5b49a6313af34670120298ca4a880c537c14a3",
+    "r2_grouped_a_pipeline11/timings.csv": "2610cb50e7ae50e3155142120d1df627f33dec9cb4dcfd7856b9666ba5218709",
+    "r2_grouped_a_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r2_grouped_a_zidane_engine/stdout.txt": "1ced4a4238f6dc1a6b5ec552cd128459123736e7545375f325137bf3eea38421",
+    "r2_grouped_a_zidane_engine/times.json.gz": "9735715370800f9ead2d456b23fdaf49fb39e97968c6c49c44a3446b2e9de3d1",
+    "r2_grouped_b_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r2_grouped_b_bus_engine/stdout.txt": "ab33c225c6d7858b13d83dd315708a3e0b5ced5ae074144632af028f32073e5d",
+    "r2_grouped_b_bus_engine/times.json.gz": "fbef87361f0218351aeabd59cd796ac825fc615646072d993fa5a9201af6eb8e",
+    "r2_grouped_b_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r2_grouped_b_pipeline11/setup.csv": "c37e7effd0c4bc86de93fb32d703da493847b72df89f4c3632197c3e83139083",
+    "r2_grouped_b_pipeline11/stdout.txt": "184fd994a8023112faee2a8039fcbb27d801cb03c0c18e7b9a4d237407e67d33",
+    "r2_grouped_b_pipeline11/throughput.csv": "ea41ba38fed55525bff8198ddef619262d7a62a36e0b41024509b68440e1f8ec",
+    "r2_grouped_b_pipeline11/timings.csv": "a0fbe2b67fbb4d09faef4b0213f90ecfa4ea607dd03923b226be7a90a76a05e3",
+    "r2_grouped_b_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r2_grouped_b_zidane_engine/stdout.txt": "de3e23f4f8d3cf7f38d47d6a697e98160b37f86eb18f49f2990f4bc7270b7d8c",
+    "r2_grouped_b_zidane_engine/times.json.gz": "9b4ed06b497d1c1e02a4deeedd00dbf23841788585d722555a1fd259894e2e45",
+    "r3_control_a_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r3_control_a_bus_engine/stdout.txt": "355e4876b3c8a4a506b176875901145559710ad10eec458c5bbbb4558519c45a",
+    "r3_control_a_bus_engine/times.json.gz": "831802c644967b3fbf3c8ff58aeb841695e8c465307ed6babd3f1e4f336bb6cf",
+    "r3_control_a_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r3_control_a_pipeline11/setup.csv": "6e7a1f7c1f6ff3eda404afcc1add64e94d850333b1f827c15303b0e845e1947b",
+    "r3_control_a_pipeline11/stdout.txt": "166811600706c951f3744d5e2966279a3e756d31ce020f5703666edc16d4c0cc",
+    "r3_control_a_pipeline11/throughput.csv": "2d4aafa41baddd9c71c58caa27ba0af4a07fa923fbe99bc64c1bd7bf1afe46bc",
+    "r3_control_a_pipeline11/timings.csv": "05ababb928c0adf8e52798c262e41d59df191dc23703c026dea38df5cf00d870",
+    "r3_control_a_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r3_control_a_zidane_engine/stdout.txt": "07c4b5bda1001bf85fb8c0e5380043cdd1b721387c8804f06d077be92aa685af",
+    "r3_control_a_zidane_engine/times.json.gz": "1f240c6cf3b3cede8c6173796a7c219ccaa47ce4070f800077a77256e75dfb85",
+    "r3_control_b_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r3_control_b_bus_engine/stdout.txt": "b881a0ebdeb647b8a7c3afdc65a7105c986fa7fc2475cad6d18671c39a4dd32f",
+    "r3_control_b_bus_engine/times.json.gz": "fe21799ec9b0d96009f25adcd4027bfc4485823ee6f07de18f063b85a10c12ff",
+    "r3_control_b_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r3_control_b_pipeline11/setup.csv": "fafdfd0fc3319bc3c8c3f6513d64234416c5189dbac5ce2b833bc3944b90a8f4",
+    "r3_control_b_pipeline11/stdout.txt": "f2e213f68d5c198b4a6e88bd015925a9a030317d19afe9e8310ece7060474542",
+    "r3_control_b_pipeline11/throughput.csv": "e9fd30fb61c372bac1414f4db9d422c10ddcc698d93bf644e9d4e8552d8cb839",
+    "r3_control_b_pipeline11/timings.csv": "8ff6bd192de9faecb66d532bf292a07aa6d41207bf85cde6ab9a2166e7be57f3",
+    "r3_control_b_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r3_control_b_zidane_engine/stdout.txt": "3e91a6c664167656be68b3f4f2599753fd0350860d376fa7f29d8ef09aa998b7",
+    "r3_control_b_zidane_engine/times.json.gz": "b1f7def7c47ef3719f594485832618e3ee4c8b357909b9d2f4c02e1747d841e4",
+    "r3_grouped_a_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r3_grouped_a_bus_engine/stdout.txt": "2a1c5cde6d8fbc739ad2f10188641f658502e3ac08acd7e42a32a3962d6b2c42",
+    "r3_grouped_a_bus_engine/times.json.gz": "b950c3d25b5d7fe4bc5794313a982f98dac3ff2b11163febd47fef6b82adc157",
+    "r3_grouped_a_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r3_grouped_a_pipeline11/setup.csv": "439ce05211b6049cb7edc27022758bd7847b12359bdb4633d460ec234a5a0937",
+    "r3_grouped_a_pipeline11/stdout.txt": "7ae6e553f4aee086cce18f948904ce277d8aab48122077a98c533c8002c41ccd",
+    "r3_grouped_a_pipeline11/throughput.csv": "07cb3991db91ab13a613e109e01bd361259f88838abafe1f3125ae9a4f5f603c",
+    "r3_grouped_a_pipeline11/timings.csv": "fe39b797e801267d135403851d4045afe93d2696f6e0dc556b83b4229a694cdb",
+    "r3_grouped_a_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r3_grouped_a_zidane_engine/stdout.txt": "b2273da36f4d771052cd339f8b82396a55310b4c7aa45a6170943cef0c3884ed",
+    "r3_grouped_a_zidane_engine/times.json.gz": "20547f7a2163ddee02c65b39d80efb097b6b01188b1d67cfca4ea72c6b6ab22b",
+    "r3_grouped_b_bus_engine/output.json": "ea07d549310b5367cdf1bc9637e4997bbb79066df715e16a8056c0a50ffd2cdd",
+    "r3_grouped_b_bus_engine/stdout.txt": "c39a9d09963ba4b8802b23beddff2e4d89b860b01bdcea8d98c7b288825d3b3d",
+    "r3_grouped_b_bus_engine/times.json.gz": "6b347c8a7a5b789c28c11c79abb3394cb001f037fac73229000c2f256210d518",
+    "r3_grouped_b_pipeline11/detections.csv": "0cefc13ca36f156761f8ffae5f8e9621178b10ab9ef5542df5b53158c84866d6",
+    "r3_grouped_b_pipeline11/setup.csv": "5ef57f30a4fb80028b6f196b34e2a4293484becf20564566f198fa01a8b8097e",
+    "r3_grouped_b_pipeline11/stdout.txt": "0060010e061b6dc8b67c5d7d9d791aa6da53eccd340e253033ca9b606b8be830",
+    "r3_grouped_b_pipeline11/throughput.csv": "411d6ad652996154e0144a819114c051c664f813ad9a2a65a582b370f20fb8bc",
+    "r3_grouped_b_pipeline11/timings.csv": "8ce9e5ddb8d6cd53a60debd975257bb27a979cc03659c550352a42e722c8f6cc",
+    "r3_grouped_b_zidane_engine/output.json": "02cc214604a711525fd5513645d1b27a0f8c431952a6af5fafb53c59ee657204",
+    "r3_grouped_b_zidane_engine/stdout.txt": "b76c633760792a1fd1f000033534688c7d4c68efb6b25f86b3258f425c411214",
+    "r3_grouped_b_zidane_engine/times.json.gz": "6c47a2c2e117c3ba0bcd2efc7d9697c22c182f5e82b01da00cd5ef6be213d52f",
+    "summary.json": "1fd762135431892fef4b6cc830129c3859cdecbf268a2250ee0520091adc2d05"
+  },
+  "summarizer_sha256": "b3aab67b8aecff3c86fcf78374ccf8d97be32887aaf9cc552d856595d367de1f"
+}

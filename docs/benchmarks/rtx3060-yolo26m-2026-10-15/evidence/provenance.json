@@ -1,0 +1,47 @@
+{
+  "model": "YOLO26m",
+  "checked_date": "2026-10-15",
+  "official_models_page": "https://docs.ultralytics.com/models/",
+  "release_url": "https://github.com/ultralytics/assets/releases/tag/v8.4.0",
+  "note": "YOLO26 is latest released Ultralytics YOLO; YOLO27 weights unavailable at check time.",
+  "packages": {
+    "torch": "2.13.0+cpu",
+    "torchvision": "0.28.0+cpu",
+    "ultralytics": "8.4.137",
+    "onnx": "1.22.0",
+    "numpy": "2.2.6"
+  },
+  "export_command": [
+    ".venv-export/bin/python",
+    "tools/export_onnx.py",
+    "yolo26m.pt"
+  ],
+  "export_options": {
+    "imgsz": 640,
+    "batch": 1,
+    "opset": 16,
+    "dynamic": false,
+    "simplify": false,
+    "nms": false,
+    "device": "cpu"
+  },
+  "sha256": {
+    "weights/yolo26m.pt": "401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
+    "weights/yolo26m.onnx": "67c7c58da169e8b824fcfb44afae0e720fac9f645735c940ba1d91bdcb0e1dec",
+    "tools/export_onnx.py": "ffd425a729642b0534310b90b9aa1bdb2a6e5ba04512a815a1d53028be85af22",
+    "tools/export-requirements.txt": "b7c3b5c0628760b04fb94b8b52d02546e5152014b96d8cd76a4fe04b835ccd34",
+    "tools/grouped_topk.py": "4003c57c77ba3400fafaf0fe3b2d23a24cf205da3af595c82c05c95aafdba0be",
+    "artifacts/yolo26m-2026-10-15/models/control.onnx": "67c7c58da169e8b824fcfb44afae0e720fac9f645735c940ba1d91bdcb0e1dec",
+    "artifacts/yolo26m-2026-10-15/models/grouped.onnx": "653f5c1922e2faeff4364ffbb5f0f33d89218042da6a55b974038c7e775081ea"
+  },
+  "official_asset": {
+    "id": 340096038,
+    "name": "yolo26m.pt",
+    "size": 44255705,
+    "digest": "sha256:401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
+    "created_at": "2026-01-13T19:59:19Z",
+    "updated_at": "2026-01-13T19:59:21Z",
+    "browser_download_url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt"
+  },
+  "checkpoint_digest_verified": true
+}
